@@ -12,7 +12,7 @@ The payloads for this extension are all from the excellent Ambionics project [PH
 PHPGGC is a library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
 You will need it for further exploiting any vulnerabilities found by this extension.
 
-This extention works best if combined with the `PHP Object Injection Check` extension from [Securify].(https://github.com/securifybv/PHPUnserializeCheck).
+This extention works best if combined with the `PHP Object Injection Check` extension from [Securify](https://github.com/securifybv/PHPUnserializeCheck).
 
 
 ### Compile
