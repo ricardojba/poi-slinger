@@ -25,14 +25,14 @@ Tested on
 
 
 ### Install
-Load the jar manually, in Burp Suite (community or pro), use "`Extender -> Extensions -> Add`"" to load "`poi-slinger/build/libs/poi-slinger-all.jar`""
+Load the jar manually, in Burp Suite (community or pro), use `Extender -> Extensions -> Add` to load `poi-slinger/build/libs/poi-slinger-all.jar`
 
 `You can also install this is in Burp Suite, via Extender -> BApp Store - If PortSwigger accepts and publishes this extension on their BApp Store :)`
 
 
 ### Use
-Right click on a request and click "`Send To POI Slinger`". This will also highlight the request and set the comment `Sent to POI Slinger`
-You can watch the debug messages on the extension's output pane under "`Extender->Extensions->PHP Object Injection Slinger`".
+Right click on a request and click `Send To POI Slinger`. This will also highlight the request and set the comment `Sent to POI Slinger`
+You can watch the debug messages on the extension's output pane under `Extender->Extensions->PHP Object Injection Slinger`.
 
 If you're using Burp Pro, any findings will also be reported as scan issues.
 
