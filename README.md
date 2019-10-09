@@ -5,7 +5,7 @@ It will send a serialized PHP Object to the web application designed to force th
 
 
 ### Contribute
-Testing and issue reporting is welcome.
+Feedback, testing and issue reporting is welcome.
 
 
 ### Credits
