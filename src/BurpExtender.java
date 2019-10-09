@@ -206,16 +206,16 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                 // Sleep 2 second(s) between each payload injection to compensate for any network delay on the target.
                 try { Thread.sleep(2000); }
                 catch (InterruptedException e) { Thread.currentThread().interrupt(); }
-                // Fetch collaborator collaborator callback host interactions that may have occurred for the current injected payload.
+                // Fetch collaborator callback host interactions that may have occurred for the current injected payload.
                 List<IBurpCollaboratorInteraction> collaboratorInteractions_payload = collaboratorContext.fetchCollaboratorInteractionsFor(payload);
                 // Fetch ANY collaborator callback host interactions that may have occurred.
                 List<IBurpCollaboratorInteraction> collaboratorInteractions_all = collaboratorContext.fetchAllCollaboratorInteractions();
                 if (!collaboratorInteractions_payload.isEmpty()) {
                     stdout.println("Interaction detected on Collaborator Callback Host!");
-                    // Report specific interaction.
+                    // Report a specific interaction due to a payload injection.
                     return singletonList(reportIssue(payload, checkRequestResponse, collaboratorInteractions_payload.get(0)));
                 } else if (!collaboratorInteractions_all.isEmpty()) {
-                    // Report any interaction.
+                    // Report any interaction - pickup any delayed collaborator callback host interaction from other previous payload injection.
                     return singletonList(reportIssue(payload, checkRequestResponse, collaboratorInteractions_all.get(0)));
                 } else { stdout.println("No interaction detected on Collaborator Callback Host."); }
             }
