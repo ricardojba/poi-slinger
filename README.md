@@ -17,12 +17,18 @@ You should combine your testing with the `PHP Object Injection Check` extension 
 
 
 ### Compile
-Build with `gradle fatJar`
 
 Tested on:
  * `OSX Mojave 10.14.6`
  * `java version "11.0.4" 2019-07-16 LTS`
- * `Gradle 5.6.2 (brew install gradle)`
+ * `Gradle 5.6.2`
+
+Build the extension on OSX:
+ * Install [`Homebrew`](https://docs.brew.sh/Installation)
+ * After installing `Homebrew` run on a terminal `brew install gradle`
+ * Clone the repository `git clone https://github.com/ricardojba/poi-slinger.git`
+ * Inside the cloned repository directory, build the Jar with `gradle fatJar`
+ * Jar location `poi-slinger/build/libs/poi-slinger-all.jar`
 
 
 ### Install
