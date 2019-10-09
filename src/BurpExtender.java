@@ -39,7 +39,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
         // Set our extension name.
         callbacks.setExtensionName("PHP Object Injection Slinger");
 
-        // Register our context menu entry
+        // Register our context menu entry.
         callbacks.registerContextMenuFactory(this);
 
         // Create member versions of the StdOut and StdErr.
@@ -60,7 +60,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     // This method is called when multiple issues are reported for the same URL
     // path by the same extension-provided check. The value we return from this
     // method determines how/whether Burp consolidates the multiple issues
-    // to prevent duplication
+    // to prevent duplication.
     @Override
     public int consolidateDuplicateIssues(IScanIssue existingIssue, IScanIssue newIssue) {
         if (existingIssue.getUrl().equals(newIssue.getUrl()) &&
@@ -90,11 +90,11 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
         return requestHighlights;
     }
 
+    // This method adds a context menu entry to Proxy/Target/Intruder/Repeater Tabs for the extension.
     @Override
     public List<JMenuItem> createMenuItems(final IContextMenuInvocation invocation) {
         List<JMenuItem> menuList = new ArrayList<>();
         mInvocation = invocation;
-        // Add the context menu entry to Proxy/Target/Intruder/Repeater Tabs
         if (mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_PROXY_HISTORY ||
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SCANNER_RESULTS ||
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SEARCH_RESULTS ||
@@ -169,13 +169,13 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     public List<IScanIssue> doActiveScan(IHttpRequestResponse baseRequestResponse, IScannerInsertionPoint insertionPoint) {
 
         // Print Generated Colaborator Callback Host on stdout for debugging purposes.
-        stdout.println("Generated Colaborator Callback Host: " + collaboratorHost);
+        stdout.println("\nGenerated Colaborator Callback Host: " + collaboratorHost);
 
         // Get the payload data from the payloads.json file.
         JSONArray payloaddata = getPayloadData();
 
         // Interate through each payload.
-        Iterator iter = payloaddata.iterator();
+        Iterator<?> iter = payloaddata.iterator();
         while (iter.hasNext()) {
 
             JSONObject json = (JSONObject) iter.next();
@@ -195,7 +195,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
             }
 
             // Print payloads on stdout for debugging purposes.
-            stdout.println("Sending Payload For: " + (String) json.get("name") + ": \n" + payload+"\n\n");
+            stdout.println("\nSending Payload For: " + (String) json.get("name") + ": \n" + payload+"\n\n");
 
             // First round sends the payload URL encoded, Second round sends the payload Base64 encoded.
             for (int i = 0; i < 2; i++) {
@@ -210,11 +210,12 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                 // Fetch ANY collaborator callback host interactions that may have occurred.
                 List<IBurpCollaboratorInteraction> collaboratorInteractions_all = collaboratorContext.fetchAllCollaboratorInteractions();
                 if (!collaboratorInteractions_payload.isEmpty()) {
-                    stdout.println("Interaction detected on Collaborator Callback Host!");
                     // Report a specific interaction due to a payload injection.
+                    stdout.println("Interaction detected on Collaborator Callback Host!");
                     return singletonList(reportIssue(payload, checkRequestResponse, collaboratorInteractions_payload.get(0)));
                 } else if (!collaboratorInteractions_all.isEmpty()) {
                     // Report any interaction - pickup any delayed collaborator callback host interaction from other previous payload injection.
+                    stdout.println("Interaction detected on Collaborator Callback Host!");
                     return singletonList(reportIssue(payload, checkRequestResponse, collaboratorInteractions_all.get(0)));
                 } else { stdout.println("No interaction detected on Collaborator Callback Host."); }
             }
