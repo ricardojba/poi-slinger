@@ -14,7 +14,7 @@ class POISlingerScanIssue implements IScanIssue {
                 "on their implementations can be used for various attacks. These attacks include arbitrary code " +
                 "execution, SQL injection, arbitrary file access, and others.</p>" +
                 "<p>See also: <a href=\"https://www.owasp.org/index.php/PHP_Object_Injection\">https://www.owasp.org/index.php/PHP_Object_Injection</a></p>";
-    private static final String REMEDIATION_BACKGROUND = "<p>Avoid unserializing untrusted (user) data. " + 
+    private static final String REMEDIATION_BACKGROUND = "<p>Avoid unserializing untrusted (user) data. " +
                 "Use <strong><code>json_decode()</code>/<code>json_decode</code></strong> or set the " +
                 "<strong><code>unserialize()</code></strong> options to <strong>allowed_classes=false</strong> (PHP >= 7.0).</p>";
     private final URL url;
@@ -87,9 +87,9 @@ class POISlingerScanIssue implements IScanIssue {
     private String buildIssueDetail(String payload, IBurpCollaboratorInteraction event) {
         return "<p>The Web Application is vulnerable to PHP Object Injection.</p><br />" +
                "<p>The following serialized PHP Object was sent to the application: <br /><strong>" + payload + "</strong><br /> </p><br />" +
-               "<p>The Web Application Web Server made " + eventDescription(event) + 
+               "<p>The Web Application Web Server made " + eventDescription(event) +
                "<strong>" + event.getProperty("interaction_id") + ".burpcollaborator.net</strong></p><br />" +
-               "<p>The <strong>" + interactionType(event.getProperty("type")) + 
+               "<p>The <strong>" + interactionType(event.getProperty("type")) +
                "</strong> was received from the IP address <strong>" + event.getProperty("client_ip") +
                "</strong> at " + event.getProperty("time_stamp") + ".</p>";
     }

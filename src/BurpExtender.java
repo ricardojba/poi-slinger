@@ -45,7 +45,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
         // Create member versions of the StdOut and StdErr.
         stdout = new PrintWriter(callbacks.getStdout(), true);
         stderr = new PrintWriter(callbacks.getStderr(), true);
-        
+
         // Get a collaborator callback host.
         collaboratorContext = callbacks.createBurpCollaboratorClientContext();
         collaboratorHost = "poi-slinger." + collaboratorContext.generatePayload(true);
@@ -57,8 +57,8 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
         stdout.println("--|> PHP Object Injection Slinger Extension Loaded <|--");
     }
 
-    // This method is called when multiple issues are reported for the same URL 
-    // path by the same extension-provided check. The value we return from this 
+    // This method is called when multiple issues are reported for the same URL
+    // path by the same extension-provided check. The value we return from this
     // method determines how/whether Burp consolidates the multiple issues
     // to prevent duplication
     @Override
@@ -95,14 +95,14 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
         List<JMenuItem> menuList = new ArrayList<>();
         mInvocation = invocation;
         // Add the context menu entry to Proxy/Target/Intruder/Repeater Tabs
-        if (mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_PROXY_HISTORY || 
-            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SCANNER_RESULTS || 
-            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SEARCH_RESULTS || 
-            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_INTRUDER_PAYLOAD_POSITIONS || 
+        if (mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_PROXY_HISTORY ||
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SCANNER_RESULTS ||
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SEARCH_RESULTS ||
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_INTRUDER_PAYLOAD_POSITIONS ||
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_INTRUDER_ATTACK_RESULTS ||
-            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_MESSAGE_EDITOR_REQUEST || 
-            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_MESSAGE_VIEWER_REQUEST || 
-            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_TARGET_SITE_MAP_TREE || 
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_MESSAGE_EDITOR_REQUEST ||
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_MESSAGE_VIEWER_REQUEST ||
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_TARGET_SITE_MAP_TREE ||
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_TARGET_SITE_MAP_TABLE) {
             JMenuItem markScan = new JMenuItem("Send To POI Slinger");
             markScan.addActionListener(new ActionListener() {
@@ -131,7 +131,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                 if (callbacks.isInScope(url)) {
                     callbacks.doActiveScan(
                         messages[i].getHttpService().getHost(),
-                        messages[i].getHttpService().getPort(), 
+                        messages[i].getHttpService().getPort(),
                         messages[i].getHttpService().getProtocol().equalsIgnoreCase("HTTPS"),
                         messages[i].getRequest());
                     // Highlight and set a Comment on the HTTP Request on the Proxy Tab.
@@ -196,7 +196,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
 
             // Print payloads on stdout for debugging purposes.
             stdout.println("Sending Payload For: " + (String) json.get("name") + ": \n" + payload+"\n\n");
-            
+
             // First round sends the payload URL encoded, Second round sends the payload Base64 encoded.
             for (int i = 0; i < 2; i++) {
                 // Make a request containing our payload in the insertion point.
@@ -218,8 +218,8 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                     return singletonList(reportIssue(payload, checkRequestResponse, collaboratorInteractions_all.get(0)));
                 } else { stdout.println("No interaction detected on Collaborator Callback Host."); }
             }
-        }        
+        }
         return null;
     }
-    
+
 }
