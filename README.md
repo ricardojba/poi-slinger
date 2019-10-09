@@ -28,7 +28,7 @@ Tested on:
 ### Install
 Load the jar manually, in Burp Suite Pro, use `Extender -> Extensions -> Add` to load `poi-slinger/build/libs/poi-slinger-all.jar`
 
-`You can also install this is in Burp Suite, via Extender -> BApp Store > PHP Object Injection Slinger - If PortSwigger accepts and publishes this extension on their BApp Store :)`
+`You can also install the extention in Burp Suite Pro, via Extender -> BApp Store > PHP Object Injection Slinger - If PortSwigger accepts and publishes this extension on their BApp Store :)`
 
 
 ### Use
