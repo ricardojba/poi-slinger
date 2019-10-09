@@ -27,8 +27,6 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     //
     public PrintWriter stdout;
     public PrintWriter stderr;
-    // Context Menu Text.
-    public static String MENU_NAME = "Send To POI Slinger";
 
     @Override
     public void registerExtenderCallbacks(final IBurpExtenderCallbacks callbacks) {
@@ -96,13 +94,21 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     public List<JMenuItem> createMenuItems(final IContextMenuInvocation invocation) {
         List<JMenuItem> menuList = new ArrayList<>();
         mInvocation = invocation;
-        
-        if (mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_PROXY_HISTORY) {
-            JMenuItem markScan = new JMenuItem("POI Slinger Scan");
+        // Add the context menu entry to Proxy/Target/Intruder/Repeater Tabs
+        if (mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_PROXY_HISTORY || 
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SCANNER_RESULTS || 
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SEARCH_RESULTS || 
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_INTRUDER_PAYLOAD_POSITIONS || 
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_INTRUDER_ATTACK_RESULTS ||
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_MESSAGE_EDITOR_REQUEST || 
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_MESSAGE_VIEWER_REQUEST || 
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_TARGET_SITE_MAP_TREE || 
+            mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_TARGET_SITE_MAP_TABLE) {
+            JMenuItem markScan = new JMenuItem("Send To POI Slinger");
             markScan.addActionListener(new ActionListener() {
                @Override
                public void actionPerformed(ActionEvent arg0) {
-                   if (arg0.getActionCommand().equals("POI Slinger Scan")) {
+                   if (arg0.getActionCommand().equals("Send To POI Slinger")) {
                        POISlingerScan(mInvocation.getSelectedMessages());
                    }
                }
@@ -128,8 +134,9 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                         messages[i].getHttpService().getPort(), 
                         messages[i].getHttpService().getProtocol().equalsIgnoreCase("HTTPS"),
                         messages[i].getRequest());
+                    // Highlight and set a Comment on the HTTP Request on the Proxy Tab.
                     messages[i].setHighlight("pink");
-                    messages[i].setComment("Sent to POI Scanner");
+                    messages[i].setComment("Sent to POI Slinger");
                 }
             }
             catch (Exception e) {
@@ -196,19 +203,21 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                 // Make a request containing our payload in the insertion point.
                 byte[] checkRequest = insertionPoint.buildRequest(i == 1 ? helpers.base64Encode(payload).getBytes() : helpers.urlEncode(payload).getBytes());
                 IHttpRequestResponse checkRequestResponse = callbacks.makeHttpRequest(baseRequestResponse.getHttpService(), checkRequest);
-                // Sleep 1 second between each payload injection to compensate for any network delay on the target.
-                try { Thread.sleep(1000); }
-                catch (InterruptedException ex) { Thread.currentThread().interrupt(); }
+                // Sleep 2 second(s) between each payload injection to compensate for any network delay on the target.
+                try { Thread.sleep(2000); }
+                catch (InterruptedException e) { Thread.currentThread().interrupt(); }
                 // Fetch collaborator collaborator callback host interactions that may have occurred for the current injected payload.
-                //List<IBurpCollaboratorInteraction> collaboratorInteractions = collaboratorContext.fetchCollaboratorInteractionsFor(payload);
-                //
-                // Fetch any collaborator callback host interactions that may have occurred.
-                List<IBurpCollaboratorInteraction> collaboratorInteractions = collaboratorContext.fetchAllCollaboratorInteractions();
-                if (!collaboratorInteractions.isEmpty()) {
-                    stdout.println("Interaction detected on Collaborator!");
-                    // Report The issue.
-                    return singletonList(reportIssue(payload, checkRequestResponse, collaboratorInteractions.get(0)));
-                } else { stdout.println("No interaction detected on Collaborator Host."); }
+                List<IBurpCollaboratorInteraction> collaboratorInteractions_payload = collaboratorContext.fetchCollaboratorInteractionsFor(payload);
+                // Fetch ANY collaborator callback host interactions that may have occurred.
+                List<IBurpCollaboratorInteraction> collaboratorInteractions_all = collaboratorContext.fetchAllCollaboratorInteractions();
+                if (!collaboratorInteractions_payload.isEmpty()) {
+                    stdout.println("Interaction detected on Collaborator Callback Host!");
+                    // Report specific interaction.
+                    return singletonList(reportIssue(payload, checkRequestResponse, collaboratorInteractions_payload.get(0)));
+                } else if (!collaboratorInteractions_all.isEmpty()) {
+                    // Report any interaction.
+                    return singletonList(reportIssue(payload, checkRequestResponse, collaboratorInteractions_all.get(0)));
+                } else { stdout.println("No interaction detected on Collaborator Callback Host."); }
             }
         }        
         return null;
