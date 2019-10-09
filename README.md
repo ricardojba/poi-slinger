@@ -9,8 +9,8 @@ Feedback, testing and issue reporting is welcome.
 
 
 ### Credits
-The payloads for this extension are all from the excellent Ambionics project [PHPGGC](https://github.com/ambionics/phpggc).
-PHPGGC is a library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
+The payloads for this extension are all from the excellent Ambionics project [`PHPGGC`](https://github.com/ambionics/phpggc).
+`PHPGGC` is a library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
 You will need it for further exploiting any vulnerabilities found by this extension.
 
 You should combine your testing with the `PHP Object Injection Check` extension from [Securify](https://github.com/securifybv/PHPUnserializeCheck) so you can identify other possible PHP Object Injection issues that this extension does not pick up.
