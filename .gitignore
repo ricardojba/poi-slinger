@@ -44,7 +44,10 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-.gradle
+.gradle/
+.settings/
+.vscode/
+bin/
 env/
 build/
 develop-eggs/
@@ -60,6 +63,8 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+.classpath
+.project
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
