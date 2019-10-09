@@ -140,8 +140,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                 }
             }
             catch (Exception e) {
-                PrintWriter stdErr = new PrintWriter(callbacks.getStderr(), true);
-                stdErr.println("Error creating URL: " + e.getMessage());
+                stderr.println("Error creating URL: " + e.getMessage());
             }
         }
     }
