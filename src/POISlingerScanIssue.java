@@ -22,11 +22,11 @@ class POISlingerScanIssue implements IScanIssue {
     private final IHttpService httpService;
     private final IHttpRequestResponse[] httpMessages;
 
-    POISlingerScanIssue(IHttpService httpService, URL url, IHttpRequestResponse[] httpMessages, String payload, IBurpCollaboratorInteraction collaboratorInteraction) {
+    POISlingerScanIssue(IHttpService httpService, URL url, IHttpRequestResponse[] httpMessages, String name, String gen_with, String payload, IBurpCollaboratorInteraction collaboratorInteraction) {
         this.url = url;
         this.httpService = httpService;
         this.httpMessages = httpMessages;
-        this.detail = buildIssueDetail(payload, collaboratorInteraction);
+        this.detail = buildIssueDetail(name, gen_with, payload, collaboratorInteraction);
     }
 
     @Override
@@ -84,9 +84,12 @@ class POISlingerScanIssue implements IScanIssue {
         return httpService;
     }
 
-    private String buildIssueDetail(String payload, IBurpCollaboratorInteraction event) {
+    private String buildIssueDetail(String name, String gen_with, String payload, IBurpCollaboratorInteraction event) {
         return "<p>The Web Application is vulnerable to PHP Object Injection.</p><br />" +
+               "<p>It appears that the Web Application is running: "+ name +" </p>" +
                "<p>The following serialized PHP Object was sent to the application: <br /><strong>" + payload + "</strong><br /> </p><br />" +
+               "<p>To further check the exploitability of this issue download the tool <a href=\"https://github.com/ambionics/phpggc\">PHPGCC</a> " +
+               "and generate your payload with the following command: <strong>"+ gen_with +"</strong></p>" +
                "<p>The Web Application Web Server made " + eventDescription(event) +
                "<strong>" + event.getProperty("interaction_id") + ".burpcollaborator.net</strong></p><br />" +
                "<p>The <strong>" + interactionType(event.getProperty("type")) +

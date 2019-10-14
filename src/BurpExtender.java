@@ -70,13 +70,13 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
         else return 0;
     }
 
-    private IScanIssue reportIssue(String payload, IHttpRequestResponse sentRequestResponse, IBurpCollaboratorInteraction collaboratorInteraction) {
+    private IScanIssue reportIssue(String name, String gen_with, String payload, IHttpRequestResponse sentRequestResponse, IBurpCollaboratorInteraction collaboratorInteraction) {
         // Highlight the Request.
         IHttpRequestResponse[] httpMessages = new IHttpRequestResponse[] {
             callbacks.applyMarkers(sentRequestResponse, buildRequestHighlights(payload, sentRequestResponse), emptyList())
         };
         // Create a new Issue.
-        return new POISlingerScanIssue(sentRequestResponse.getHttpService(), helpers.analyzeRequest(sentRequestResponse).getUrl(), httpMessages, payload, collaboratorInteraction);
+        return new POISlingerScanIssue(sentRequestResponse.getHttpService(), helpers.analyzeRequest(sentRequestResponse).getUrl(), httpMessages, name, gen_with, payload, collaboratorInteraction);
     }
 
     private List<int[]> buildRequestHighlights(String payload, IHttpRequestResponse sentRequestResponse) {
@@ -180,6 +180,8 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
 
             JSONObject json = (JSONObject) iter.next();
             String payload = (String) json.get("payload");
+            String gen_with = (String) json.get("gen_with");
+            String name = (String) json.get("name");
 
             // Replace the hardcoded string CHANGEME on each payload with the generated Colaborator Callback Host.
             if ((Boolean) json.get("_needs_dynamic_payload_editing")) {
@@ -195,7 +197,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
             }
 
             // Print payloads on stdout for debugging purposes.
-            stdout.println("\nSending Payload For: " + (String) json.get("name") + ": \n" + payload+"\n\n");
+            stdout.println("\nSending Payload For: " + name + ": \n" + payload +"\n\n");
 
             // First round sends the payload URL encoded, Second round sends the payload Base64 encoded.
             for (int i = 0; i < 2; i++) {
@@ -212,11 +214,11 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                 if (!collaboratorInteractions_payload.isEmpty()) {
                     // Report a specific interaction due to a payload injection.
                     stdout.println("Interaction detected on Collaborator Callback Host!");
-                    return singletonList(reportIssue(payload, checkRequestResponse, collaboratorInteractions_payload.get(0)));
+                    return singletonList(reportIssue(name, gen_with, payload, checkRequestResponse, collaboratorInteractions_payload.get(0)));
                 } else if (!collaboratorInteractions_all.isEmpty()) {
                     // Report any interaction - pickup any delayed collaborator callback host interaction from other previous payload injection.
                     stdout.println("Interaction detected on Collaborator Callback Host!");
-                    return singletonList(reportIssue(payload, checkRequestResponse, collaboratorInteractions_all.get(0)));
+                    return singletonList(reportIssue(name, gen_with, payload, checkRequestResponse, collaboratorInteractions_all.get(0)));
                 } else { stdout.println("No interaction detected on Collaborator Callback Host."); }
             }
         }
