@@ -1,6 +1,7 @@
 package burp;
 
 import java.net.URL;
+import org.apache.commons.text.StringEscapeUtils;
 
 // class implementing IScanIssue to hold our custom scan issue details
 class POISlingerScanIssue implements IScanIssue {
@@ -86,15 +87,15 @@ class POISlingerScanIssue implements IScanIssue {
 
     private String buildIssueDetail(String name, String gen_with, String payload, IBurpCollaboratorInteraction event) {
         return "<p>The Web Application is vulnerable to PHP Object Injection.</p><br />" +
-               "<p>It appears that the Web Application is running: "+ name +" </p>" +
-               "<p>The following serialized PHP Object was sent to the application: <br /><strong>" + payload + "</strong><br /> </p><br />" +
-               "<p>To further check the exploitability of this issue download the tool <a href=\"https://github.com/ambionics/phpggc\">PHPGCC</a> " +
-               "and generate your payload with the following command: <strong>"+ gen_with +"</strong></p>" +
-               "<p>The Web Application Web Server made " + eventDescription(event) +
+               "<p>The following serialized PHP Object was sent to the application: <br /><strong>" + payload + "</strong></p><br /><br />" +
+               "<p>That forced the Web Application Web Server to make " + eventDescription(event) +
                "<strong>" + event.getProperty("interaction_id") + ".burpcollaborator.net</strong></p><br />" +
                "<p>The <strong>" + interactionType(event.getProperty("type")) +
                "</strong> was received from the IP address <strong>" + event.getProperty("client_ip") +
-               "</strong> at " + event.getProperty("time_stamp") + ".</p>";
+               "</strong> at " + event.getProperty("time_stamp") + ".</p><br />" +
+               "<p>It appears that the Web Application is running: <strong>"+ StringEscapeUtils.escapeHtml4(name) +"</strong></p>" +
+               "<p>To further check the exploitability of this issue download the tool <a href=\"https://github.com/ambionics/phpggc\">PHPGCC</a> " +
+               "and generate your payload with the following command: <strong>"+ gen_with +"</strong></p>";
     }
 
     private String interactionType(String type) {

@@ -7,6 +7,7 @@ repositories {
 dependencies {
     compile 'org.apache.clerezza.ext:org.json.simple:0.4'
     compile 'net.portswigger.burp.extender:burp-extender-api:2.1'
+    compile 'org.apache.commons:commons-text:1.8'
 }
 
 sourceSets {
