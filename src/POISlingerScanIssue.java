@@ -87,7 +87,7 @@ class POISlingerScanIssue implements IScanIssue {
 
     private String buildIssueDetail(String name, String gen_with, String payload, IBurpCollaboratorInteraction event) {
         return "<p>The Web Application is vulnerable to PHP Object Injection.</p><br />" +
-               "<p>The following serialized PHP Object was sent to the application: <br /><strong>" + payload + "</strong></p><br /><br />" +
+               "<p>The following serialized PHP Object was sent to the application: <br /><strong>" + payload + "</strong></p><br />" +
                "<p>That forced the Web Application Web Server to make " + eventDescription(event) +
                "<strong>" + event.getProperty("interaction_id") + ".burpcollaborator.net</strong></p><br />" +
                "<p>The <strong>" + interactionType(event.getProperty("type")) +
