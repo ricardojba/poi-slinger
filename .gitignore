@@ -12,7 +12,7 @@
 *.dmg
 *.gz
 *.iso
-*.jar
+# *.jar
 *.rar
 *.tar
 *.zip
@@ -49,6 +49,7 @@ __pycache__/
 .settings/
 .vscode/
 bin/
+!bin/poi-slinger-all.jar
 env/
 build/
 develop-eggs/
