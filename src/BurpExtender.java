@@ -204,9 +204,9 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                 // Make a request containing our payload in the insertion point.
                 byte[] checkRequest = insertionPoint.buildRequest(i == 1 ? helpers.base64Encode(payload).getBytes() : helpers.urlEncode(payload).getBytes());
                 IHttpRequestResponse checkRequestResponse = callbacks.makeHttpRequest(baseRequestResponse.getHttpService(), checkRequest);
-                // Sleep 2 second(s) between each payload injection to compensate for any network delay on the target.
-                try { Thread.sleep(2000); }
-                catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+                // Sleep 2 second(s) between each payload injection to compensate for any network delay on the target. - Removed at the request of PortSwigger Code review process.
+                //try { Thread.sleep(2000); }
+                //catch (InterruptedException e) { Thread.currentThread().interrupt(); }
                 // Fetch collaborator callback host interactions that may have occurred for the current injected payload.
                 List<IBurpCollaboratorInteraction> collaboratorInteractions_payload = collaboratorContext.fetchCollaboratorInteractionsFor(payload);
                 // Fetch ANY collaborator callback host interactions that may have occurred.
