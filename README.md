@@ -36,7 +36,7 @@ Load the jar manually, in Burp Suite Pro, use `Extender -> Extensions -> Add` to
 
 You may find the built Jar on the `bin` directory of this repository.
 
-`You can also install the extension in Burp Suite Pro, via Extender -> BApp Store > PHP Object Injection Slinger`
+`You can also install the extension in Burp Suite Pro, via Extender -> BApp Store > PHP Object Injection Slinger`.
 
 
 ### Use
