@@ -43,7 +43,7 @@ You can watch the debug messages on the extension's output pane under `Extender-
 
 
 ### Test it
-Check the PHP file and the instructions contained on it on how to host the file and use it to test the extension.
+Check the PHP file on the `test-extension` directory and the instructions contained in it, on how to host the file and use it to test this extension.
 
 
 ### Example Report
