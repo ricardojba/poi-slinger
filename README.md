@@ -36,12 +36,16 @@ Load the jar manually, in Burp Suite Pro, use `Extender -> Extensions -> Add` to
 
 You may find the built Jar on the `bin` directory of this repository.
 
-`You can also install the extension in Burp Suite Pro, via Extender -> BApp Store > PHP Object Injection Slinger`.
+`You can also install the extension in Burp Suite Pro, via Extender -> BApp Store > PHP Object Injection Slinger`
 
 
 ### Use
 On the Proxy/Target/Intruder/Repeater Tab, right click on the desired HTTP Request and click `Send To POI Slinger`. This will also highlight the HTTP Request and set the comment `Sent to POI Slinger`
-You can watch the debug messages on the extension's output pane under `Extender->Extensions->PHP Object Injection Slinger`.
+You can watch the debug messages on the extension's output pane under `Extender->Extensions->PHP Object Injection Slinger`
+
+
+### Test it
+Check the PHP file and the instructions contained it's instructions to host the PHP file and use it to test the extension.
 
 
 Any findings will be reported as scan issues:
