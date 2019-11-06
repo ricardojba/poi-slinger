@@ -16,7 +16,7 @@ You will need it for further exploiting any vulnerabilities found by this extens
 You should combine your testing with the [`PHP Object Injection Check`](https://github.com/securifybv/PHPUnserializeCheck) extension from [Securify](https://securify.nl) so you can identify other possible PHP Object Injection issues that this extension does not pick up.
 
 
-### Compile
+### Build it
 
 Tested on:
  * `OSX Mojave 10.14.6`
@@ -31,13 +31,13 @@ Build the extension on OSX:
  * Jar location `poi-slinger/build/libs/poi-slinger-all.jar`
 
 
-### Install
+### Install it
 Load the jar manually, in Burp Suite Pro, use `Extender -> Extensions -> Add` to load the jar file `poi-slinger-all.jar`
 You may find the built `Jar` on the `bin` directory of this repository.
 You can also install the extension in Burp Suite Pro, via `Extender -> BApp Store > PHP Object Injection Slinger`
 
 
-### Use
+### Use it
 On the Proxy/Target/Intruder/Repeater Tab, right click on the desired HTTP Request and click `Send To POI Slinger`. This will also highlight the HTTP Request and set the comment `Sent to POI Slinger`
 You can watch the debug messages on the extension's output pane under `Extender->Extensions->PHP Object Injection Slinger`
 
