@@ -20,8 +20,8 @@ You should combine your testing with the [`PHP Object Injection Check`](https://
 
 Tested on:
  * `OSX Mojave 10.14.6`
- * `java version "11.0.4" 2019-07-16 LTS`
- * `Gradle 5.6.2`
+ * `java version "11.0.5" 2019-10-15 LTS`
+ * `Gradle 5.6.4`
 
 Build the extension on OSX:
  * Install [`Homebrew`](https://docs.brew.sh/Installation)
@@ -34,9 +34,9 @@ Build the extension on OSX:
 ### Install
 Load the jar manually, in Burp Suite Pro, use `Extender -> Extensions -> Add` to load the jar file `poi-slinger-all.jar`
 
-You may find the built Jar on the `bin` directory of this repository.
+You may find the built `Jar` on the `bin` directory of this repository.
 
-`You can also install the extension in Burp Suite Pro, via Extender -> BApp Store > PHP Object Injection Slinger`
+You can also install the extension in Burp Suite Pro, via `Extender -> BApp Store > PHP Object Injection Slinger`
 
 
 ### Use
