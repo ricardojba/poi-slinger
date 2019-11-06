@@ -48,5 +48,6 @@ You can watch the debug messages on the extension's output pane under `Extender-
 Check the PHP file and the instructions contained it's instructions to host the PHP file and use it to test the extension.
 
 
+### Example Report
 Any findings will be reported as scan issues:
 ![alt tag](https://raw.githubusercontent.com/ricardojba/POI-Slinger/master/img/report-example.png)
