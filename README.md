@@ -38,12 +38,12 @@ You can also install the extension in Burp Suite Pro, via `Extender -> BApp Stor
 
 
 ### Use it
-On the Proxy/Target/Intruder/Repeater Tab, right click on the desired HTTP Request and click `Send To POI Slinger`. This will also highlight the HTTP Request and set the comment `Sent to POI Slinger`
+On the Proxy/Target/Intruder/Repeater Tab, right click on the desired HTTP Request and click `Send To POI Slinger`. This will also highlight the HTTP Request and set the comment `Sent to POI Slinger.`
 You can watch the debug messages on the extension's output pane under `Extender->Extensions->PHP Object Injection Slinger`
 
 
 ### Test it
-Check the PHP file on the `test-extension` directory and the instructions contained in it, on how to host the file and use it to test this extension.
+Check the [PHP file](https://github.com/ricardojba/poi-slinger/blob/master/test-extension/guzzle-poi-slinger-test.php) on the `test-extension` directory and the instructions contained in it, on how to host the file and use it to test this extension.
 
 
 ### Example Report
