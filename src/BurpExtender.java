@@ -145,7 +145,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
         }
     }
 
-    // Read and parse the embeded payloads.json file and return a JSONArray.
+    // Read and parse the embedded payloads.json file and return a JSONArray.
     public JSONArray getPayloadData() {
         JSONArray jsonarray = null;
         try {
@@ -168,13 +168,13 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     @Override
     public List<IScanIssue> doActiveScan(IHttpRequestResponse baseRequestResponse, IScannerInsertionPoint insertionPoint) {
 
-        // Print Generated Colaborator Callback Host on stdout for debugging purposes.
-        stdout.println("\nGenerated Colaborator Callback Host: " + collaboratorHost);
+        // Print Generated Collaborator Callback Host on stdout for debugging purposes.
+        stdout.println("\nGenerated Collaborator Callback Host: " + collaboratorHost);
 
         // Get the payload data from the payloads.json file.
         JSONArray payloaddata = getPayloadData();
 
-        // Interate through each payload.
+        // Iterate through each payload.
         Iterator<?> iter = payloaddata.iterator();
         while (iter.hasNext()) {
 
@@ -183,7 +183,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
             String gen_with = (String) json.get("gen_with");
             String name = (String) json.get("name");
 
-            // Replace the hardcoded string CHANGEME on each payload with the generated Colaborator Callback Host.
+            // Replace the hard coded string CHANGEME on each payload with the generated Collaborator Callback Host.
             if ((Boolean) json.get("_needs_dynamic_payload_editing")) {
                 // Payload editing for special cases (ex: Yii and maybe future others).
                 byte[] decodedBytes = helpers.base64Decode("OTk5OTk5OTk5OW5zbG9va3VwIENIQU5HRU1F".getBytes());

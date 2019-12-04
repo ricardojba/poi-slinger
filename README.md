@@ -21,7 +21,7 @@ You should combine your testing with the [`PHP Object Injection Check`](https://
 Tested on:
  * `OSX Mojave 10.14.6`
  * `java version "11.0.5" 2019-10-15 LTS`
- * `Gradle 5.6.4`
+ * `Gradle 6.0.1`
 
 Build the extension on OSX:
  * Install [`Homebrew`](https://docs.brew.sh/Installation)
