@@ -23,9 +23,19 @@ Tested on:
  * `java version "11.0.5" 2019-10-15 LTS`
  * `Gradle 6.0.1`
 
+ * `Alpine Linux v3.11`
+ * `OpenJDK 8.242.08`
+ * `gradle 5.6.4`
+
 Build the extension on OSX:
  * Install [`Homebrew`](https://docs.brew.sh/Installation)
  * After installing `Homebrew` run on a terminal `brew install gradle`
+ * Clone the repository `git clone https://github.com/ricardojba/poi-slinger.git`
+ * Inside the cloned repository directory, build the Jar with `gradle fatJar`
+ * Jar location `poi-slinger/build/libs/poi-slinger-all.jar`
+
+Build the extension on Alpine Linux:
+ * Install Gradle and OpenJDK `apk add gradle openjdk8` 
  * Clone the repository `git clone https://github.com/ricardojba/poi-slinger.git`
  * Inside the cloned repository directory, build the Jar with `gradle fatJar`
  * Jar location `poi-slinger/build/libs/poi-slinger-all.jar`
