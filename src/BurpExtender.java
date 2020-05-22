@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuFactory {
+public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuFactory, IExtensionStateListener {
 
     // Globals.
     private IBurpExtenderCallbacks callbacks;
@@ -30,9 +30,14 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
 
     @Override
     public void registerExtenderCallbacks(final IBurpExtenderCallbacks callbacks) {
+        
         // Keep a reference to our callbacks object.
         this.callbacks = callbacks;
 
+        // Proper extension unloading
+        // REF: https://portswigger.net/burp/extender/api/burp/IExtensionStateListener.html
+        callbacks.registerExtensionStateListener(this);
+        
         // Obtain an extension helpers object.
         helpers = callbacks.getHelpers();
 
@@ -223,5 +228,10 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
             }
         }
         return null;
+    }
+    @Override
+    public void extensionUnloaded() {
+        stdout.println("Extension unloaded - aborting threads...");
+        Thread.currentThread().interrupt();
     }
 }
