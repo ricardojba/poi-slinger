@@ -132,9 +132,11 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                     callbacks.doActiveScan(
                         messages[i].getHttpService().getHost(),
                         messages[i].getHttpService().getPort(),
-                        // Use HTTP or HTTPS depending on the base request - See Issues 1
-                        //messages[i].getHttpService().getProtocol().equalsIgnoreCase("HTTPS"),
-                        (messages[i].getHttpService().getProtocol().equalsIgnoreCase("http") ? false : true), messages[i].getRequest());
+                        // Use HTTP or HTTPS depending on the base request
+                        messages[i].getHttpService().getProtocol().equalsIgnoreCase("HTTPS"),
+                        // Line based on Issue 1 (4) - Testing reveal that this is a non-issue, so reverting to original code.
+                        //(messages[i].getHttpService().getProtocol().equalsIgnoreCase("http") ? false : true),
+                        messages[i].getRequest());
                     // Highlight and set a Comment on the HTTP Request on the Proxy Tab.
                     messages[i].setHighlight("pink");
                     messages[i].setComment("Sent to POI Slinger");
