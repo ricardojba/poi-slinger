@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 import static java.util.Collections.*;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -27,6 +28,8 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     //
     public PrintWriter stdout;
     public PrintWriter stderr;
+    //
+    static AtomicBoolean unloaded = new AtomicBoolean(false);
 
     @Override
     public void registerExtenderCallbacks(final IBurpExtenderCallbacks callbacks) {
@@ -34,7 +37,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
         // Keep a reference to our callbacks object.
         this.callbacks = callbacks;
 
-        // Proper extension unloading
+        // Extension unloading
         // REF: https://portswigger.net/burp/extender/api/burp/IExtensionStateListener.html
         callbacks.registerExtensionStateListener(this);
         
@@ -99,7 +102,6 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     @Override
     public List<JMenuItem> createMenuItems(final IContextMenuInvocation invocation) {
         List<JMenuItem> menuList = new ArrayList<>();
-        mInvocation = invocation;
         if (mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_PROXY_HISTORY ||
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SCANNER_RESULTS ||
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SEARCH_RESULTS ||
@@ -124,6 +126,11 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     }
 
     private void POISlingerScan(IHttpRequestResponse[] messages) {
+        if(unloaded.get()) {
+            stdout.println("Extension unloaded - aborting attack");
+            Thread.currentThread().interrupt();
+            throw new RuntimeException("Extension unloaded");
+        }
         for (int i=0; i < messages.length; i++) {
             try {
                 URL url = new URL(messages[i].getHttpService().getProtocol(), messages[i].getHttpService().getHost(), messages[i].getHttpService().getPort(), "");
@@ -175,6 +182,12 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
 
     @Override
     public List<IScanIssue> doActiveScan(IHttpRequestResponse baseRequestResponse, IScannerInsertionPoint insertionPoint) {
+        
+        if(unloaded.get()) {
+            stdout.println("Extension unloaded - aborting attack");
+            Thread.currentThread().interrupt();
+            throw new RuntimeException("Extension unloaded");
+        }
 
         // Print Generated Collaborator Callback Host on stdout for debugging purposes.
         stdout.println("\nGenerated Collaborator Callback Host: " + collaboratorHost);
@@ -231,7 +244,9 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     }
     @Override
     public void extensionUnloaded() {
-        stdout.println("Extension unloaded - aborting threads...");
+        stdout.println("Extension unloaded - Aborting scan!");
+        unloaded.set(true);
         Thread.currentThread().interrupt();
+        throw new RuntimeException("Extension unloaded!");
     }
 }
