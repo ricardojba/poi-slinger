@@ -20,13 +20,13 @@ You should combine your testing with the [`PHP Object Injection Check`](https://
 
 Tested on OSX:
  * `OSX Mojave 10.14.6`
- * `java version "11.0.5" 2019-10-15 LTS`
+ * `Java version "11.0.5" 2019-10-15 LTS`
  * `Gradle 6.0.1`
 
 Tested on Linux:
- * `Alpine Linux v3.11`
- * `OpenJDK 8.242.08`
- * `gradle 5.6.4`
+ * `Alpine Linux`
+ * `OpenJDK 1.8.0_272`
+ * `Gradle 6.5.1`
 
 Build the extension on OSX:
  * Install [`Homebrew`](https://docs.brew.sh/Installation)
