@@ -102,6 +102,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     @Override
     public List<JMenuItem> createMenuItems(final IContextMenuInvocation invocation) {
         List<JMenuItem> menuList = new ArrayList<>();
+        mInvocation = invocation;
         if (mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_PROXY_HISTORY ||
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SCANNER_RESULTS ||
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_SEARCH_RESULTS ||
