@@ -25,7 +25,7 @@ Tested on OSX:
 
 Tested on Linux:
  * `Alpine Linux`
- * `OpenJDK 1.8.0_272`
+ * `OpenJDK 1.8.0_275`
  * `Gradle 6.7.1`
 
 Build the extension on OSX:
