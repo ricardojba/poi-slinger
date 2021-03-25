@@ -25,8 +25,8 @@ Tested on OSX:
 
 Tested on Linux:
  * `Alpine Linux`
- * `OpenJDK 1.8.0_275`
- * `Gradle 6.7.1`
+ * `OpenJDK 1.8.0_282`
+ * `Gradle 6.8.3`
 
 Build the extension on OSX:
  * Install [`Homebrew`](https://docs.brew.sh/Installation)
