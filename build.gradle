@@ -1,4 +1,4 @@
-apply plugin: 'java'
+apply plugin: 'java-library'
 
 repositories {
     mavenCentral()
@@ -22,7 +22,8 @@ sourceSets {
 }
 
 task fatJar(type: Jar) {
-    baseName = project.name + '-all'
-    from { configurations.runtimeOnly.collect { it.isDirectory() ? it : zipTree(it) } }
+    duplicatesStrategy 'exclude'
+    archiveBaseName = project.name + '-all'
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
