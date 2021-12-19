@@ -18,15 +18,16 @@ You should combine your testing with the [`PHP Object Injection Check`](https://
 
 ### Build it
 
-Tested on OSX:
+Build on Linux:
+ * `Alpine Linux`
+ * `OpenJDK 11.0.13`
+ * `Gradle 7.2`
+
+Build on OSX:
  * `OSX Mojave 10.14.6`
  * `Java version "11.0.5" 2019-10-15 LTS`
  * `Gradle 6.0.1`
 
-Tested on Linux:
- * `Alpine Linux`
- * `OpenJDK 11.0.12`
- * `Gradle 7.1.1`
 
 Build the extension on OSX:
  * Install [`Homebrew`](https://docs.brew.sh/Installation)
@@ -54,7 +55,7 @@ You can watch the debug messages on the extension's output pane under `Extender-
 
 
 ### Test it
-Check the [PHP file](https://github.com/ricardojba/poi-slinger/blob/master/test-extension/guzzle-poi-slinger-test.php) on the `test-extension` directory and the instructions contained in it, on how to host the file and use it to test this extension.
+Check the [PHP file](https://github.com/ricardojba/poi-slinger/blob/master/test-extension/guzzle-poi-slinger-test.php) on the `test-extension` directory and read the instructions contained in it, on how to host the file and use it to test this extension.
 
 
 ### Example Report
