@@ -21,7 +21,7 @@ You should combine your testing with the [`PHP Object Injection Check`](https://
 Build on Linux:
  * `Alpine Linux`
  * `OpenJDK 11.0.13`
- * `Gradle 7.4.2`
+ * `Gradle 7.5`
 
 Build on OSX:
  * `OSX Mojave 10.14.6`
