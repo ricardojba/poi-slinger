@@ -20,24 +20,20 @@ You should combine your testing with the [`PHP Object Injection Check`](https://
 
 Build on Linux:
  * `Alpine Linux`
- * `OpenJDK 11.0.13`
- * `Gradle 7.5`
-
-Build on OSX:
- * `OSX Mojave 10.14.6`
- * `Java version "11.0.5" 2019-10-15 LTS`
- * `Gradle 6.0.1`
+ * `OpenJDK 17.0.4.1`
+ * `Gradle 7.5.1`
 
 
-Build the extension on OSX:
- * Install [`Homebrew`](https://docs.brew.sh/Installation)
- * After installing `Homebrew` run on a terminal `brew install gradle`
+Build the extension on Alpine Linux:
+ * Install Gradle and OpenJDK `apk add gradle openjdk17` 
  * Clone the repository `git clone https://github.com/ricardojba/poi-slinger`
  * Inside the cloned repository directory, build the Jar with `gradle fatJar`
  * Jar location `poi-slinger/build/libs/poi-slinger-all.jar`
 
-Build the extension on Alpine Linux:
- * Install Gradle and OpenJDK `apk add gradle openjdk11` 
+
+Build the extension on OSX:
+ * Install [`Homebrew`](https://docs.brew.sh/Installation)
+ * After installing `Homebrew` run on a terminal `brew install gradle openjdk17`
  * Clone the repository `git clone https://github.com/ricardojba/poi-slinger`
  * Inside the cloned repository directory, build the Jar with `gradle fatJar`
  * Jar location `poi-slinger/build/libs/poi-slinger-all.jar`
