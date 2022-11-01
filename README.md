@@ -9,11 +9,11 @@ Feedback, testing and issue reporting is welcome.
 
 
 ### Credits
-The payloads for this extension are all from the excellent [Ambionics](https://ambionics.io/blog) project [`PHPGGC`](https://github.com/ambionics/phpggc).
+The payloads for this extension are all from the excellent [`Ambionics`](https://ambionics.io/blog) project [`PHPGGC`](https://github.com/ambionics/phpggc).
 `PHPGGC` is a library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
 You will need it for further exploiting any vulnerabilities found by this extension.
 
-You should combine your testing with the [`PHP Object Injection Check`](https://github.com/securifybv/PHPUnserializeCheck) extension from [Securify](https://securify.nl) so you can identify other possible PHP Object Injection issues that this extension does not pick up.
+You should combine your testing with the [`PHP Object Injection Check`](https://github.com/securifybv/PHPUnserializeCheck) extension from [`Securify`](https://securify.nl) so you can identify other possible PHP Object Injection issues that this extension does not pick up.
 
 
 ### Build it
@@ -46,12 +46,12 @@ You can also install the extension in Burp Suite Pro, via `Extender -> BApp Stor
 
 
 ### Use it
-On the Proxy/Target/Intruder/Repeater Tab, right click on the desired HTTP Request and click `Send To POI Slinger`. This will also highlight the HTTP Request and set the comment `Sent to POI Slinger.`
+On the `Proxy/Target/Intruder/Repeater` Tab, right click on the desired HTTP Request and click `Send To POI Slinger`. This will also highlight the HTTP Request and set the comment `Sent to POI Slinger`.
 You can watch the debug messages on the extension's output pane under `Extender->Extensions->PHP Object Injection Slinger`
 
 
 ### Test it
-Check the [PHP file](https://github.com/ricardojba/poi-slinger/blob/master/test-extension/guzzle-poi-slinger-test.php) on the `test-extension` directory and read the instructions contained in it, on how to host the file and use it to test this extension.
+Check the [`PHP file`](https://github.com/ricardojba/poi-slinger/blob/master/test-extension/guzzle-poi-slinger-test.php) on the `test-extension` directory and read the instructions contained in it, on how to host the file and use it to test this extension.
 
 
 ### Example Report
