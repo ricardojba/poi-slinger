@@ -19,8 +19,8 @@ You should combine your testing with the [`PHP Object Injection Check`](https://
 ### Build it
 
 Build on Linux:
- * `Alpine Linux`
- * `OpenJDK 17.0.4.1`
+ * `Alpine Linux (Edge)`
+ * `OpenJDK 17.0.5`
  * `Gradle 7.5.1`
 
 
