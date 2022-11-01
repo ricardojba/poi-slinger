@@ -33,7 +33,7 @@ Build the extension on Alpine Linux:
 
 Build the extension on OSX:
  * Install [`Homebrew`](https://docs.brew.sh/Installation)
- * After installing `Homebrew` run on a terminal `brew install gradle openjdk17`
+ * After installing Homebrew run on a terminal `brew install gradle openjdk17`
  * Clone the repository `git clone https://github.com/ricardojba/poi-slinger`
  * Inside the cloned repository directory, build the Jar with `gradle fatJar`
  * Jar location `poi-slinger/build/libs/poi-slinger-all.jar`
