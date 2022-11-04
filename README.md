@@ -42,7 +42,9 @@ Build the extension on OSX:
 ### Install it
 Load the jar manually, in Burp Suite Pro, use `Extender -> Extensions -> Add` to load the jar file `poi-slinger-all.jar`
 You may find the built `Jar` on the `bin` directory of this repository.
-You can also install the extension in Burp Suite Pro, via `Extender -> BApp Store > PHP Object Injection Slinger` - Just be aware that the BApp Store is not syncing with this repo so their official version is not being updated.
+You can also install the extension in Burp Suite Pro, via `Extender -> BApp Store > PHP Object Injection Slinger`.
+
+NOTE: Be aware that the BApp Store is not syncing with this repo, so the BApp Store official version is not being updated with the latest payloads.
 
 
 ### Use it
