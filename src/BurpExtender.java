@@ -62,7 +62,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
         callbacks.registerScannerCheck(this);
 
         // Say Hi on stdout.
-        stdout.println("--|> PHP Object Injection Slinger Extension Loaded <|--");
+        //stdout.println("--|> PHP Object Injection Slinger Extension Loaded <|--");
     }
 
     // This method is called when multiple issues are reported for the same URL
@@ -112,11 +112,11 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_MESSAGE_VIEWER_REQUEST ||
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_TARGET_SITE_MAP_TREE ||
             mInvocation.getInvocationContext() == IContextMenuInvocation.CONTEXT_TARGET_SITE_MAP_TABLE) {
-            JMenuItem markScan = new JMenuItem("Send To POI Slinger");
+            JMenuItem markScan = new JMenuItem("Send To POI-Slinger");
             markScan.addActionListener(new ActionListener() {
                @Override
                public void actionPerformed(ActionEvent arg0) {
-                   if (arg0.getActionCommand().equals("Send To POI Slinger")) {
+                   if (arg0.getActionCommand().equals("Send To POI-Slinger")) {
                        POISlingerScan(mInvocation.getSelectedMessages());
                    }
                }
@@ -128,9 +128,9 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
 
     private void POISlingerScan(IHttpRequestResponse[] messages) {
         if(unloaded.get()) {
-            stdout.println("Extension unloaded - aborting attack");
+            stdout.println("Extension unloaded.");
             Thread.currentThread().interrupt();
-            throw new RuntimeException("Extension unloaded");
+            throw new RuntimeException("Extension unloaded.");
         }
         for (int i=0; i < messages.length; i++) {
             try {
@@ -185,9 +185,9 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
     public List<IScanIssue> doActiveScan(IHttpRequestResponse baseRequestResponse, IScannerInsertionPoint insertionPoint) {
         
         if(unloaded.get()) {
-            stdout.println("Extension unloaded - aborting attack");
+            stdout.println("Extension unloaded.");
             Thread.currentThread().interrupt();
-            throw new RuntimeException("Extension unloaded");
+            throw new RuntimeException("Extension unloaded.");
         }
 
         // Print Generated Collaborator Callback Host on stdout for debugging purposes.
@@ -205,7 +205,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
             String gen_with = (String) json.get("gen_with");
             String name = (String) json.get("name");
 
-            // Replace the hard coded string CHANGEME on each payload with the generated Collaborator Callback Host.
+            // Replace the hardcoded string CHANGEME on each payload with the generated Collaborator Callback Host.
             if ((Boolean) json.get("_needs_dynamic_payload_editing")) {
                 // Payload editing for special cases (ex: Yii and maybe future others).
                 byte[] decodedBytes = helpers.base64Decode("OTk5OTk5OTk5OW5zbG9va3VwIENIQU5HRU1F".getBytes());
@@ -219,7 +219,7 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
             }
 
             // Print payloads on stdout for debugging purposes.
-            stdout.println("\nSending Payload For: " + name + ": \n" + payload +"\n\n");
+            stdout.println("\nSending payload for " + name + ": \n" + payload +"\n\n");
 
             // First round sends the payload URL encoded, Second round sends the payload Base64 encoded.
             for (int i = 0; i < 2; i++) {
@@ -232,13 +232,14 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IContextMenuF
                 List<IBurpCollaboratorInteraction> collaboratorInteractions_all = collaboratorContext.fetchAllCollaboratorInteractions();
                 if (!collaboratorInteractions_payload.isEmpty()) {
                     // Report a specific interaction due to a payload injection.
-                    stdout.println("Interaction detected on Collaborator Callback Host!");
+                    stdout.println("Interaction detected on Collaborator Callback Host!!!");
                     return singletonList(reportIssue(name, gen_with, payload, checkRequestResponse, collaboratorInteractions_payload.get(0)));
                 } else if (!collaboratorInteractions_all.isEmpty()) {
                     // Report any interaction - pickup any delayed collaborator callback host interaction from other previous payload injection.
-                    stdout.println("Interaction detected on Collaborator Callback Host!");
+                    stdout.println("Interaction detected on Collaborator Callback Host!!!");
                     return singletonList(reportIssue(name, gen_with, payload, checkRequestResponse, collaboratorInteractions_all.get(0)));
-                } else { stdout.println("No interaction detected on Collaborator Callback Host."); }
+                }
+                // else { stdout.println("No interaction detected on Collaborator Callback Host."); }
             }
         }
         return null;
