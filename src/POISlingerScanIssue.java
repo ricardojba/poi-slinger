@@ -16,8 +16,7 @@ class POISlingerScanIssue implements IScanIssue {
                 "execution, SQL injection, arbitrary file access, and others.</p>" +
                 "<p>See also: <a href=\"https://www.owasp.org/index.php/PHP_Object_Injection\">https://www.owasp.org/index.php/PHP_Object_Injection</a></p>";
     private static final String REMEDIATION_BACKGROUND = "<p>Avoid unserializing untrusted (user) data. " +
-                "Use <strong><code>json_decode()</code>/<code>json_decode</code></strong> or set the " +
-                "<strong><code>unserialize()</code></strong> options to <strong>allowed_classes=false</strong> (PHP >= 7.0).</p>";
+                "Use <strong>json_decode()</strong> or set the <strong>unserialize()</strong> options to <strong>allowed_classes=false</strong> (PHP >= 7.0).</p>";
     private final URL url;
     private final String detail;
     private final IHttpService httpService;
@@ -89,13 +88,13 @@ class POISlingerScanIssue implements IScanIssue {
         return "<p>The Web Application is vulnerable to PHP Object Injection.</p><br />" +
                "<p>The following serialized PHP Object was sent to the application: <br /><strong>" + payload + "</strong></p><br />" +
                "<p>That forced the Web Application Web Server to make " + eventDescription(event) +
-               "<strong>" + event.getProperty("interaction_id") + ".burpcollaborator.net</strong></p><br />" +
+               "<strong>" + event.getProperty("interaction_id") + ".oastify.com</strong></p><br />" +
                "<p>The <strong>" + interactionType(event.getProperty("type")) +
                "</strong> was received from the IP address <strong>" + event.getProperty("client_ip") +
                "</strong> at " + event.getProperty("time_stamp") + ".</p><br />" +
                "<p>It appears that the Web Application is running: <strong>"+ StringEscapeUtils.escapeHtml4(name) +"</strong></p>" +
                "<p>To further check the exploitability of this issue download the tool <a href=\"https://github.com/ambionics/phpggc\">PHPGCC</a> " +
-               "and generate your payload with the following command: <strong>"+ gen_with +"</strong></p>";
+               "and generate your payload with the following command: <strong>"+ gen_with +" -b/-s</strong></p>";
     }
 
     private String interactionType(String type) {
