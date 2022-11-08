@@ -12,7 +12,7 @@
 *.dmg
 *.gz
 *.iso
-# *.jar
+*.jar
 *.rar
 *.tar
 *.zip
@@ -34,11 +34,20 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
+Desktop.ini
+.bundle
+.jekyll-cache
+.sass-cache
+Gemfile.lock
+_site
+*.gem
+.env
+.venv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*.pyc
 
 # C extensions
 *.so
