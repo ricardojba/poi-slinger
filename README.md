@@ -26,9 +26,9 @@ Build on Linux:
 
 Build the extension on Alpine Linux:
  * Install Gradle and OpenJDK `apk add gradle openjdk17` 
- * Clone the repository `git clone https://github.com/ricardojba/poi-slinger`
+ * Clone the repository `cd ~ && git clone https://github.com/ricardojba/poi-slinger && cd ~/poi-slinger/`
  * Inside the cloned repository directory, build the Jar with `gradle fatJar`
- * Jar location `poi-slinger/build/libs/poi-slinger-all.jar`
+ * Jar location `~/poi-slinger/build/libs/poi-slinger-all.jar`
 
 
 Build the extension on OSX:
