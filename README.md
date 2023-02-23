@@ -20,8 +20,8 @@ You should combine your testing with the [`PHP Object Injection Check`](https://
 
 Build on Linux:
  * `Alpine Linux (Edge)`
- * `OpenJDK 17.0.5`
- * `Gradle 7.5.1`
+ * `OpenJDK 17.0.6+10-alpine-r0`
+ * `Gradle 7.6`
 
 
 Build the extension on Alpine Linux:
