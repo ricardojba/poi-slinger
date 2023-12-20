@@ -18,7 +18,7 @@ while read line;  do
    elif echo $line | /bin/grep -q "<command>"; then
       echo -e "\n"
       echo $gadget "<command>"
-      ~/phpggc/phpggc $options $gadget "$command?$(date +%s)" | sed 's/poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.oastify.com/CHANGEME/g' | jq -aR .
+      ~/phpggc/phpggc $options $gadget "$command" | sed 's/poi-slinger.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.oastify.com/CHANGEME/g' | jq -aR .
    else
       echo -e "\n"
       echo $gadget
