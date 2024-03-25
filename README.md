@@ -4,13 +4,9 @@ This is an extension for Burp Suite Professional, designed to help you scan for 
 It will send a serialized PHP Object to the web application designed to force the web server to perform a DNS lookup to a Burp Collaborator Callback Host.
 
 
-### Contribute
-Feedback, testing and issue reporting is welcome.
-
-
 ### Credits
 The payloads for this extension are all from the excellent [`Ambionics`](https://ambionics.io/blog) project [`PHPGGC`](https://github.com/ambionics/phpggc).
-`PHPGGC` is a library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
+[`PHPGGC`](https://github.com/ambionics/phpggc) is a library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
 You will need it for further exploiting any vulnerabilities found by this extension.
 
 You should combine your testing with the [`PHP Object Injection Check`](https://github.com/securifybv/PHPUnserializeCheck) extension from [`Securify`](https://securify.nl) so you can identify other possible PHP Object Injection issues that this extension does not pick up.
