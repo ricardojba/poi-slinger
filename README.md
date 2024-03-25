@@ -38,14 +38,14 @@ Build the extension on OSX:
 ### Install it
 Load the jar manually, in Burp Suite Pro, use `Extender -> Extensions -> Add` to load the jar file `poi-slinger-all.jar`
 You may find the built `Jar` on the `bin` directory of this repository.
-You can also install the extension in Burp Suite Pro, via `Extender -> BApp Store > PHP Object Injection Slinger`.
+You can also install the extension in Burp Suite Pro, via `Extender -> BApp Store -> PHP Object Injection Slinger`.
 
 `NOTE: Be aware that the BApp Store official version is not being updated with the latest payloads.`
 
 
 ### Use it
 On the `Proxy/Target/Intruder/Repeater` Tab, right click on the desired HTTP Request and click `Send To POI Slinger`. This will also highlight the HTTP Request and set the comment `Sent to POI Slinger`.
-You can watch the debug messages on the extension's output pane under `Extender->Extensions->PHP Object Injection Slinger`
+You can watch the debug messages on the extension's output pane under `Extender->Extensions -> PHP Object Injection Slinger`
 
 
 ### Test it
