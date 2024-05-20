@@ -1,3 +1,9 @@
+[![GitHub release](https://img.shields.io/github/release/ricardojba/poi-slinger.svg)](https://github.com/ricardojba/poi-slinger/releases) 
+[![GitHub issues](https://img.shields.io/github/issues/ricardojba/poi-slinger.svg)](https://github.com/ricardojba/poi-slinger/issues) 
+[![GitHub Downloads](https://img.shields.io/github/downloads/ricardojba/poi-slinger/total.svg)]() 
+[![Github Stars](https://img.shields.io/github/stars/ricardojba/poi-slinger.svg?style=social&label=Stars)](https://github.com/ricardojba/poi-slinger/) 
+[![GitHub Followers](https://img.shields.io/github/followers/ricardojba.svg?style=social&label=Follow)](https://github.com/ricardojba/poi-slinger/)
+
 # PHP Object Injection Slinger
 
 This is an extension for Burp Suite Professional, designed to help you scan for [PHP Object Injection](https://www.owasp.org/index.php/PHP_Object_Injection) vulnerabilities on popular PHP Frameworks and some of their dependencies.
